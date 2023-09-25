@@ -48,11 +48,11 @@
 		040979C22AC1635A00E7AA7E /* FoodPrintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodPrintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040979C62AC1635A00E7AA7E /* FoodPrintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPrintUITests.swift; sourceTree = "<group>"; };
 		040979C82AC1635A00E7AA7E /* FoodPrintUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPrintUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		040979D82AC16A0600E7AA7E /* Kalam-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Light.ttf"; path = "../../../../Kalam/Kalam-Light.ttf"; sourceTree = "<group>"; };
-		040979D92AC16A0600E7AA7E /* Kalam-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Bold.ttf"; path = "../../../../Kalam/Kalam-Bold.ttf"; sourceTree = "<group>"; };
-		040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Regular.ttf"; path = "../../../../Kalam/Kalam-Regular.ttf"; sourceTree = "<group>"; };
+		040979D82AC16A0600E7AA7E /* Kalam-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Light.ttf"; path = "FoodPrint/Fonts/Kalam-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		040979D92AC16A0600E7AA7E /* Kalam-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Bold.ttf"; path = "FoodPrint/Fonts/Kalam-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Regular.ttf"; path = "FoodPrint/Fonts/Kalam-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		040979DE2AC16B3B00E7AA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		040979E02AC16C3E00E7AA7E /* fastingImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fastingImg.png; path = ../../../../fastingImg.png; sourceTree = "<group>"; };
+		040979E02AC16C3E00E7AA7E /* fastingImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fastingImg.png; path = FoodPrint/Imgs/fastingImg.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

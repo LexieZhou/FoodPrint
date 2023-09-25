@@ -8,17 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var offset: CGFloat = 0.0
-    @State private var isMoveUp: Bool = true
-    
-    func startAnimation() {
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
-                    withAnimation(Animation.easeInOut(duration: 0.5)) {
-                        offset = isMoveUp ? -20 : 18 // Set the desired vertical offset
-                    }
-                    isMoveUp.toggle()
-                }
-            }
     
     var body: some View {
         NavigationView {
