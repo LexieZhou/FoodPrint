@@ -14,6 +14,10 @@
 		040979BD2AC1635A00E7AA7E /* FoodPrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040979BC2AC1635A00E7AA7E /* FoodPrintTests.swift */; };
 		040979C72AC1635A00E7AA7E /* FoodPrintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040979C62AC1635A00E7AA7E /* FoodPrintUITests.swift */; };
 		040979C92AC1635A00E7AA7E /* FoodPrintUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040979C82AC1635A00E7AA7E /* FoodPrintUITestsLaunchTests.swift */; };
+		040979DB2AC16A0700E7AA7E /* Kalam-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040979D82AC16A0600E7AA7E /* Kalam-Light.ttf */; };
+		040979DC2AC16A0700E7AA7E /* Kalam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040979D92AC16A0600E7AA7E /* Kalam-Bold.ttf */; };
+		040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */; };
+		040979E12AC16C3E00E7AA7E /* fastingImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 040979E02AC16C3E00E7AA7E /* fastingImg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		040979C22AC1635A00E7AA7E /* FoodPrintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodPrintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040979C62AC1635A00E7AA7E /* FoodPrintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPrintUITests.swift; sourceTree = "<group>"; };
 		040979C82AC1635A00E7AA7E /* FoodPrintUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPrintUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		040979D82AC16A0600E7AA7E /* Kalam-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Light.ttf"; path = "../../../../Kalam/Kalam-Light.ttf"; sourceTree = "<group>"; };
+		040979D92AC16A0600E7AA7E /* Kalam-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Bold.ttf"; path = "../../../../Kalam/Kalam-Bold.ttf"; sourceTree = "<group>"; };
+		040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Regular.ttf"; path = "../../../../Kalam/Kalam-Regular.ttf"; sourceTree = "<group>"; };
+		040979DE2AC16B3B00E7AA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		040979E02AC16C3E00E7AA7E /* fastingImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fastingImg.png; path = ../../../../fastingImg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,9 @@
 		040979AA2AC1635800E7AA7E /* FoodPrint */ = {
 			isa = PBXGroup;
 			children = (
+				040979DE2AC16B3B00E7AA7E /* Info.plist */,
+				040979DF2AC16C2000E7AA7E /* Imgs */,
+				040979D72AC1692200E7AA7E /* Fonts */,
 				040979AB2AC1635900E7AA7E /* FoodPrintApp.swift */,
 				040979AD2AC1635900E7AA7E /* ContentView.swift */,
 				040979AF2AC1635A00E7AA7E /* Assets.xcassets */,
@@ -125,6 +137,24 @@
 				040979C82AC1635A00E7AA7E /* FoodPrintUITestsLaunchTests.swift */,
 			);
 			path = FoodPrintUITests;
+			sourceTree = "<group>";
+		};
+		040979D72AC1692200E7AA7E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				040979D92AC16A0600E7AA7E /* Kalam-Bold.ttf */,
+				040979D82AC16A0600E7AA7E /* Kalam-Light.ttf */,
+				040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		040979DF2AC16C2000E7AA7E /* Imgs */ = {
+			isa = PBXGroup;
+			children = (
+				040979E02AC16C3E00E7AA7E /* fastingImg.png */,
+			);
+			path = Imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +261,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040979DB2AC16A0700E7AA7E /* Kalam-Light.ttf in Resources */,
+				040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */,
 				040979B32AC1635A00E7AA7E /* Preview Assets.xcassets in Resources */,
+				040979DC2AC16A0700E7AA7E /* Kalam-Bold.ttf in Resources */,
+				040979E12AC16C3E00E7AA7E /* fastingImg.png in Resources */,
 				040979B02AC1635A00E7AA7E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +454,7 @@
 				DEVELOPMENT_TEAM = DJY49YYL9Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodPrint/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +484,7 @@
 				DEVELOPMENT_TEAM = DJY49YYL9Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodPrint/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
