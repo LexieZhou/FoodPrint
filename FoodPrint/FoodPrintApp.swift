@@ -11,7 +11,7 @@ import SwiftUI
 struct FoodPrintApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomePageView()
         }
     }
 }

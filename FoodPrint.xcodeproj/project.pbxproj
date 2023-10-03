@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		040979AC2AC1635900E7AA7E /* FoodPrintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040979AB2AC1635900E7AA7E /* FoodPrintApp.swift */; };
-		040979AE2AC1635900E7AA7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040979AD2AC1635900E7AA7E /* ContentView.swift */; };
+		040979AE2AC1635900E7AA7E /* WelcomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040979AD2AC1635900E7AA7E /* WelcomePageView.swift */; };
 		040979B02AC1635A00E7AA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040979AF2AC1635A00E7AA7E /* Assets.xcassets */; };
 		040979B32AC1635A00E7AA7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040979B22AC1635A00E7AA7E /* Preview Assets.xcassets */; };
 		040979BD2AC1635A00E7AA7E /* FoodPrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040979BC2AC1635A00E7AA7E /* FoodPrintTests.swift */; };
@@ -18,6 +18,12 @@
 		040979DC2AC16A0700E7AA7E /* Kalam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040979D92AC16A0600E7AA7E /* Kalam-Bold.ttf */; };
 		040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */; };
 		040979E12AC16C3E00E7AA7E /* fastingImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 040979E02AC16C3E00E7AA7E /* fastingImg.png */; };
+		049C9B382ACBB87A00A95A98 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C9B372ACBB87A00A95A98 /* LoginPageView.swift */; };
+		049C9B3A2ACBBB0600A95A98 /* RegisterPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C9B392ACBBB0600A95A98 /* RegisterPageView.swift */; };
+		049C9B3C2ACBBB9C00A95A98 /* TabPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C9B3B2ACBBB9C00A95A98 /* TabPageView.swift */; };
+		049C9B3E2ACBBC3300A95A98 /* ProfilePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C9B3D2ACBBC3300A95A98 /* ProfilePageView.swift */; };
+		049C9B402ACBBF4800A95A98 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C9B3F2ACBBF4800A95A98 /* HomePageView.swift */; };
+		049C9B422ACBC03800A95A98 /* RecordPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C9B412ACBC03800A95A98 /* RecordPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +46,7 @@
 /* Begin PBXFileReference section */
 		040979A82AC1635800E7AA7E /* FoodPrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040979AB2AC1635900E7AA7E /* FoodPrintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPrintApp.swift; sourceTree = "<group>"; };
-		040979AD2AC1635900E7AA7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		040979AD2AC1635900E7AA7E /* WelcomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageView.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		040979AF2AC1635A00E7AA7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040979B22AC1635A00E7AA7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		040979B82AC1635A00E7AA7E /* FoodPrintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodPrintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +59,12 @@
 		040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Regular.ttf"; path = "FoodPrint/Fonts/Kalam-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		040979DE2AC16B3B00E7AA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		040979E02AC16C3E00E7AA7E /* fastingImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fastingImg.png; path = FoodPrint/Imgs/fastingImg.png; sourceTree = SOURCE_ROOT; };
+		049C9B372ACBB87A00A95A98 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
+		049C9B392ACBBB0600A95A98 /* RegisterPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageView.swift; sourceTree = "<group>"; };
+		049C9B3B2ACBBB9C00A95A98 /* TabPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageView.swift; sourceTree = "<group>"; };
+		049C9B3D2ACBBC3300A95A98 /* ProfilePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageView.swift; sourceTree = "<group>"; };
+		049C9B3F2ACBBF4800A95A98 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		049C9B412ACBC03800A95A98 /* RecordPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +119,13 @@
 				040979DF2AC16C2000E7AA7E /* Imgs */,
 				040979D72AC1692200E7AA7E /* Fonts */,
 				040979AB2AC1635900E7AA7E /* FoodPrintApp.swift */,
-				040979AD2AC1635900E7AA7E /* ContentView.swift */,
+				040979AD2AC1635900E7AA7E /* WelcomePageView.swift */,
+				049C9B372ACBB87A00A95A98 /* LoginPageView.swift */,
+				049C9B392ACBBB0600A95A98 /* RegisterPageView.swift */,
+				049C9B3B2ACBBB9C00A95A98 /* TabPageView.swift */,
+				049C9B3F2ACBBF4800A95A98 /* HomePageView.swift */,
+				049C9B3D2ACBBC3300A95A98 /* ProfilePageView.swift */,
+				049C9B412ACBC03800A95A98 /* RecordPageView.swift */,
 				040979AF2AC1635A00E7AA7E /* Assets.xcassets */,
 				040979B12AC1635A00E7AA7E /* Preview Content */,
 			);
@@ -291,8 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040979AE2AC1635900E7AA7E /* ContentView.swift in Sources */,
+				040979AE2AC1635900E7AA7E /* WelcomePageView.swift in Sources */,
+				049C9B3E2ACBBC3300A95A98 /* ProfilePageView.swift in Sources */,
 				040979AC2AC1635900E7AA7E /* FoodPrintApp.swift in Sources */,
+				049C9B3C2ACBBB9C00A95A98 /* TabPageView.swift in Sources */,
+				049C9B3A2ACBBB0600A95A98 /* RegisterPageView.swift in Sources */,
+				049C9B402ACBBF4800A95A98 /* HomePageView.swift in Sources */,
+				049C9B422ACBC03800A95A98 /* RecordPageView.swift in Sources */,
+				049C9B382ACBB87A00A95A98 /* LoginPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
