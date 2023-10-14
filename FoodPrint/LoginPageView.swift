@@ -7,13 +7,27 @@
 
 import Foundation
 import SwiftUI
+import AVFoundation
+import Firebase
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 struct LoginPageView: View {
     @State var email = ""
     @State var password = ""
     @State var successLogin = false
     @State private var showingUnsuccessAlert = false
+    
     var body: some View {
+        if (successLogin) {
+            HomePageView().navigationBarBackButtonHidden(true)
+        } else {
+            content
+        }
+    }
+    
+    var content: some View {
         NavigationView {
             ZStack{
                 VStack{
@@ -44,7 +58,7 @@ struct LoginPageView: View {
                         .padding(.bottom)
                     
                     Button{
-                        //login()
+                        login()
                     } label: {
                         Text("Go!")
                             .bold()
@@ -74,6 +88,17 @@ struct LoginPageView: View {
                 .frame(width: 280)
             }
             .ignoresSafeArea()
+        }
+    }
+    func login() {
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+                showingUnsuccessAlert = true
+            } else {
+                successLogin = true
+                print("success")
+            }
         }
     }
 }

@@ -14,17 +14,22 @@ struct TabPageView: View {
             HomePageView()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .tabItem{
-                    Label("Fasting", systemImage: "1.circle")
+                    Label("Fasting", systemImage: "fork.knife.circle")
+                }
+            ChatbotPageView()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .tabItem{
+                    Label("Chatbot", systemImage: "fork.knife.circle")
                 }
             RecordPageView()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .tabItem{
-                    Label("Records", systemImage: "2.circle")
+                    Label("Records", systemImage: "calendar.circle")
                 }
             ProfilePageView()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .tabItem{
-                    Label("Profile", systemImage: "3.circle")
+                    Label("Profile", systemImage: "person.crop.circle")
                 }
         }
     }

@@ -7,25 +7,31 @@
 
 import Foundation
 import SwiftUI
+import AVFoundation
+import Firebase
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
+
+
 struct RegisterPageView: View {
     @State var email = ""
     @State var password = ""
     @State var successRegister = false
     @State private var showUnsucessAlert = false
     @State private var showSucessAlert = false
-
-
-//    func register(){
-//        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-//            if error != nil {
-//                print(error?.localizedDescription ?? "")
-//                showUnsucessAlert = true
-//            }
-//            else {
-//                showSucessAlert = true
-//            }
-//        }
-//    }
+    
+    func register(){
+        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+                showUnsucessAlert = true
+            }
+            else {
+                showSucessAlert = true
+            }
+        }
+    }
 
     var body: some View {
         NavigationView {
@@ -58,7 +64,7 @@ struct RegisterPageView: View {
                         .padding(.bottom)
                     
                     Button{
-                        //register()
+                        register()
                     } label: {
                         Text("Sign up")
                             .bold()
