@@ -18,9 +18,6 @@
 		040979DC2AC16A0700E7AA7E /* Kalam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040979D92AC16A0600E7AA7E /* Kalam-Bold.ttf */; };
 		040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */; };
 		040979E12AC16C3E00E7AA7E /* fastingImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 040979E02AC16C3E00E7AA7E /* fastingImg.png */; };
-		0494BEBC2ADAF93F00076F61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0494BEBB2ADAF93F00076F61 /* GoogleService-Info.plist */; };
-		0494BEBD2ADAF93F00076F61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0494BEBB2ADAF93F00076F61 /* GoogleService-Info.plist */; };
-		0494BEBE2ADAF93F00076F61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0494BEBB2ADAF93F00076F61 /* GoogleService-Info.plist */; };
 		0494BEC12ADAFA7100076F61 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0494BEC02ADAFA7100076F61 /* FirebaseAnalytics */; };
 		0494BEC32ADAFA7100076F61 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 0494BEC22ADAFA7100076F61 /* FirebaseAnalyticsOnDeviceConversion */; };
 		0494BEC52ADAFA7100076F61 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0494BEC42ADAFA7100076F61 /* FirebaseAnalyticsSwift */; };
@@ -46,6 +43,9 @@
 		049C9B3E2ACBBC3300A95A98 /* ProfilePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C9B3D2ACBBC3300A95A98 /* ProfilePageView.swift */; };
 		049C9B402ACBBF4800A95A98 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C9B3F2ACBBF4800A95A98 /* HomePageView.swift */; };
 		049C9B422ACBC03800A95A98 /* RecordPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C9B412ACBC03800A95A98 /* RecordPageView.swift */; };
+		04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
+		04AAE4CE2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
+		04AAE4CF2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +81,6 @@
 		040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Regular.ttf"; path = "FoodPrint/Fonts/Kalam-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		040979DE2AC16B3B00E7AA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		040979E02AC16C3E00E7AA7E /* fastingImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fastingImg.png; path = FoodPrint/Imgs/fastingImg.png; sourceTree = SOURCE_ROOT; };
-		0494BEBB2ADAF93F00076F61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0494BEE02ADB00A600076F61 /* ChatBotPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotPageView.swift; sourceTree = "<group>"; };
 		049C9B372ACBB87A00A95A98 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
 		049C9B392ACBBB0600A95A98 /* RegisterPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageView.swift; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		049C9B3D2ACBBC3300A95A98 /* ProfilePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageView.swift; sourceTree = "<group>"; };
 		049C9B3F2ACBBF4800A95A98 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		049C9B412ACBC03800A95A98 /* RecordPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPageView.swift; sourceTree = "<group>"; };
+		04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +135,6 @@
 		0409799F2AC1635800E7AA7E = {
 			isa = PBXGroup;
 			children = (
-				0494BEBB2ADAF93F00076F61 /* GoogleService-Info.plist */,
 				040979AA2AC1635800E7AA7E /* FoodPrint */,
 				040979BB2AC1635A00E7AA7E /* FoodPrintTests */,
 				040979C52AC1635A00E7AA7E /* FoodPrintUITests */,
@@ -156,6 +155,7 @@
 		040979AA2AC1635800E7AA7E /* FoodPrint */ = {
 			isa = PBXGroup;
 			children = (
+				04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */,
 				040979DE2AC16B3B00E7AA7E /* Info.plist */,
 				040979DF2AC16C2000E7AA7E /* Imgs */,
 				040979D72AC1692200E7AA7E /* Fonts */,
@@ -343,12 +343,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				040979DB2AC16A0700E7AA7E /* Kalam-Light.ttf in Resources */,
+				04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */,
 				040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */,
 				040979B32AC1635A00E7AA7E /* Preview Assets.xcassets in Resources */,
 				040979DC2AC16A0700E7AA7E /* Kalam-Bold.ttf in Resources */,
 				040979E12AC16C3E00E7AA7E /* fastingImg.png in Resources */,
 				040979B02AC1635A00E7AA7E /* Assets.xcassets in Resources */,
-				0494BEBC2ADAF93F00076F61 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0494BEBD2ADAF93F00076F61 /* GoogleService-Info.plist in Resources */,
+				04AAE4CE2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0494BEBE2ADAF93F00076F61 /* GoogleService-Info.plist in Resources */,
+				04AAE4CF2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,7 +21,7 @@ struct LoginPageView: View {
     
     var body: some View {
         if (successLogin) {
-            HomePageView().navigationBarBackButtonHidden(true)
+            TabPageView().navigationBarBackButtonHidden(true)
         } else {
             content
         }
