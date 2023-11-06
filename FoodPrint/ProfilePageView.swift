@@ -37,21 +37,6 @@ struct ProfilePageView: View {
                     Rectangle()
                         .frame(width: 350, height: 1)
                         .foregroundColor(.gray)
-                    HStack {
-                        NavigationLink(destination: WelcomePageView().navigationBarBackButtonHidden(true)){
-                            Text("Log Out")
-                                .font(.custom("Kalam-Regular", size: 20))
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(.black)
-                            Image("back")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                        }
-                    }
-                    Rectangle()
-                        .frame(width: 350, height: 1)
-                        .foregroundColor(.gray)
-                        .padding(.bottom, 70)
                     
                 }
             }
