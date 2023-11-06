@@ -57,7 +57,6 @@
 		04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CE2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CF2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
-		04DB4ED82AEFD8C600E8D9FA /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 04DB4ED72AEFD8C600E8D9FA /* SwiftCSV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,7 +125,6 @@
 				0494BED32ADAFA7100076F61 /* FirebaseFirestore in Frameworks */,
 				0494BEDF2ADAFA7100076F61 /* FirebaseStorage in Frameworks */,
 				0494BEC92ADAFA7100076F61 /* FirebaseAuth in Frameworks */,
-				04DB4ED82AEFD8C600E8D9FA /* SwiftCSV in Frameworks */,
 				0494BED52ADAFA7100076F61 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				0494BEC52ADAFA7100076F61 /* FirebaseAnalyticsSwift in Frameworks */,
 				0494BED12ADAFA7100076F61 /* FirebaseDynamicLinks in Frameworks */,
@@ -285,7 +283,6 @@
 				0494BEDA2ADAFA7100076F61 /* FirebaseRemoteConfig */,
 				0494BEDC2ADAFA7100076F61 /* FirebaseRemoteConfigSwift */,
 				0494BEDE2ADAFA7100076F61 /* FirebaseStorage */,
-				04DB4ED72AEFD8C600E8D9FA /* SwiftCSV */,
 			);
 			productName = FoodPrint;
 			productReference = 040979A82AC1635800E7AA7E /* FoodPrint.app */;
@@ -361,7 +358,6 @@
 			mainGroup = 0409799F2AC1635800E7AA7E;
 			packageReferences = (
 				0494BEBF2ADAFA7100076F61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				04DB4ED62AEFD8C600E8D9FA /* XCRemoteSwiftPackageReference "SwiftCSV" */,
 			);
 			productRefGroup = 040979A92AC1635800E7AA7E /* Products */;
 			projectDirPath = "";
@@ -770,14 +766,6 @@
 				minimumVersion = 9.0.0;
 			};
 		};
-		04DB4ED62AEFD8C600E8D9FA /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -860,11 +848,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0494BEBF2ADAFA7100076F61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
-		};
-		04DB4ED72AEFD8C600E8D9FA /* SwiftCSV */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 04DB4ED62AEFD8C600E8D9FA /* XCRemoteSwiftPackageReference "SwiftCSV" */;
-			productName = SwiftCSV;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
