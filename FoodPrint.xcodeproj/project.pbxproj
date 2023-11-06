@@ -420,14 +420,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				9D3E4C642AEFD5F600AA8495 /* Homepage-ViewModel.swift in Sources */,
-=======
 				0485CB942AF8A8560093B68E /* SwipingWeightPage.swift in Sources */,
 				0485CB8C2AF7FAC30093B68E /* ViewController.swift in Sources */,
 				0485CB902AF806240093B68E /* SwipingHeightPage.swift in Sources */,
 				0485CB982AF8AA4F0093B68E /* SwipingAgePage.swift in Sources */,
->>>>>>> 185c0b59bb5180dd2699ab6e465cd4c13396193b
 				040979AE2AC1635900E7AA7E /* WelcomePageView.swift in Sources */,
 				049C9B3E2ACBBC3300A95A98 /* ProfilePageView.swift in Sources */,
 				040979AC2AC1635900E7AA7E /* FoodPrintApp.swift in Sources */,
