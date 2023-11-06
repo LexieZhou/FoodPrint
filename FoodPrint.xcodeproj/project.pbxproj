@@ -57,9 +57,17 @@
 		04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CE2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CF2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
+		460CB2FC2AEFDC4E002388F5 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 460CB2FB2AEFDC4E002388F5 /* SwiftUICharts */; };
+		9D03D85A2AF95911009FDF47 /* Battery6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8532AF95911009FDF47 /* Battery6.png */; };
+		9D03D85B2AF95911009FDF47 /* Battery4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8542AF95911009FDF47 /* Battery4.png */; };
+		9D03D85C2AF95911009FDF47 /* lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8552AF95911009FDF47 /* lightning.png */; };
+		9D03D85D2AF95911009FDF47 /* Battery1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8562AF95911009FDF47 /* Battery1.png */; };
+		9D03D85E2AF95911009FDF47 /* Battery3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8572AF95911009FDF47 /* Battery3.png */; };
+		9D03D85F2AF95911009FDF47 /* Battery5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8582AF95911009FDF47 /* Battery5.png */; };
+		9D03D8602AF95911009FDF47 /* Battery2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8592AF95911009FDF47 /* Battery2.png */; };
+		9D03D8692AF95A01009FDF47 /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8682AF95A01009FDF47 /* camera-icon.png */; };
 		9D3E4C642AEFD5F600AA8495 /* Homepage-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E4C632AEFD5F600AA8495 /* Homepage-ViewModel.swift */; };
 		9D9F379D2AF92A4E00E947C1 /* Data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9D9F379C2AF92A4E00E947C1 /* Data.csv */; };
-		460CB2FC2AEFDC4E002388F5 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 460CB2FB2AEFDC4E002388F5 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +122,14 @@
 		049C9B3F2ACBBF4800A95A98 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		049C9B412ACBC03800A95A98 /* RecordPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPageView.swift; sourceTree = "<group>"; };
 		04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D03D8532AF95911009FDF47 /* Battery6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Battery6.png; path = "../../../../Desktop/battery pics.fld/Battery6.png"; sourceTree = "<group>"; };
+		9D03D8542AF95911009FDF47 /* Battery4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Battery4.png; path = "../../../../Desktop/battery pics.fld/Battery4.png"; sourceTree = "<group>"; };
+		9D03D8552AF95911009FDF47 /* lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lightning.png; path = "../../../../Desktop/battery pics.fld/lightning.png"; sourceTree = "<group>"; };
+		9D03D8562AF95911009FDF47 /* Battery1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Battery1.png; path = "../../../../Desktop/battery pics.fld/Battery1.png"; sourceTree = "<group>"; };
+		9D03D8572AF95911009FDF47 /* Battery3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Battery3.png; path = "../../../../Desktop/battery pics.fld/Battery3.png"; sourceTree = "<group>"; };
+		9D03D8582AF95911009FDF47 /* Battery5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Battery5.png; path = "../../../../Desktop/battery pics.fld/Battery5.png"; sourceTree = "<group>"; };
+		9D03D8592AF95911009FDF47 /* Battery2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Battery2.png; path = "../../../../Desktop/battery pics.fld/Battery2.png"; sourceTree = "<group>"; };
+		9D03D8682AF95A01009FDF47 /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-icon.png"; path = "../../../../Desktop/camera-icon.png"; sourceTree = "<group>"; };
 		9D3E4C632AEFD5F600AA8495 /* Homepage-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homepage-ViewModel.swift"; sourceTree = "<group>"; };
 		9D9F379C2AF92A4E00E947C1 /* Data.csv */ = {isa = PBXFileReference; lastKnownFileType = file; name = Data.csv; path = "../../../Desktop/battery pics.fld/Data.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,6 +264,14 @@
 		040979DF2AC16C2000E7AA7E /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
+				9D03D8682AF95A01009FDF47 /* camera-icon.png */,
+				9D03D8562AF95911009FDF47 /* Battery1.png */,
+				9D03D8592AF95911009FDF47 /* Battery2.png */,
+				9D03D8572AF95911009FDF47 /* Battery3.png */,
+				9D03D8542AF95911009FDF47 /* Battery4.png */,
+				9D03D8582AF95911009FDF47 /* Battery5.png */,
+				9D03D8532AF95911009FDF47 /* Battery6.png */,
+				9D03D8552AF95911009FDF47 /* lightning.png */,
 				040979E02AC16C3E00E7AA7E /* fastingImg.png */,
 				0485CB9A2AF8B10A0093B68E /* age.jpg */,
 				0485CB9F2AF8B2750093B68E /* height.jpeg */,
@@ -388,16 +412,24 @@
 				040979DB2AC16A0700E7AA7E /* Kalam-Light.ttf in Resources */,
 				04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */,
 				0485CBA22AF8B46E0093B68E /* eat.jpeg in Resources */,
+				9D03D8692AF95A01009FDF47 /* camera-icon.png in Resources */,
 				0485CB9E2AF8B10B0093B68E /* measure_weight.jpg in Resources */,
+				9D03D8602AF95911009FDF47 /* Battery2.png in Resources */,
+				9D03D85C2AF95911009FDF47 /* lightning.png in Resources */,
+				9D03D85E2AF95911009FDF47 /* Battery3.png in Resources */,
 				040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */,
 				040979B32AC1635A00E7AA7E /* Preview Assets.xcassets in Resources */,
 				9D9F379D2AF92A4E00E947C1 /* Data.csv in Resources */,
 				040979DC2AC16A0700E7AA7E /* Kalam-Bold.ttf in Resources */,
+				9D03D85A2AF95911009FDF47 /* Battery6.png in Resources */,
 				0485CBA02AF8B2750093B68E /* height.jpeg in Resources */,
+				9D03D85D2AF95911009FDF47 /* Battery1.png in Resources */,
 				040979E12AC16C3E00E7AA7E /* fastingImg.png in Resources */,
+				9D03D85F2AF95911009FDF47 /* Battery5.png in Resources */,
 				0485CB9D2AF8B10B0093B68E /* age.jpg in Resources */,
 				0485CB9C2AF8B10B0093B68E /* gender.jpg in Resources */,
 				040979B02AC1635A00E7AA7E /* Assets.xcassets in Resources */,
+				9D03D85B2AF95911009FDF47 /* Battery4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,14 +808,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 10.0.0;
-			};
-		};
-		460CB2FA2AEFDC4E002388F5 /* XCRemoteSwiftPackageReference "ChartView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppPear/ChartView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
 			};
 		};
 		460CB2FA2AEFDC4E002388F5 /* XCRemoteSwiftPackageReference "ChartView" */ = {
