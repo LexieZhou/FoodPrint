@@ -12,11 +12,11 @@ struct WelcomePageView: View {
     var body: some View {
         NavigationView {
             NavigationLink(destination: LoginPageView().navigationBarBackButtonHidden(true)) {
-                VStack{
+                VStack {
                     Text("Welcome to\nFoodprint")
                         .font(.custom("Kalam-Bold", size: 40))
                         .padding(.bottom, 50)
-                        .padding(.top,10)
+                        .padding(.top, 10)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.black)
                     Text("Tap to Start")
@@ -26,11 +26,8 @@ struct WelcomePageView: View {
                         .cornerRadius(8)
                         .multilineTextAlignment(.center)
                         .padding(.bottom, 60)
-                    Image("fastingImg")
-                        .resizable()
-                        .frame(width: 350, height: 200)
-                        .cornerRadius(30)
                 }
+                .navigationBarHidden(true) // Hide the navigation bar
             }
         }
     }

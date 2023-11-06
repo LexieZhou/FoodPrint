@@ -13,7 +13,7 @@ struct SwipingWeightPageView: View {
     
     var body: some View {
         VStack {
-            Text("What's your current weight?")
+            Text("What's your weight?")
                 .font(.custom("Kalam-Bold", size: 30))
                 .padding(.bottom, 50)
                 .padding(.top, 10)

@@ -14,12 +14,14 @@ struct SwipingEatPageView: View {
     
     var body: some View {
         VStack {
-            Text("When do you usually eat the first meal of the day?")
+            Text("When do you usually eat the \(Text("first").foregroundColor(.blue)) meal of the day?")
                 .font(.custom("Kalam-Bold", size: 30))
-                .padding(.bottom, 50)
+                .padding(.bottom, 20)
                 .padding(.top, 10)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.black)
+                .padding([.leading, .trailing], 30)
+            
             Image("eat")
                 .resizable()
                 .frame(width: 250, height: 230)
