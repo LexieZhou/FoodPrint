@@ -18,6 +18,17 @@
 		040979DC2AC16A0700E7AA7E /* Kalam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040979D92AC16A0600E7AA7E /* Kalam-Bold.ttf */; };
 		040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */; };
 		040979E12AC16C3E00E7AA7E /* fastingImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 040979E02AC16C3E00E7AA7E /* fastingImg.png */; };
+		0485CB8C2AF7FAC30093B68E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485CB8B2AF7FAC30093B68E /* ViewController.swift */; };
+		0485CB902AF806240093B68E /* SwipingHeightPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485CB8F2AF806240093B68E /* SwipingHeightPage.swift */; };
+		0485CB922AF806CB0093B68E /* SwipingGenderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485CB912AF806CB0093B68E /* SwipingGenderPage.swift */; };
+		0485CB942AF8A8560093B68E /* SwipingWeightPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485CB932AF8A8560093B68E /* SwipingWeightPage.swift */; };
+		0485CB962AF8A92B0093B68E /* SwipingEatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485CB952AF8A92B0093B68E /* SwipingEatPage.swift */; };
+		0485CB982AF8AA4F0093B68E /* SwipingAgePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485CB972AF8AA4F0093B68E /* SwipingAgePage.swift */; };
+		0485CB9C2AF8B10B0093B68E /* gender.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0485CB992AF8B10A0093B68E /* gender.jpg */; };
+		0485CB9D2AF8B10B0093B68E /* age.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0485CB9A2AF8B10A0093B68E /* age.jpg */; };
+		0485CB9E2AF8B10B0093B68E /* measure_weight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0485CB9B2AF8B10A0093B68E /* measure_weight.jpg */; };
+		0485CBA02AF8B2750093B68E /* height.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0485CB9F2AF8B2750093B68E /* height.jpeg */; };
+		0485CBA22AF8B46E0093B68E /* eat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0485CBA12AF8B46E0093B68E /* eat.jpeg */; };
 		0494BEC12ADAFA7100076F61 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0494BEC02ADAFA7100076F61 /* FirebaseAnalytics */; };
 		0494BEC32ADAFA7100076F61 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 0494BEC22ADAFA7100076F61 /* FirebaseAnalyticsOnDeviceConversion */; };
 		0494BEC52ADAFA7100076F61 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0494BEC42ADAFA7100076F61 /* FirebaseAnalyticsSwift */; };
@@ -46,6 +57,7 @@
 		04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CE2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CF2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
+		04DB4ED82AEFD8C600E8D9FA /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 04DB4ED72AEFD8C600E8D9FA /* SwiftCSV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +93,17 @@
 		040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Regular.ttf"; path = "FoodPrint/Fonts/Kalam-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		040979DE2AC16B3B00E7AA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		040979E02AC16C3E00E7AA7E /* fastingImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fastingImg.png; path = FoodPrint/Imgs/fastingImg.png; sourceTree = SOURCE_ROOT; };
+		0485CB8B2AF7FAC30093B68E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0485CB8F2AF806240093B68E /* SwipingHeightPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingHeightPage.swift; sourceTree = "<group>"; };
+		0485CB912AF806CB0093B68E /* SwipingGenderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingGenderPage.swift; sourceTree = "<group>"; };
+		0485CB932AF8A8560093B68E /* SwipingWeightPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingWeightPage.swift; sourceTree = "<group>"; };
+		0485CB952AF8A92B0093B68E /* SwipingEatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingEatPage.swift; sourceTree = "<group>"; };
+		0485CB972AF8AA4F0093B68E /* SwipingAgePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingAgePage.swift; sourceTree = "<group>"; };
+		0485CB992AF8B10A0093B68E /* gender.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gender.jpg; sourceTree = "<group>"; };
+		0485CB9A2AF8B10A0093B68E /* age.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = age.jpg; sourceTree = "<group>"; };
+		0485CB9B2AF8B10A0093B68E /* measure_weight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = measure_weight.jpg; sourceTree = "<group>"; };
+		0485CB9F2AF8B2750093B68E /* height.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = height.jpeg; sourceTree = "<group>"; };
+		0485CBA12AF8B46E0093B68E /* eat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eat.jpeg; sourceTree = "<group>"; };
 		0494BEE02ADB00A600076F61 /* ChatBotPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotPageView.swift; sourceTree = "<group>"; };
 		049C9B372ACBB87A00A95A98 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
 		049C9B392ACBBB0600A95A98 /* RegisterPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageView.swift; sourceTree = "<group>"; };
@@ -103,6 +126,7 @@
 				0494BED32ADAFA7100076F61 /* FirebaseFirestore in Frameworks */,
 				0494BEDF2ADAFA7100076F61 /* FirebaseStorage in Frameworks */,
 				0494BEC92ADAFA7100076F61 /* FirebaseAuth in Frameworks */,
+				04DB4ED82AEFD8C600E8D9FA /* SwiftCSV in Frameworks */,
 				0494BED52ADAFA7100076F61 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				0494BEC52ADAFA7100076F61 /* FirebaseAnalyticsSwift in Frameworks */,
 				0494BED12ADAFA7100076F61 /* FirebaseDynamicLinks in Frameworks */,
@@ -167,6 +191,12 @@
 				0494BEE02ADB00A600076F61 /* ChatBotPageView.swift */,
 				049C9B3F2ACBBF4800A95A98 /* HomePageView.swift */,
 				049C9B3D2ACBBC3300A95A98 /* ProfilePageView.swift */,
+				0485CB8B2AF7FAC30093B68E /* ViewController.swift */,
+				0485CB8F2AF806240093B68E /* SwipingHeightPage.swift */,
+				0485CB932AF8A8560093B68E /* SwipingWeightPage.swift */,
+				0485CB912AF806CB0093B68E /* SwipingGenderPage.swift */,
+				0485CB972AF8AA4F0093B68E /* SwipingAgePage.swift */,
+				0485CB952AF8A92B0093B68E /* SwipingEatPage.swift */,
 				049C9B412ACBC03800A95A98 /* RecordPageView.swift */,
 				040979AF2AC1635A00E7AA7E /* Assets.xcassets */,
 				040979B12AC1635A00E7AA7E /* Preview Content */,
@@ -213,6 +243,11 @@
 			isa = PBXGroup;
 			children = (
 				040979E02AC16C3E00E7AA7E /* fastingImg.png */,
+				0485CB9A2AF8B10A0093B68E /* age.jpg */,
+				0485CB9F2AF8B2750093B68E /* height.jpeg */,
+				0485CBA12AF8B46E0093B68E /* eat.jpeg */,
+				0485CB992AF8B10A0093B68E /* gender.jpg */,
+				0485CB9B2AF8B10A0093B68E /* measure_weight.jpg */,
 			);
 			path = Imgs;
 			sourceTree = "<group>";
@@ -250,6 +285,7 @@
 				0494BEDA2ADAFA7100076F61 /* FirebaseRemoteConfig */,
 				0494BEDC2ADAFA7100076F61 /* FirebaseRemoteConfigSwift */,
 				0494BEDE2ADAFA7100076F61 /* FirebaseStorage */,
+				04DB4ED72AEFD8C600E8D9FA /* SwiftCSV */,
 			);
 			productName = FoodPrint;
 			productReference = 040979A82AC1635800E7AA7E /* FoodPrint.app */;
@@ -325,6 +361,7 @@
 			mainGroup = 0409799F2AC1635800E7AA7E;
 			packageReferences = (
 				0494BEBF2ADAFA7100076F61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				04DB4ED62AEFD8C600E8D9FA /* XCRemoteSwiftPackageReference "SwiftCSV" */,
 			);
 			productRefGroup = 040979A92AC1635800E7AA7E /* Products */;
 			projectDirPath = "";
@@ -344,10 +381,15 @@
 			files = (
 				040979DB2AC16A0700E7AA7E /* Kalam-Light.ttf in Resources */,
 				04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */,
+				0485CBA22AF8B46E0093B68E /* eat.jpeg in Resources */,
+				0485CB9E2AF8B10B0093B68E /* measure_weight.jpg in Resources */,
 				040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */,
 				040979B32AC1635A00E7AA7E /* Preview Assets.xcassets in Resources */,
 				040979DC2AC16A0700E7AA7E /* Kalam-Bold.ttf in Resources */,
+				0485CBA02AF8B2750093B68E /* height.jpeg in Resources */,
 				040979E12AC16C3E00E7AA7E /* fastingImg.png in Resources */,
+				0485CB9D2AF8B10B0093B68E /* age.jpg in Resources */,
+				0485CB9C2AF8B10B0093B68E /* gender.jpg in Resources */,
 				040979B02AC1635A00E7AA7E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,14 +417,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0485CB942AF8A8560093B68E /* SwipingWeightPage.swift in Sources */,
+				0485CB8C2AF7FAC30093B68E /* ViewController.swift in Sources */,
+				0485CB902AF806240093B68E /* SwipingHeightPage.swift in Sources */,
+				0485CB982AF8AA4F0093B68E /* SwipingAgePage.swift in Sources */,
 				040979AE2AC1635900E7AA7E /* WelcomePageView.swift in Sources */,
 				049C9B3E2ACBBC3300A95A98 /* ProfilePageView.swift in Sources */,
 				040979AC2AC1635900E7AA7E /* FoodPrintApp.swift in Sources */,
 				049C9B3C2ACBBB9C00A95A98 /* TabPageView.swift in Sources */,
+				0485CB962AF8A92B0093B68E /* SwipingEatPage.swift in Sources */,
 				049C9B3A2ACBBB0600A95A98 /* RegisterPageView.swift in Sources */,
 				049C9B402ACBBF4800A95A98 /* HomePageView.swift in Sources */,
 				049C9B422ACBC03800A95A98 /* RecordPageView.swift in Sources */,
 				0494BEE12ADB00A600076F61 /* ChatBotPageView.swift in Sources */,
+				0485CB922AF806CB0093B68E /* SwipingGenderPage.swift in Sources */,
 				049C9B382ACBB87A00A95A98 /* LoginPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -722,6 +770,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		04DB4ED62AEFD8C600E8D9FA /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -804,6 +860,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0494BEBF2ADAFA7100076F61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		04DB4ED72AEFD8C600E8D9FA /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04DB4ED62AEFD8C600E8D9FA /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -20,6 +20,20 @@ struct RegisterPageView: View {
     @State var successRegister = false
     @State private var showUnsucessAlert = false
     @State private var showSucessAlert = false
+    @State private var showNextPage = false
+    
+    var body: some View {
+        if (showNextPage) {
+//            PreviewContainerView(controller: ViewController())
+            NavigationLink(
+                destination: PreviewContainerView(controller: ViewController()).navigationBarBackButtonHidden(true),
+                isActive: $showNextPage,
+                label: { EmptyView() }
+            )
+        } else {
+            content
+        }
+    }
     
     func register(){
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
@@ -33,7 +47,7 @@ struct RegisterPageView: View {
         }
     }
 
-    var body: some View {
+    var content: some View {
         NavigationView {
             ZStack{
                 VStack{
@@ -79,13 +93,14 @@ struct RegisterPageView: View {
                     .alert("Unsucessful Register", isPresented: $showUnsucessAlert){
                         Button("Okay", role: .cancel){}
                     }
-                    .alert("Register Successfully!\nPlease go login!", isPresented: $showSucessAlert){
-                        Button("Okay", role: .cancel){}
+                    .alert("Register Successfully!🐶", isPresented: $showSucessAlert){
+                        Button("Okay", role: .cancel){
+                            showNextPage = true
+                            print("show next page")
+                        }
                     }
-                    
                 }
                 .frame(width: 280)
-                    
             }
             .ignoresSafeArea()
         }
