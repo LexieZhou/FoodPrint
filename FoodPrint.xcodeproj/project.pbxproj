@@ -46,6 +46,8 @@
 		04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CE2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CF2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
+		9D3E4C642AEFD5F600AA8495 /* Homepage-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E4C632AEFD5F600AA8495 /* Homepage-ViewModel.swift */; };
+		9D9F379D2AF92A4E00E947C1 /* Data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9D9F379C2AF92A4E00E947C1 /* Data.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		049C9B3F2ACBBF4800A95A98 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		049C9B412ACBC03800A95A98 /* RecordPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPageView.swift; sourceTree = "<group>"; };
 		04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D3E4C632AEFD5F600AA8495 /* Homepage-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homepage-ViewModel.swift"; sourceTree = "<group>"; };
+		9D9F379C2AF92A4E00E947C1 /* Data.csv */ = {isa = PBXFileReference; lastKnownFileType = file; name = Data.csv; path = "../../../Desktop/battery pics.fld/Data.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +164,10 @@
 				040979DF2AC16C2000E7AA7E /* Imgs */,
 				040979D72AC1692200E7AA7E /* Fonts */,
 				040979AB2AC1635900E7AA7E /* FoodPrintApp.swift */,
+				9D9F379C2AF92A4E00E947C1 /* Data.csv */,
 				040979AD2AC1635900E7AA7E /* WelcomePageView.swift */,
 				049C9B372ACBB87A00A95A98 /* LoginPageView.swift */,
+				9D3E4C632AEFD5F600AA8495 /* Homepage-ViewModel.swift */,
 				049C9B392ACBBB0600A95A98 /* RegisterPageView.swift */,
 				049C9B3B2ACBBB9C00A95A98 /* TabPageView.swift */,
 				0494BEE02ADB00A600076F61 /* ChatBotPageView.swift */,
@@ -346,6 +352,7 @@
 				04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */,
 				040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */,
 				040979B32AC1635A00E7AA7E /* Preview Assets.xcassets in Resources */,
+				9D9F379D2AF92A4E00E947C1 /* Data.csv in Resources */,
 				040979DC2AC16A0700E7AA7E /* Kalam-Bold.ttf in Resources */,
 				040979E12AC16C3E00E7AA7E /* fastingImg.png in Resources */,
 				040979B02AC1635A00E7AA7E /* Assets.xcassets in Resources */,
@@ -375,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3E4C642AEFD5F600AA8495 /* Homepage-ViewModel.swift in Sources */,
 				040979AE2AC1635900E7AA7E /* WelcomePageView.swift in Sources */,
 				049C9B3E2ACBBC3300A95A98 /* ProfilePageView.swift in Sources */,
 				040979AC2AC1635900E7AA7E /* FoodPrintApp.swift in Sources */,
@@ -719,7 +727,7 @@
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
