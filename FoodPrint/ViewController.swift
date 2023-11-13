@@ -141,7 +141,8 @@ extension ViewController: UIPageViewControllerDataSource {
         if currentIndex < pages.count - 1 {
             return pages[currentIndex + 1]  // go next
         } else {
-            return pages.first              // wrap first
+            //return pages.first              // wrap first
+            return nil
         }
     }
 }
@@ -174,6 +175,7 @@ extension ViewController: UIPageViewControllerDelegate {
 
         if lastPage {
             hideControls()
+            disablePageViewController()
         } else {
             showControls()
         }
