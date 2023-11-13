@@ -11,14 +11,10 @@ import SwiftUICharts
 
 
 struct RecordPageView: View {
-    private let data: [Double] = [42.0, 25.8, 88.19, 15.0, 17]
-    private let labels: [String] = ["The answer", "Birthday", "2021-11-21", "My number"]
     // the current date and time
     @State var selectedDate: Date = Date()
     // access records stored in db
     @State private var records: [Record] = []
-    
-    
     
     var body: some View {
         
@@ -37,10 +33,22 @@ struct RecordPageView: View {
                     .datePickerStyle(.graphical)
                 Divider()
             }
-            Spacer()
-            
-            LineChartView(data: data, title: "7-day Weight")
-                .frame(width: 700, height: 300)
+            BarChartView(
+                data: ChartData(
+                values: [
+                ("2023-09-01", 60),
+                ("2023-09-02", 59),
+                ("2023-09-03", 55),
+                ("2023-09-04", 53),
+                ("2023-09-05", 51),
+                ("2023-09-06", 50),
+                ("2023-09-07", 40),
+                ]),
+                title: "7-day Weight",
+                style: Styles.barChartStyleNeonBlueLight,
+                form: ChartForm.extraLarge
+            ).padding()
+            let _ = retrieveRecords()
         }
     }
     
@@ -48,7 +56,9 @@ struct RecordPageView: View {
         FirebaseDataManager.retrieveRecords { records in
             self.records = records // Store the retrieved records in the state property
             // Perform any other actions with the retrieved records if needed
+            print(records[0].foodCategory)
             print(records[0].weight)
+            print(records[0].calories)
         }
     }
 }
