@@ -58,13 +58,13 @@ struct HomePageView: View {
                         Text("Eating Time!")
 //                            .foregroundColor(.white)
                             .padding(.vertical, 8)
-                            .font(.title)
+                            .font(.custom("Kalam-Bold", size: 35))
                             .opacity(0.7)
                     } else {
                         Text("You are fasting now!")
 //                            .foregroundColor(.white)
                             .padding(.vertical, 8)
-                            .font(.title)
+                            .font(.custom("Kalam-Bold", size: 35))
                             .opacity(0.7)
                     }
                 } else {
@@ -72,22 +72,22 @@ struct HomePageView: View {
                     Button("Tap here to start!"){
                         print("touch start eating button")
                         vm.startEating(eatingTime: vm.eatingTime)
-                    }.font(.title)
+                    }.font(.custom("Kalam-Bold", size: 35))
                 }
 
                 
 //                Text(Date(), formatter: formatter)
 //                    .fontWeight(.bold)
                 HStack(spacing: 5) {
-                    Text(vm.initialTime, format: .dateTime.weekday().hour().minute().second()).fontWeight(.bold)
+                    Text(vm.initialTime, format: .dateTime.weekday().hour().minute().second()).font(.custom("Kalam-Bold", size: 20))
 //                        .foregroundColor(.white)
 
                     if vm.isActive {
                         Text("->")
     //                        .foregroundColor(.white)
-                            .fontWeight(.bold)
+                            .fontWeight(.bold).font(.custom("Kalam-Bold", size: 25))
                         
-                        Text(vm.endDate, format: .dateTime.weekday().hour().minute().second()).fontWeight(.bold)
+                        Text(vm.endDate, format: .dateTime.weekday().hour().minute().second()).fontWeight(.bold).font(.custom("Kalam-Regular", size: 20))
     //                        .foregroundColor(.white)
                     }
                 }
@@ -107,7 +107,7 @@ struct HomePageView: View {
                     
                     //MARK: ligntning
                     if vm.isEating == false && vm.isActive {
-                        Image(.lightning)
+                        Image("lightning")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width:50, height:50)
@@ -119,7 +119,8 @@ struct HomePageView: View {
             
                 
                 //MARK: remaining time
-                Text("\(vm.time)")                /*.foregroundColor(.white)*/
+                Text("\(vm.time)")               /*.foregroundColor(.white)*/
+                    .font(.custom("Kalam-Bold", size: 20))
                     .alert("Timer done!", isPresented: $vm.showingAlert) {
                         Button("Continue") {
                             vm.startEating(eatingTime: vm.eatingTime)
@@ -131,6 +132,7 @@ struct HomePageView: View {
                     // Action to perform when the button is tapped
                     showAlert = true
                 }
+                .font(.custom("Kalam-Bold", size: 20))
                 .foregroundColor(.white)
                 .padding(.all, 10)
                 .background(Color.blue)
@@ -154,7 +156,7 @@ struct HomePageView: View {
             
             
             //MARK: camera
-            Image(.cameraIcon)
+            Image("cameraIcon")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .padding()

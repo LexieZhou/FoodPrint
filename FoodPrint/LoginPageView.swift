@@ -34,7 +34,6 @@ struct LoginPageView: View {
                     Text("Login")
                         .font(.custom("Kalam-Bold", size: 50))
                         .padding(.bottom, 50)
-                        .padding(.top, 10)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.black)
                     
@@ -55,7 +54,6 @@ struct LoginPageView: View {
                     Rectangle()
                         .frame(width: 280, height: 1)
                         .foregroundColor(.gray)
-                        .padding(.bottom)
                     
                     Button{
                         login()
@@ -74,7 +72,7 @@ struct LoginPageView: View {
                     .padding(.top)
                     .offset(y: 80)
                     
-                    NavigationLink(destination: RegisterPageView()){
+                    NavigationLink(destination: RegisterPageView().navigationBarBackButtonHidden(true)){
                         Text("No account? Register One!")
                             .bold()
                             .font(.custom("Kalam-Bold", size: 20))
@@ -82,12 +80,20 @@ struct LoginPageView: View {
                             .underline()
                     }
                     .padding(.top)
+                    .padding(.bottom, 10)
                     .offset(y: 85)
                     .frame(width: 350)
+                    
+                    Image("fastingClock")
+                        .resizable()
+                        .frame(width: 250, height: 140)
+                        .padding(.top)
+                        .offset(x: 100, y: 150)
                 }
                 .frame(width: 280)
             }
             .ignoresSafeArea()
+            .padding(.bottom, 100)
         }
     }
     func login() {

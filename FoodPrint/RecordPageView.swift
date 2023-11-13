@@ -15,6 +15,8 @@ struct RecordPageView: View {
     private let labels: [String] = ["The answer", "Birthday", "2021-11-21", "My number"]
     // the current date and time
     @State var selectedDate: Date = Date()
+    // access records stored in db
+    @State private var records: [Record] = []
     
     
     
@@ -40,7 +42,14 @@ struct RecordPageView: View {
             LineChartView(data: data, title: "7-day Weight")
                 .frame(width: 700, height: 300)
         }
-        
+    }
+    
+    private func retrieveRecords() {
+        FirebaseDataManager.retrieveRecords { records in
+            self.records = records // Store the retrieved records in the state property
+            // Perform any other actions with the retrieved records if needed
+            print(records[0].weight)
+        }
     }
 }
 

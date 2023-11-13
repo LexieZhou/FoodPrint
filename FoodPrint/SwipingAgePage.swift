@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct SwipingAgePageView: View {
-    @State private var selectedAge = 18
+    @State private var selectedAge = 22
     
     var body: some View {
         VStack {
