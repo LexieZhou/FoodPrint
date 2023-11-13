@@ -57,6 +57,9 @@
 		04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CE2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CF2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
+		04AD1E9F2B0203AD000E7AA3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD1E9E2B0203AD000E7AA3 /* DataManager.swift */; };
+		04AD1EA12B020BA5000E7AA3 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04AD1EA02B020BA4000E7AA3 /* background.jpg */; };
+		04AD1EA52B021491000E7AA3 /* fastingClock.png in Resources */ = {isa = PBXBuildFile; fileRef = 04AD1EA42B021490000E7AA3 /* fastingClock.png */; };
 		460CB2FC2AEFDC4E002388F5 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 460CB2FB2AEFDC4E002388F5 /* SwiftUICharts */; };
 		9D03D87F2AF9D56E009FDF47 /* Battery4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8782AF9D56E009FDF47 /* Battery4.png */; };
 		9D03D8802AF9D56E009FDF47 /* Battery1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8792AF9D56E009FDF47 /* Battery1.png */; };
@@ -121,6 +124,9 @@
 		049C9B3F2ACBBF4800A95A98 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		049C9B412ACBC03800A95A98 /* RecordPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPageView.swift; sourceTree = "<group>"; };
 		04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04AD1E9E2B0203AD000E7AA3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		04AD1EA02B020BA4000E7AA3 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		04AD1EA42B021490000E7AA3 /* fastingClock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fastingClock.png; sourceTree = "<group>"; };
 		9D03D8782AF9D56E009FDF47 /* Battery4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battery4.png; sourceTree = "<group>"; };
 		9D03D8792AF9D56E009FDF47 /* Battery1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battery1.png; sourceTree = "<group>"; };
 		9D03D87A2AF9D56E009FDF47 /* Battery5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battery5.png; sourceTree = "<group>"; };
@@ -202,6 +208,7 @@
 				040979DF2AC16C2000E7AA7E /* Imgs */,
 				040979D72AC1692200E7AA7E /* Fonts */,
 				040979AB2AC1635900E7AA7E /* FoodPrintApp.swift */,
+				04AD1E9E2B0203AD000E7AA3 /* DataManager.swift */,
 				040979AD2AC1635900E7AA7E /* WelcomePageView.swift */,
 				049C9B372ACBB87A00A95A98 /* LoginPageView.swift */,
 				9D3E4C632AEFD5F600AA8495 /* Homepage-ViewModel.swift */,
@@ -263,6 +270,7 @@
 			children = (
 				9D03D8772AF9D504009FDF47 /* Homepage */,
 				040979E02AC16C3E00E7AA7E /* fastingImg.png */,
+				04AD1EA42B021490000E7AA3 /* fastingClock.png */,
 				0485CB9A2AF8B10A0093B68E /* age.jpg */,
 				0485CB9F2AF8B2750093B68E /* height.jpeg */,
 				0485CBA12AF8B46E0093B68E /* eat.jpeg */,
@@ -275,6 +283,7 @@
 		9D03D8772AF9D504009FDF47 /* Homepage */ = {
 			isa = PBXGroup;
 			children = (
+				04AD1EA02B020BA4000E7AA3 /* background.jpg */,
 				9D03D8862AF9D591009FDF47 /* lightning.png */,
 				9D03D8792AF9D56E009FDF47 /* Battery1.png */,
 				9D03D87D2AF9D56E009FDF47 /* Battery2.png */,
@@ -421,8 +430,10 @@
 				9D03D8852AF9D56E009FDF47 /* Battery6.png in Resources */,
 				0485CBA22AF8B46E0093B68E /* eat.jpeg in Resources */,
 				9D03D8832AF9D56E009FDF47 /* Battery3.png in Resources */,
+				04AD1EA52B021491000E7AA3 /* fastingClock.png in Resources */,
 				9D03D8872AF9D591009FDF47 /* lightning.png in Resources */,
 				0485CB9E2AF8B10B0093B68E /* measure_weight.jpg in Resources */,
+				04AD1EA12B020BA5000E7AA3 /* background.jpg in Resources */,
 				040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */,
 				040979B32AC1635A00E7AA7E /* Preview Assets.xcassets in Resources */,
 				040979DC2AC16A0700E7AA7E /* Kalam-Bold.ttf in Resources */,
@@ -469,6 +480,7 @@
 				049C9B3E2ACBBC3300A95A98 /* ProfilePageView.swift in Sources */,
 				040979AC2AC1635900E7AA7E /* FoodPrintApp.swift in Sources */,
 				049C9B3C2ACBBB9C00A95A98 /* TabPageView.swift in Sources */,
+				04AD1E9F2B0203AD000E7AA3 /* DataManager.swift in Sources */,
 				0485CB962AF8A92B0093B68E /* SwipingEatPage.swift in Sources */,
 				049C9B3A2ACBBB0600A95A98 /* RegisterPageView.swift in Sources */,
 				049C9B402ACBBF4800A95A98 /* HomePageView.swift in Sources */,
