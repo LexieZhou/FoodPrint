@@ -57,6 +57,16 @@
 		04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CE2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
 		04AAE4CF2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */; };
+		460CB2FC2AEFDC4E002388F5 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 460CB2FB2AEFDC4E002388F5 /* SwiftUICharts */; };
+		9D03D87F2AF9D56E009FDF47 /* Battery4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8782AF9D56E009FDF47 /* Battery4.png */; };
+		9D03D8802AF9D56E009FDF47 /* Battery1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8792AF9D56E009FDF47 /* Battery1.png */; };
+		9D03D8812AF9D56E009FDF47 /* Battery5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D87A2AF9D56E009FDF47 /* Battery5.png */; };
+		9D03D8822AF9D56E009FDF47 /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D87B2AF9D56E009FDF47 /* camera-icon.png */; };
+		9D03D8832AF9D56E009FDF47 /* Battery3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D87C2AF9D56E009FDF47 /* Battery3.png */; };
+		9D03D8842AF9D56E009FDF47 /* Battery2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D87D2AF9D56E009FDF47 /* Battery2.png */; };
+		9D03D8852AF9D56E009FDF47 /* Battery6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D87E2AF9D56E009FDF47 /* Battery6.png */; };
+		9D03D8872AF9D591009FDF47 /* lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8862AF9D591009FDF47 /* lightning.png */; };
+		9D3E4C642AEFD5F600AA8495 /* Homepage-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E4C632AEFD5F600AA8495 /* Homepage-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +121,15 @@
 		049C9B3F2ACBBF4800A95A98 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		049C9B412ACBC03800A95A98 /* RecordPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPageView.swift; sourceTree = "<group>"; };
 		04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D03D8782AF9D56E009FDF47 /* Battery4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battery4.png; sourceTree = "<group>"; };
+		9D03D8792AF9D56E009FDF47 /* Battery1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battery1.png; sourceTree = "<group>"; };
+		9D03D87A2AF9D56E009FDF47 /* Battery5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battery5.png; sourceTree = "<group>"; };
+		9D03D87B2AF9D56E009FDF47 /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
+		9D03D87C2AF9D56E009FDF47 /* Battery3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battery3.png; sourceTree = "<group>"; };
+		9D03D87D2AF9D56E009FDF47 /* Battery2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battery2.png; sourceTree = "<group>"; };
+		9D03D87E2AF9D56E009FDF47 /* Battery6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battery6.png; sourceTree = "<group>"; };
+		9D03D8862AF9D591009FDF47 /* lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning.png; sourceTree = "<group>"; };
+		9D3E4C632AEFD5F600AA8495 /* Homepage-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homepage-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +148,7 @@
 				0494BEC52ADAFA7100076F61 /* FirebaseAnalyticsSwift in Frameworks */,
 				0494BED12ADAFA7100076F61 /* FirebaseDynamicLinks in Frameworks */,
 				0494BEC12ADAFA7100076F61 /* FirebaseAnalytics in Frameworks */,
+				460CB2FC2AEFDC4E002388F5 /* SwiftUICharts in Frameworks */,
 				0494BED92ADAFA7100076F61 /* FirebaseFunctions in Frameworks */,
 				0494BECD2ADAFA7100076F61 /* FirebaseDatabase in Frameworks */,
 				0494BEDD2ADAFA7100076F61 /* FirebaseRemoteConfigSwift in Frameworks */,
@@ -184,6 +204,7 @@
 				040979AB2AC1635900E7AA7E /* FoodPrintApp.swift */,
 				040979AD2AC1635900E7AA7E /* WelcomePageView.swift */,
 				049C9B372ACBB87A00A95A98 /* LoginPageView.swift */,
+				9D3E4C632AEFD5F600AA8495 /* Homepage-ViewModel.swift */,
 				049C9B392ACBBB0600A95A98 /* RegisterPageView.swift */,
 				049C9B3B2ACBBB9C00A95A98 /* TabPageView.swift */,
 				0494BEE02ADB00A600076F61 /* ChatBotPageView.swift */,
@@ -240,6 +261,7 @@
 		040979DF2AC16C2000E7AA7E /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
+				9D03D8772AF9D504009FDF47 /* Homepage */,
 				040979E02AC16C3E00E7AA7E /* fastingImg.png */,
 				0485CB9A2AF8B10A0093B68E /* age.jpg */,
 				0485CB9F2AF8B2750093B68E /* height.jpeg */,
@@ -248,6 +270,21 @@
 				0485CB9B2AF8B10A0093B68E /* measure_weight.jpg */,
 			);
 			path = Imgs;
+			sourceTree = "<group>";
+		};
+		9D03D8772AF9D504009FDF47 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				9D03D8862AF9D591009FDF47 /* lightning.png */,
+				9D03D8792AF9D56E009FDF47 /* Battery1.png */,
+				9D03D87D2AF9D56E009FDF47 /* Battery2.png */,
+				9D03D87C2AF9D56E009FDF47 /* Battery3.png */,
+				9D03D8782AF9D56E009FDF47 /* Battery4.png */,
+				9D03D87A2AF9D56E009FDF47 /* Battery5.png */,
+				9D03D87E2AF9D56E009FDF47 /* Battery6.png */,
+				9D03D87B2AF9D56E009FDF47 /* camera-icon.png */,
+			);
+			name = Homepage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +320,7 @@
 				0494BEDA2ADAFA7100076F61 /* FirebaseRemoteConfig */,
 				0494BEDC2ADAFA7100076F61 /* FirebaseRemoteConfigSwift */,
 				0494BEDE2ADAFA7100076F61 /* FirebaseStorage */,
+				460CB2FB2AEFDC4E002388F5 /* SwiftUICharts */,
 			);
 			productName = FoodPrint;
 			productReference = 040979A82AC1635800E7AA7E /* FoodPrint.app */;
@@ -358,6 +396,7 @@
 			mainGroup = 0409799F2AC1635800E7AA7E;
 			packageReferences = (
 				0494BEBF2ADAFA7100076F61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				460CB2FA2AEFDC4E002388F5 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 040979A92AC1635800E7AA7E /* Products */;
 			projectDirPath = "";
@@ -377,7 +416,12 @@
 			files = (
 				040979DB2AC16A0700E7AA7E /* Kalam-Light.ttf in Resources */,
 				04AAE4CD2ADB90E20016CE4C /* GoogleService-Info.plist in Resources */,
+				9D03D8822AF9D56E009FDF47 /* camera-icon.png in Resources */,
+				9D03D87F2AF9D56E009FDF47 /* Battery4.png in Resources */,
+				9D03D8852AF9D56E009FDF47 /* Battery6.png in Resources */,
 				0485CBA22AF8B46E0093B68E /* eat.jpeg in Resources */,
+				9D03D8832AF9D56E009FDF47 /* Battery3.png in Resources */,
+				9D03D8872AF9D591009FDF47 /* lightning.png in Resources */,
 				0485CB9E2AF8B10B0093B68E /* measure_weight.jpg in Resources */,
 				040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */,
 				040979B32AC1635A00E7AA7E /* Preview Assets.xcassets in Resources */,
@@ -385,8 +429,11 @@
 				0485CBA02AF8B2750093B68E /* height.jpeg in Resources */,
 				040979E12AC16C3E00E7AA7E /* fastingImg.png in Resources */,
 				0485CB9D2AF8B10B0093B68E /* age.jpg in Resources */,
+				9D03D8842AF9D56E009FDF47 /* Battery2.png in Resources */,
 				0485CB9C2AF8B10B0093B68E /* gender.jpg in Resources */,
 				040979B02AC1635A00E7AA7E /* Assets.xcassets in Resources */,
+				9D03D8802AF9D56E009FDF47 /* Battery1.png in Resources */,
+				9D03D8812AF9D56E009FDF47 /* Battery5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3E4C642AEFD5F600AA8495 /* Homepage-ViewModel.swift in Sources */,
 				0485CB942AF8A8560093B68E /* SwipingWeightPage.swift in Sources */,
 				0485CB8C2AF7FAC30093B68E /* ViewController.swift in Sources */,
 				0485CB902AF806240093B68E /* SwipingHeightPage.swift in Sources */,
@@ -763,7 +811,15 @@
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 10.0.0;
+			};
+		};
+		460CB2FA2AEFDC4E002388F5 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -848,6 +904,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0494BEBF2ADAFA7100076F61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		460CB2FB2AEFDC4E002388F5 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 460CB2FA2AEFDC4E002388F5 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
