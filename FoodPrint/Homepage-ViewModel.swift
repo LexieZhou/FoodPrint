@@ -48,7 +48,7 @@ extension HomePageView {
             self.endDate = Calendar.current.date(byAdding: .hour, value: Int(eatingTime), to: endDate)!
             //self.time = "\(Int(eatingCountingTime)):00:00"
             //finishingTimeString
-            print("end date ", endDate)
+//            print("end date ", endDate)
         }
         
         func startFasting(fastingTime: Float) {
@@ -68,8 +68,8 @@ extension HomePageView {
             let now = Date()
             let diff = endDate.timeIntervalSince1970 - now.timeIntervalSince1970
 
-            print("eating time",Double(eatingTime))
-            print("diff", diff)
+//            print("eating time",Double(eatingTime))
+//            print("diff", diff)
             if diff > 0 {
                 if isEating {
                     if diff > 3600*5/6*Double(eatingTime) && diff <= 3600*Double(eatingTime) {
@@ -119,13 +119,13 @@ extension HomePageView {
             }
             
             let date = Date(timeIntervalSince1970: diff)
-            print("date", date)
+//            print("date", date)
             var calendar = Calendar.current
             calendar.timeZone = TimeZone(identifier: "UTC")!
             let hour = calendar.component(.hour, from: date)
             let minutes = calendar.component(.minute, from: date)
             let seconds = calendar.component(.second, from: date)
-            print("hour", hour)
+//            print("hour", hour)
             
             self.time = String(format: "%02d : %02d : %02d", hour, minutes, seconds)
         }
