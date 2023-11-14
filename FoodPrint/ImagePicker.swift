@@ -3,7 +3,7 @@
 //  FoodPrint
 //
 //  Created by Sistine Yu on 2023/11/13.
-//
+//  https://github.com/azamsharp/SwiftUICamera
 
 import Foundation
 import SwiftUI
@@ -18,10 +18,11 @@ class ImagePickerCoordinator: NSObject, UINavigationControllerDelegate, UIImageP
         _isShown = isShown
     }
     
-    func imagePickerController(_picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let uiImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             image = uiImage
+            print("Selected image: \(image)")
             isShown = false
         }
     }
@@ -53,6 +54,8 @@ struct ImagePicker: UIViewControllerRepresentable {
         let picker = UIImagePickerController()
         picker.sourceType = sourceType
         picker.delegate = context.coordinator
+        print("Delegate set")
+        print("Source type: \(picker.sourceType.rawValue)")
         return picker
         
     }
