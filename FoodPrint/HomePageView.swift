@@ -17,6 +17,7 @@ struct HomePageView: View {
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     @State private var image: UIImage?
     @State private var showNotification: Bool = false
+    @State private var notificationText: String = "Photo selected!"
     @StateObject private var vm = ViewModel()
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private let width: Double = 250
@@ -28,7 +29,7 @@ struct HomePageView: View {
             
             ZStack {
                 if showNotification {
-                    BannerNotification(text: "Photo selected!", color: .green, showNotification: $showNotification)
+                    BannerNotification(text: notificationText, color: .green, showNotification: $showNotification)
                         .transition(.move(edge: .top))
                         .animation(.easeInOut)
                         .offset(x:0, y: -350)
@@ -185,7 +186,68 @@ struct HomePageView: View {
             }
         }
         .sheet(isPresented: $showImagePicker, onDismiss: {
-            showNotification = true
+            var GPTResponse: String = "Ramen, 300 kcal."
+            var base64String = ""
+            if let imageData = image?.jpegData(compressionQuality: 0.1) {
+                base64String = imageData.base64EncodedString()
+            }
+            if base64String == "" {
+                notificationText = "No photo selected."
+                showNotification = true
+            } else {
+                guard let url = URL(string: "https://api.openai.com/v1/chat/completions"),
+                      let payload = """
+      {
+        "model": "gpt-4-vision-preview",
+        "max_tokens": 30,
+        "messages": [
+            {
+                "role": "system",
+                "content": [{"type": "text", "text": "You are a helpful and professional Diat Analyst."}]
+            },
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "Read the photo of a meal. Please responde with minimal number of words (at most 3 words) describing what food it is, and a number indicating the estimated energy this meal includes in kilogram calories."
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": "data:image/jpeg;base64,{\(base64String)}",
+                            "detail": "low"
+                        }
+                    }
+                ]
+            }
+        ]
+      }
+    """.data(using: .utf8) else
+                {
+                    return
+                }
+                
+                var request = URLRequest(url: url)
+                request.httpMethod = "POST"
+                request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+                request.addValue("Bearer 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", forHTTPHeaderField: "Authorization")
+                request.httpBody = payload
+                let semaphore = DispatchSemaphore(value: 0)
+                URLSession.shared.dataTask(with: request) { (data, response, error) in
+                    defer { semaphore.signal() }
+                    guard error == nil else { print(error!.localizedDescription); return }
+                    guard let data = data else { print("Empty data"); return }
+                    if let str = String(data: data, encoding: .utf8) {
+                        print(str)
+                        GPTResponse = String(String(str.components(separatedBy: "\"}, \"finish_details\": ")[0]).components(separatedBy: "content\": \"")[1])
+                        print(GPTResponse)
+                    }
+                }.resume()
+                semaphore.wait()
+                notificationText = GPTResponse
+                showNotification = true
+            }
         }) {
             let _ = print(self.$showImagePicker)
             ImagePicker(image: self.$image, isShown: self.$showImagePicker, sourceType: self.sourceType)
@@ -257,7 +319,8 @@ struct BannerNotification: View {
 
 struct RecordInput: View {
     @State var food = ""
-    @State var weight = ""
+//    @State var weight = ""
+    @State var weight: Double = 0.0
     @ObservedObject var calories_data = ReadData()
 //    @Binding var totalCalories: Double
     
@@ -276,7 +339,7 @@ struct RecordInput: View {
             .frame(width: 100)
             
             VStack {
-                TextField("60", text: $weight)
+                TextField("60", value: $weight, format: .number)
                     .foregroundColor(.black)
                     .textFieldStyle(.plain)
                     .autocapitalization(.none)
@@ -289,27 +352,21 @@ struct RecordInput: View {
             
             Spacer()
             
-            if (food != "" && weight != "") {
+            if (food != "" && weight != 0.0) {
                 VStack {
                     if let matchingFood = calories_data.calories.first(where: { $0.Food.lowercased() == food.lowercased() }) {
-                        if let weightValue = Double(weight), let caloriesValue = Double(matchingFood.Calories) {
-                            let calculatedCalories = caloriesValue * weightValue / 100
-                            let formattedCalories = String(format: "%.1f", calculatedCalories)
-                            Text("\(formattedCalories)")
-                                .foregroundColor(.black)
-                                .textFieldStyle(.plain)
-                                .autocapitalization(.none)
-                                .frame(width: 100, height: 20)
+//                        if let weightValue = Double(weight), let caloriesValue = Double(matchingFood.Calories) {
+                        let calculatedCalories = matchingFood.Calories * Int(weight) / 100
+                        let formattedCalories = String(format: "%.1f", calculatedCalories)
+                        Text("\(formattedCalories)")
+                            .foregroundColor(.black)
+                            .textFieldStyle(.plain)
+                            .autocapitalization(.none)
+                            .frame(width: 100, height: 20)
 //                                .onChange(of: calculatedCalories) { newValue in
 //                                    totalCalories += newValue
 //                                }
-                        } else {
-                            Text("Invalid weight or calories")
-                                .foregroundColor(.black)
-                                .textFieldStyle(.plain)
-                                .autocapitalization(.none)
-                                .frame(width: 100, height: 20)
-                        }
+                        
                     } else if let anyFood = calories_data.calories.first {
                         Text("\(anyFood.Calories)")
                             .foregroundColor(.black)

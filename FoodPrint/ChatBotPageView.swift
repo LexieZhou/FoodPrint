@@ -24,11 +24,13 @@ struct ChatbotPageView: View {
         guard let url = URL(string: "https://api.openai.com/v1/chat/completions"),
             let payload = """
   {
-    "model": "gpt-3.5-turbo",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0.7,
+    "max_tokens": 200,
     "messages": [
       {
         "role": "system",
-        "content": "You are a helpful assistant."
+        "content": "You are a helpful Personal Diet Assistant providing diet advices to help the user. The user is currently practicing 16:8 intermittent fasting. It involves an 8-hour window for food consumption and fasting for 16 hours. Your answers need to be concise with no more than 50 words."
       },
       {
         "role": "user",
@@ -44,7 +46,7 @@ struct ChatbotPageView: View {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Bearer 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", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer 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", forHTTPHeaderField: "Authorization")
         request.httpBody = payload
         let semaphore = DispatchSemaphore(value: 0)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
