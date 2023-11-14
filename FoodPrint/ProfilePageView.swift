@@ -9,8 +9,12 @@ import Foundation
 import SwiftUI
 
 struct ProfilePageView: View {
+    @State private var LogOut = false
     @State private var showingEditSheet = false
     @State private var showingRankingSheet = false
+    @State var gender = "Female"
+    @State var height = 160
+    @State var weight = 55
     
     var body: some View {
         NavigationView {
@@ -25,9 +29,9 @@ struct ProfilePageView: View {
                             .overlay(
                                 Circle()
                                     .stroke(Color.black, lineWidth: 2)
-                                )
+                            )
                             .offset(x: 0, y: 20)
-                            
+                        
                         Image(systemName: "checkmark.seal.fill")
                             .font(.system(size: 25))
                             .foregroundColor(.blue)
@@ -49,7 +53,7 @@ struct ProfilePageView: View {
                             Text("Trying to be healthy")
                                 .font(.custom("Kalam-Regular", size: 15))
                                 .foregroundColor(Color.gray)
-                                
+                            
                         }
                     }
                     .padding(.bottom, 40)
@@ -66,7 +70,7 @@ struct ProfilePageView: View {
                                 Text("Height")
                                     .font(.custom("Kalam-Bold", size: 20))
                                     .foregroundColor(.black)
-                                Text("160 cm")
+                                Text("\(height) cm")
                                     .font(.custom("Kalam-Regular", size: 17))
                                     .foregroundColor(.black)
                             }
@@ -83,7 +87,7 @@ struct ProfilePageView: View {
                                 Text("Weight")
                                     .font(.custom("Kalam-Bold", size: 20))
                                     .foregroundColor(.black)
-                                Text("55 kg")
+                                Text("\(weight) kg")
                                     .font(.custom("Kalam-Regular", size: 17))
                                     .foregroundColor(.black)
                             }
@@ -100,7 +104,7 @@ struct ProfilePageView: View {
                                 Text("Streak")
                                     .font(.custom("Kalam-Bold", size: 20))
                                     .foregroundColor(.black)
-                                Text("40 days")
+                                Text("113 days")
                                     .font(.custom("Kalam-Regular", size: 17))
                                     .foregroundColor(.black)
                             }
@@ -113,20 +117,20 @@ struct ProfilePageView: View {
                         .frame(width: 350, height: 1)
                         .foregroundColor(.gray)
                     Button{showingEditSheet.toggle()} label: {
-                        Text("Edit Information")
+                        Text("Profile")
                             .font(.custom("Kalam-Regular", size: 20))
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)
                     }
                     .sheet(isPresented: $showingEditSheet) {
-                        EditSheet()
+                        EditSheet(isPresented: $showingEditSheet, gender: $gender, height: $height, weight: $weight)
                     }
                     
                     Rectangle()
                         .frame(width: 350, height: 1)
                         .foregroundColor(.gray)
                     Button{showingRankingSheet.toggle()} label: {
-                        Text("See Rankings")
+                        Text("Rankings")
                             .font(.custom("Kalam-Regular", size: 20))
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)
@@ -137,18 +141,28 @@ struct ProfilePageView: View {
                     Rectangle()
                         .frame(width: 350, height: 1)
                         .foregroundColor(.gray)
-                    Button{} label: {
-                        Text("Log Out")
-                            .font(.custom("Kalam-Regular", size: 20))
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(.black)
+                    
+                    NavigationLink(destination: WelcomePageView().navigationBarBackButtonHidden(true), isActive: $LogOut) {
+                        Button{
+                            LogOut = true
+                        } label: {
+                            Text("Log Out")
+                                .font(.custom("Kalam-Regular", size: 20))
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color(red: 0.7, green: 0.01, blue: 0.01))
+                            Image(systemName: "arrowshape.turn.up.backward")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20, height: 20)
+                                .foregroundColor(Color(red: 0.7, green: 0.01, blue: 0.01))
+                        }
                     }
                     Rectangle()
                         .frame(width: 350, height: 1)
                         .foregroundColor(.gray)
                 }
             }
-            .padding(.bottom, 140)
+                .padding(.bottom, 140)
         }
     }
 }
@@ -161,20 +175,22 @@ struct ProfilePageView_Previews: PreviewProvider {
 
 struct EditSheet: View {
     @Environment(\.dismiss) var dismiss
-    @State var gender = ""
-    @State var height = ""
-    @State var weight = ""
-    @State var time = ""
+    @Binding var isPresented: Bool
+    @Binding var gender : String
+    @Binding var height : Int
+    @Binding var weight : Int
+    //@State var time = ""
+    @State private var selectedTime = Date()
 
     var body: some View {
         VStack {
             HStack (spacing: 20){
                 Image(systemName: "square.and.pencil")
                     .resizable()
-                    .frame(width: 35, height: 35)
+                    .frame(width: 30, height: 30)
                     .foregroundColor(.blue)
                 
-                Text("Edit Information")
+                Text("Profile")
                     .font(.custom("Kalam-Bold", size: 35))
                     .foregroundColor(.black)
 
@@ -187,7 +203,7 @@ struct EditSheet: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                 VStack {
                     TextField("Female", text: $gender)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.black)
                         .textFieldStyle(.plain)
                         .autocapitalization(.none)
                 }
@@ -200,7 +216,13 @@ struct EditSheet: View {
                     .foregroundColor(.black)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 VStack {
-                    TextField("160cm", text: $height)
+                    TextField("160cm", text: Binding<String>(
+                        get: { String(height) },
+                        set: {
+                            if let value = Int($0) {
+                                height = value
+                            }
+                        }))
                         .foregroundColor(.black)
                         .textFieldStyle(.plain)
                         .autocapitalization(.none)
@@ -215,7 +237,13 @@ struct EditSheet: View {
                     .foregroundColor(.black)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 VStack {
-                    TextField("70kg", text: $weight)
+                    TextField("70kg", text: Binding<String>(
+                        get: { String(weight) },
+                        set: {
+                            if let value = Int($0) {
+                                weight = value
+                            }
+                        }))
                         .foregroundColor(.black)
                         .textFieldStyle(.plain)
                         .autocapitalization(.none)
@@ -225,36 +253,32 @@ struct EditSheet: View {
                 .cornerRadius(10)
                 .shadow(color: .gray, radius: 1, x: 0, y: 1)
                 
-                Text("The usual FIRST meal time")
+                Text("The usual \(Text("first").foregroundColor(.blue)) meal time")
                     .font(.custom("Kalam-Bold", size: 20))
                     .foregroundColor(.black)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                VStack {
-                    TextField("7:00am", text: $time)
-                        .foregroundColor(.black)
-                        .textFieldStyle(.plain)
-                        .autocapitalization(.none)
-                }
-                .padding()
-                .background(Color.white)
-                .cornerRadius(10)
-                .shadow(color: .gray, radius: 1, x: 0, y: 1)
+                
+                DatePicker(
+                    "Selected Time",
+                    selection: $selectedTime,
+                    displayedComponents: [.hourAndMinute]
+                ).font(.custom("Kalam-Regular", size: 20))
             }
             .frame(width: 250)
             .padding(.bottom, 40)
 
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
-                    .foregroundColor(Color.gray.opacity(0.2))
-                    .frame(width: 120, height: 60)
+                    .foregroundColor(Color.blue.opacity(0.3))
+                    .frame(width: 150, height: 50)
                 
                 Button(action: {
-                    // Button action
+                    isPresented = false
                 }) {
                     Text("Save")
                         .font(.custom("Kalam-Bold", size: 30))
                         .multilineTextAlignment(.center)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.black)
                 }
             }
         }
@@ -299,7 +323,7 @@ struct RankingSheet: View {
                     .frame(width: 55, height: 55)
                     .foregroundColor(.yellow)
                 
-                Text("Fasting Streak Days Ranking")
+                Text("Streak Ranking")
                     .font(.custom("Kalam-Bold", size: 35))
                     .foregroundColor(.black)
 
