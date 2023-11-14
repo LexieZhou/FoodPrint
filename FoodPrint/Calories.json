@@ -1,0 +1,466 @@
+[
+  {
+    "Food": "Apple",
+    "Calories": 37
+  },
+  {
+    "Food": "Apricot",
+    "Calories": 34
+  },
+  {
+    "Food": "Avocado",
+    "Calories": 134
+  },
+  {
+    "Food": "Banana",
+    "Calories": 51
+  },
+  {
+    "Food": "Blackberries",
+    "Calories": 21
+  },
+  {
+    "Food": "Blackcurrant",
+    "Calories": 24
+  },
+  {
+    "Food": "Cherries",
+    "Calories": 36
+  },
+  {
+    "Food": "Clementine",
+    "Calories": 39
+  },
+  {
+    "Food": "Coconut (Fresh)",
+    "Calories": 351
+  },
+  {
+    "Food": "Cranberries",
+    "Calories": 15
+  },
+  {
+    "Food": "Cucumber",
+    "Calories": 15
+  },
+  {
+    "Food": "Dates (Dried)",
+    "Calories": 227
+  },
+  {
+    "Food": "Figs (Fresh)",
+    "Calories": 209
+  },
+  {
+    "Food": "Grapefruit",
+    "Calories": 25
+  },
+  {
+    "Food": "Kiwi",
+    "Calories": 42
+  },
+  {
+    "Food": "Lemon",
+    "Calories": 15
+  },
+  {
+    "Food": "Lime",
+    "Calories": 9
+  },
+  {
+    "Food": "Lychee",
+    "Calories": 36
+  },
+  {
+    "Food": "Mango",
+    "Calories": 39
+  },
+  {
+    "Food": "Acorn squash",
+    "Calories": 40
+  },
+  {
+    "Food": "Artichoke",
+    "Calories": 41
+  },
+  {
+    "Food": "Asparagus",
+    "Calories": 29
+  },
+  {
+    "Food": "Beetroot",
+    "Calories": 42
+  },
+  {
+    "Food": "Broccoli",
+    "Calories": 35
+  },
+  {
+    "Food": "Brussels Sprout",
+    "Calories": 51
+  },
+  {
+    "Food": "Butternut squash",
+    "Calories": 36
+  },
+  {
+    "Food": "Cabbage",
+    "Calories": 27
+  },
+  {
+    "Food": "Carrot",
+    "Calories": 10
+  },
+  {
+    "Food": "Cauliflower",
+    "Calories": 30
+  },
+  {
+    "Food": "Celery",
+    "Calories": 8
+  },
+  {
+    "Food": "Chicory",
+    "Calories": 11
+  },
+  {
+    "Food": "Corn",
+    "Calories": 54
+  },
+  {
+    "Food": "Edamame",
+    "Calories": 140
+  },
+  {
+    "Food": "Green beans",
+    "Calories": 25
+  },
+  {
+    "Food": "Iceberg lettuce",
+    "Calories": 10
+  },
+  {
+    "Food": "Kale",
+    "Calories": 30
+  },
+  {
+    "Food": "Leek",
+    "Calories": 20
+  },
+  {
+    "Food": "Mushroom",
+    "Calories": 8
+  },
+  {
+    "Food": "Onion",
+    "Calories": 43
+  },
+  {
+    "Food": "Peas",
+    "Calories": 70
+  },
+  {
+    "Food": "Peppers (Red)",
+    "Calories": 21
+  },
+  {
+    "Food": "Potato",
+    "Calories": 97
+  },
+  {
+    "Food": "Pumpkin",
+    "Calories": 13
+  },
+  {
+    "Food": "Radish",
+    "Calories": 33
+  },
+  {
+    "Food": "Romaine Lettuce",
+    "Calories": 15
+  },
+  {
+    "Food": "Spinach",
+    "Calories": 24
+  },
+  {
+    "Food": "Bean Sprouts",
+    "Calories": 30
+  },
+  {
+    "Food": "Turnips",
+    "Calories": 23
+  },
+  {
+    "Food": "Yam",
+    "Calories": 153
+  },
+  {
+    "Food": "Zucchini / Courgette",
+    "Calories": 10
+  },
+  {
+    "Food": "ahi tuna",
+    "Calories": 120
+  },
+  {
+    "Food": "albacore",
+    "Calories": 128
+  },
+  {
+    "Food": "catfish",
+    "Calories": 95
+  },
+  {
+    "Food": "caviar",
+    "Calories": 250
+  },
+  {
+    "Food": "crab",
+    "Calories": 87
+  },
+  {
+    "Food": "eel",
+    "Calories": 184
+  },
+  {
+    "Food": "flounder",
+    "Calories": 91
+  },
+  {
+    "Food": "grouper",
+    "Calories": 92
+  },
+  {
+    "Food": "herring",
+    "Calories": 158
+  },
+  {
+    "Food": "lobster",
+    "Calories": 90
+  },
+  {
+    "Food": "mussels",
+    "Calories": 86
+  },
+  {
+    "Food": "oysters",
+    "Calories": 81
+  },
+  {
+    "Food": "salmon",
+    "Calories": 183
+  },
+  {
+    "Food": "scallops",
+    "Calories": 88
+  },
+  {
+    "Food": "sea bass",
+    "Calories": 97
+  },
+  {
+    "Food": "shrimp",
+    "Calories": 106
+  },
+  {
+    "Food": "smelt",
+    "Calories": 97
+  },
+  {
+    "Food": "squid",
+    "Calories": 92
+  },
+  {
+    "Food": "tilapia",
+    "Calories": 96
+  },
+  {
+    "Food": "trout",
+    "Calories": 148
+  },
+  {
+    "Food": "whitefish",
+    "Calories": 134
+  },
+  {
+    "Food": "tuna",
+    "Calories": 108
+  },
+  {
+    "Food": "Bacon (pork)",
+    "Calories": 240
+  },
+  {
+    "Food": "Chicken Breast",
+    "Calories": 148
+  },
+  {
+    "Food": "Chicken Wings",
+    "Calories": 110
+  },
+  {
+    "Food": "Chicken Thighs",
+    "Calories": 133
+  },
+  {
+    "Food": "Chicken Eggs",
+    "Calories": 155
+  },
+  {
+    "Food": "Duck (no skin)",
+    "Calories": 195
+  },
+  {
+    "Food": "Escargots",
+    "Calories": 90
+  },
+  {
+    "Food": "Lamb",
+    "Calories": 122
+  },
+  {
+    "Food": "Liver",
+    "Calories": 119
+  },
+  {
+    "Food": "Sausage (chicken)",
+    "Calories": 172
+  },
+  {
+    "Food": "Sausage (turkey)",
+    "Calories": 196
+  },
+  {
+    "Food": "Sausage (pork)",
+    "Calories": 318
+  },
+  {
+    "Food": "Quail Eggs",
+    "Calories": 158
+  },
+  {
+    "Food": "Turkey (dark meat)",
+    "Calories": 184
+  },
+  {
+    "Food": "Tukey (white meat)",
+    "Calories": 104
+  },
+  {
+    "Food": "Venison",
+    "Calories": 157
+  },
+  {
+    "Food": "Butter",
+    "Calories": 716
+  },
+  {
+    "Food": "Buttermilk (1%)",
+    "Calories": 41
+  },
+  {
+    "Food": "Cheddar Cheese",
+    "Calories": 403
+  },
+  {
+    "Food": "Cottage Cheese (1%)",
+    "Calories": 72
+  },
+  {
+    "Food": "Cream (heavy)",
+    "Calories": 347
+  },
+  {
+    "Food": "Cream Cheese",
+    "Calories": 231
+  },
+  {
+    "Food": "Evaporated milk",
+    "Calories": 142
+  },
+  {
+    "Food": "Ghee",
+    "Calories": 899
+  },
+  {
+    "Food": "Goats Milk",
+    "Calories": 71
+  },
+  {
+    "Food": "Ice Cream (vanilla)",
+    "Calories": 207
+  },
+  {
+    "Food": "Kefir",
+    "Calories": 67
+  },
+  {
+    "Food": "Ricotta Cheese",
+    "Calories": 174
+  },
+  {
+    "Food": "Skim Milk",
+    "Calories": 38
+  },
+  {
+    "Food": "Sour cream",
+    "Calories": 214
+  },
+  {
+    "Food": "Soy milk",
+    "Calories": 46
+  },
+  {
+    "Food": "Swiss Cheese",
+    "Calories": 380
+  },
+  {
+    "Food": "Yogurt, whole milk",
+    "Calories": 61
+  },
+  {
+    "Food": "Yogurt, no fat",
+    "Calories": 55
+  },
+  {
+    "Food": "Whole Milk",
+    "Calories": 62
+  },
+  {
+    "Food": "Avocado oil",
+    "Calories": 883
+  },
+  {
+    "Food": "Canola oil",
+    "Calories": 883
+  },
+  {
+    "Food": "Coconut oil",
+    "Calories": 861
+  },
+  {
+    "Food": "Corn oil",
+    "Calories": 857
+  },
+  {
+    "Food": "Olive oil",
+    "Calories": 880
+  },
+  {
+    "Food": "Peanut oil",
+    "Calories": 883
+  },
+  {
+    "Food": "Safflower oil",
+    "Calories": 883
+  },
+  {
+    "Food": "Soybean oil",
+    "Calories": 883
+  },
+  {
+    "Food": "Sunflower oil",
+    "Calories": 883
+  }
+]

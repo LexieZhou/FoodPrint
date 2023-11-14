@@ -258,7 +258,8 @@ struct BannerNotification: View {
 struct RecordInput: View {
     @State var food = ""
     @State var weight = ""
-    @State var calories = ""
+    @ObservedObject var calories_data = ReadData()
+//    @Binding var totalCalories: Double
     
     var body: some View {
         HStack {
@@ -288,21 +289,77 @@ struct RecordInput: View {
             
             Spacer()
             
-            VStack {
-                TextField("", text: $calories)
-                    .foregroundColor(.black)
-                    .textFieldStyle(.plain)
-                    .autocapitalization(.none)
+            if (food != "" && weight != "") {
+                VStack {
+                    if let matchingFood = calories_data.calories.first(where: { $0.Food.lowercased() == food.lowercased() }) {
+                        if let weightValue = Double(weight), let caloriesValue = Double(matchingFood.Calories) {
+                            let calculatedCalories = caloriesValue * weightValue / 100
+                            let formattedCalories = String(format: "%.1f", calculatedCalories)
+                            Text("\(formattedCalories)")
+                                .foregroundColor(.black)
+                                .textFieldStyle(.plain)
+                                .autocapitalization(.none)
+                                .frame(width: 100, height: 20)
+//                                .onChange(of: calculatedCalories) { newValue in
+//                                    totalCalories += newValue
+//                                }
+                        } else {
+                            Text("Invalid weight or calories")
+                                .foregroundColor(.black)
+                                .textFieldStyle(.plain)
+                                .autocapitalization(.none)
+                                .frame(width: 100, height: 20)
+                        }
+                    } else if let anyFood = calories_data.calories.first {
+                        Text("\(anyFood.Calories)")
+                            .foregroundColor(.black)
+                            .textFieldStyle(.plain)
+                            .autocapitalization(.none)
+                            .frame(width: 100, height: 20)
+                    }
+                }
+                .padding()
+                .background(Color.white)
+                .cornerRadius(10)
+                .shadow(color: .gray, radius: 1, x: 0, y: 1)
             }
-            .padding()
-            .background(Color.white)
-            .cornerRadius(10)
-            .shadow(color: .gray, radius: 1, x: 0, y: 1)
-            .frame(width: 150)
             
         }
         .frame(maxWidth: 400)
         .padding()
+    }
+}
+
+struct Calories: Codable, Identifiable {
+    enum CodingKeys: CodingKey {
+        case Food
+        case Calories
+    }
+    
+    var id = UUID()
+    var Food: String
+    var Calories: Int
+}
+class ReadData: ObservableObject  {
+    @Published var calories = [Calories]()
+    init(){
+        loadData()
+    }
+    func loadData()  {
+        guard let url = Bundle.main.url(forResource: "Calories", withExtension: "json")
+            else {
+                print("Json file not found")
+                return
+            }
+        do {
+            let data = try Data(contentsOf: url)
+            let decoder = JSONDecoder()
+            let decodedCalories = try decoder.decode([Calories].self, from: data)
+            self.calories = decodedCalories
+        } catch {
+            print("Failed to decode JSON: \(error)")
+        }
+        
     }
 }
 
@@ -311,6 +368,7 @@ struct AddRecordSheet: View {
     @Binding var isPresented: Bool
     @State private var recordInputCount = 1
     @State private var showRecordOutBoundAlert = false
+//    @State var totalCalories = 0.0
     
     var body: some View {
         ScrollView {
@@ -365,6 +423,7 @@ struct AddRecordSheet: View {
                 .padding(.bottom, 0)
                 
                 ForEach(0..<recordInputCount, id: \.self) { index in
+//                    RecordInput(totalCalories: $totalCalories)
                     RecordInput()
                 }
                 
@@ -372,10 +431,10 @@ struct AddRecordSheet: View {
                     Rectangle()
                         .frame(width: 350, height: 1)
                         .foregroundColor(.gray)
-                    Text("Total Calories Calculated: 0")
-                        .font(.custom("Kalam-Bold", size: 20))
-                        .foregroundColor(.gray)
-                        .padding()
+//                    Text("Total Calories Calculated: \(totalCalories)")
+//                        .font(.custom("Kalam-Bold", size: 20))
+//                        .foregroundColor(.gray)
+//                        .padding()
                 }.padding(.bottom, 5)
                 
                 ZStack {
