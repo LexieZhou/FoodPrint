@@ -71,6 +71,8 @@
 		9D03D8852AF9D56E009FDF47 /* Battery6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D87E2AF9D56E009FDF47 /* Battery6.png */; };
 		9D03D8872AF9D591009FDF47 /* lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D03D8862AF9D591009FDF47 /* lightning.png */; };
 		9D3E4C642AEFD5F600AA8495 /* Homepage-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E4C632AEFD5F600AA8495 /* Homepage-ViewModel.swift */; };
+		9D8920232B025C99009BE076 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8920222B025C99009BE076 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9D8920252B026825009BE076 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8920242B026824009BE076 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		9D03D87E2AF9D56E009FDF47 /* Battery6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battery6.png; sourceTree = "<group>"; };
 		9D03D8862AF9D591009FDF47 /* lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning.png; sourceTree = "<group>"; };
 		9D3E4C632AEFD5F600AA8495 /* Homepage-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homepage-ViewModel.swift"; sourceTree = "<group>"; };
+		9D8920222B025C99009BE076 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9D8920242B026824009BE076 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D8920232B025C99009BE076 /* XCTest.framework in Frameworks */,
 				0494BECF2ADAFA7100076F61 /* FirebaseDatabaseSwift in Frameworks */,
 				0494BEC72ADAFA7100076F61 /* FirebaseAppCheck in Frameworks */,
 				0494BECB2ADAFA7100076F61 /* FirebaseAuthCombine-Community in Frameworks */,
@@ -189,6 +194,7 @@
 				040979BB2AC1635A00E7AA7E /* FoodPrintTests */,
 				040979C52AC1635A00E7AA7E /* FoodPrintUITests */,
 				040979A92AC1635800E7AA7E /* Products */,
+				9D8920212B025C99009BE076 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +232,7 @@
 				0485CB972AF8AA4F0093B68E /* SwipingAgePage.swift */,
 				0485CB952AF8A92B0093B68E /* SwipingEatPage.swift */,
 				049C9B412ACBC03800A95A98 /* RecordPageView.swift */,
+				9D8920242B026824009BE076 /* ImagePicker.swift */,
 				040979AF2AC1635A00E7AA7E /* Assets.xcassets */,
 				040979B12AC1635A00E7AA7E /* Preview Content */,
 			);
@@ -297,6 +304,14 @@
 				9D03D87B2AF9D56E009FDF47 /* camera-icon.png */,
 			);
 			name = Homepage;
+			sourceTree = "<group>";
+		};
+		9D8920212B025C99009BE076 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D8920222B025C99009BE076 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,6 +493,7 @@
 				9D3E4C642AEFD5F600AA8495 /* Homepage-ViewModel.swift in Sources */,
 				0485CB942AF8A8560093B68E /* SwipingWeightPage.swift in Sources */,
 				0485CB8C2AF7FAC30093B68E /* ViewController.swift in Sources */,
+				9D8920252B026825009BE076 /* ImagePicker.swift in Sources */,
 				0485CB902AF806240093B68E /* SwipingHeightPage.swift in Sources */,
 				0485CB982AF8AA4F0093B68E /* SwipingAgePage.swift in Sources */,
 				040979AE2AC1635900E7AA7E /* WelcomePageView.swift in Sources */,
@@ -647,13 +663,15 @@
 		040979CD2AC1635A00E7AA7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodPrint/Preview Content\"";
-				DEVELOPMENT_TEAM = DJY49YYL9Z;
+				DEVELOPMENT_TEAM = 44JYG2BS4Y;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodPrint/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -677,13 +695,15 @@
 		040979CE2AC1635A00E7AA7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodPrint/Preview Content\"";
-				DEVELOPMENT_TEAM = DJY49YYL9Z;
+				DEVELOPMENT_TEAM = 44JYG2BS4Y;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodPrint/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
