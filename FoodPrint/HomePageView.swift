@@ -13,6 +13,7 @@ struct HomePageView: View {
     @State private var showAlert = false
     @State private var showSheet: Bool = false
     @State private var showImagePicker: Bool = false
+    @State private var showingAddRecord = false
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     @State private var image: UIImage?
     @State private var showNotification: Bool = false
@@ -134,30 +135,44 @@ struct HomePageView: View {
                         
                         //MARK: camera
                         if vm.isActive {
-                            Button(action: {
-                                self.showSheet = true
-                            }) {
-                                Image("camera-icon")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .padding()
-                                    .frame(width: 100, height: 100)
-                            }
-                            .actionSheet(isPresented:$showSheet) {
-                                ActionSheet(title: Text("Select Photo"),
-                                            message: Text("Take a photo to record your food"), buttons: [
-                                                .default(Text("Photo Library")) {
-                                                    self.showImagePicker = true
-                                                    self.sourceType = .photoLibrary
-                                                },
-                                                .default(Text("Camera")) {
-                                                    self.showImagePicker = true
-                                                    self.sourceType = .camera
-                                                },
-                                                .cancel()
-                                            ])
-                            }
-                            
+                            VStack {
+                                Button(action: {
+                                    self.showSheet = true
+                                }) {
+                                    Image(systemName: "camera.circle.fill")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 70, height: 70)
+                                        .foregroundColor(Color(red: 0.3, green: 0.4, blue: 0.7))
+                                        .padding(.bottom, 5)
+                                }
+                                .actionSheet(isPresented:$showSheet) {
+                                    ActionSheet(title: Text("Select Photo"),
+                                                message: Text("Take a photo to record your food"), buttons: [
+                                                    .default(Text("Photo Library")) {
+                                                        self.showImagePicker = true
+                                                        self.sourceType = .photoLibrary
+                                                    },
+                                                    .default(Text("Camera")) {
+                                                        self.showImagePicker = true
+                                                        self.sourceType = .camera
+                                                    },
+                                                    .cancel()
+                                                ])
+                                }
+                                
+                                Button(action: {
+                                    showingAddRecord.toggle()
+                                }) {
+                                    Image(systemName: "pencil.circle.fill")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 70, height: 70)
+                                        .foregroundColor(Color(red: 0.3, green: 0.4, blue: 0.7))
+                                }.sheet(isPresented: $showingAddRecord) {
+                                    AddRecordSheet(isPresented: $showingAddRecord)
+                                }
+                            }.offset(x: 125, y: 50)
                         }
                         
                         
@@ -193,15 +208,7 @@ struct HomePageView: View {
 //                      ))
 //            }
 //        }
-//        
-        
-        
-        
-            
-
-            
-                
-        
+//
     
     let formatter: DateFormatter = {
             let formatter = DateFormatter()
@@ -246,6 +253,160 @@ struct BannerNotification: View {
         showNotification = false
     }
 }
+
+
+struct RecordInput: View {
+    @State var food = ""
+    @State var weight = ""
+    @State var calories = ""
+    
+    var body: some View {
+        HStack {
+            VStack {
+                TextField("Ramen", text: $food)
+                    .foregroundColor(.black)
+                    .textFieldStyle(.plain)
+                    .autocapitalization(.none)
+            }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+            .shadow(color: .gray, radius: 1, x: 0, y: 1)
+            .frame(width: 100)
+            
+            VStack {
+                TextField("60", text: $weight)
+                    .foregroundColor(.black)
+                    .textFieldStyle(.plain)
+                    .autocapitalization(.none)
+            }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+            .shadow(color: .gray, radius: 1, x: 0, y: 1)
+            .frame(width: 100)
+            
+            Spacer()
+            
+            VStack {
+                TextField("", text: $calories)
+                    .foregroundColor(.black)
+                    .textFieldStyle(.plain)
+                    .autocapitalization(.none)
+            }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+            .shadow(color: .gray, radius: 1, x: 0, y: 1)
+            .frame(width: 150)
+            
+        }
+        .frame(maxWidth: 400)
+        .padding()
+    }
+}
+
+struct AddRecordSheet: View {
+    @Environment(\.dismiss) var dismiss
+    @Binding var isPresented: Bool
+    @State private var recordInputCount = 1
+    @State private var showRecordOutBoundAlert = false
+    
+    var body: some View {
+        ScrollView {
+            VStack {
+                HStack (spacing: 20){
+                    Image(systemName: "fork.knife")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.blue.opacity(0.5))
+                    
+                    
+                    Text("Record Meal")
+                        .font(.custom("Kalam-Bold", size: 35))
+                        .foregroundColor(.black)
+                        .padding()
+                    
+                    Button(action: {
+                        // add record
+                        recordInputCount += 1
+                        if (recordInputCount > 4) {
+                            showRecordOutBoundAlert = true
+                        }
+                    }) {
+                        Image(systemName: "plus.square.on.square")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(.blue.opacity(0.7))
+                    }.alert("Record Number Exceed Bound", isPresented: $showRecordOutBoundAlert) {
+                        Button("OK", role: .cancel) { }
+                    }
+                    
+                }.padding(.bottom, 30)
+                
+                HStack {
+                    Text("Food")
+                        .font(.custom("Kalam-Bold", size: 15))
+                        .foregroundColor(.black)
+                        .frame(width: 100)
+                    Text("Weight")
+                        .font(.custom("Kalam-Bold", size: 15))
+                        .foregroundColor(.black)
+                        .frame(width: 100)
+                    Spacer()
+                    Text("Calculated Calories")
+                        .font(.custom("Kalam-Bold", size: 15))
+                        .foregroundColor(.black)
+                        .frame(width: 200)
+                }
+                .frame(maxWidth: 350)
+                .padding(.bottom, 0)
+                
+                ForEach(0..<recordInputCount, id: \.self) { index in
+                    RecordInput()
+                }
+                
+                VStack {
+                    Rectangle()
+                        .frame(width: 350, height: 1)
+                        .foregroundColor(.gray)
+                    Text("Total Calories Calculated: 0")
+                        .font(.custom("Kalam-Bold", size: 20))
+                        .foregroundColor(.gray)
+                        .padding()
+                }.padding(.bottom, 5)
+                
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .foregroundColor(Color.blue.opacity(0.3))
+                        .frame(width: 120, height: 60)
+                    
+                    Button(action: {
+                        // save action
+                        isPresented = false
+                        
+                    }) {
+                        Text("Record")
+                            .font(.custom("Kalam-Bold", size: 20))
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(.black)
+                        Image(systemName: "square.and.arrow.up")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(.black)
+                    }
+                }
+
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: 800)
+        .padding(.top, 16)
+    }
+}
+
 
 struct HomePageView_Previews: PreviewProvider {
     static var previews: some View {
