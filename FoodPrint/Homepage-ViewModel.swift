@@ -17,6 +17,7 @@ extension HomePageView {
         @Published var isActive = false //the whole timing system has started or not
         @Published var showingAlert = false //record whether the app is releasing an alert
         @Published var time: String = "" //recording the fasting/eating window finish time
+        @Published var success: Bool = true
         @Published var eatingTime: Float = 8.0 {
             didSet {
                 self.time = "\(Int(eatingTime)):00:00"
@@ -47,7 +48,7 @@ extension HomePageView {
             self.endDate = Calendar.current.date(byAdding: .hour, value: Int(eatingTime), to: endDate)!
             //self.time = "\(Int(eatingCountingTime)):00:00"
             //finishingTimeString
-            print("end date ", endDate)
+//            print("end date ", endDate)
         }
         
         func startFasting(fastingTime: Float) {
@@ -67,8 +68,8 @@ extension HomePageView {
             let now = Date()
             let diff = endDate.timeIntervalSince1970 - now.timeIntervalSince1970
 
-            print("eating time",Double(eatingTime))
-            print("diff", diff)
+//            print("eating time",Double(eatingTime))
+//            print("diff", diff)
             if diff > 0 {
                 if isEating {
                     if diff > 3600*5/6*Double(eatingTime) && diff <= 3600*Double(eatingTime) {
@@ -79,7 +80,7 @@ extension HomePageView {
                         self.batteryImg = Image("Battery3")
                     } else if diff > 3600*1/3*Double(eatingTime) && diff <= 3600*1/2*Double(eatingTime){
                         self.batteryImg = Image("Battery4")
-                    } else if diff > 3600*1/3*Double(eatingTime) && diff <= 3600*1/6*Double(eatingTime){
+                    } else if diff > 3600*1/6*Double(eatingTime) && diff <= 3600*1/3*Double(eatingTime){
                         self.batteryImg = Image("Battery5")
                     } else if diff > 0 && diff <= 3600*1/6*Double(eatingTime){
                         self.batteryImg = Image("Battery6")
@@ -93,7 +94,7 @@ extension HomePageView {
                         self.batteryImg = Image("Battery4")
                     } else if diff > 3600*1/3*Double(fastingTime) && diff <= 3600*1/2*Double(fastingTime){
                         self.batteryImg = Image("Battery3")
-                    } else if diff > 3600*1/3*Double(fastingTime) && diff <= 3600*1/6*Double(fastingTime){
+                    } else if diff > 3600*1/6*Double(fastingTime) && diff <= 3600*1/3*Double(fastingTime){
                         self.batteryImg = Image("Battery2")
                     } else if diff > 0 && diff <= 3600*1/6*Double(fastingTime){
                         self.batteryImg = Image("Battery1")
@@ -118,19 +119,13 @@ extension HomePageView {
             }
             
             let date = Date(timeIntervalSince1970: diff)
-            print("date", date)
+//            print("date", date)
             var calendar = Calendar.current
             calendar.timeZone = TimeZone(identifier: "UTC")!
             let hour = calendar.component(.hour, from: date)
             let minutes = calendar.component(.minute, from: date)
             let seconds = calendar.component(.second, from: date)
-            print("hour", hour)
-            
-//            if isEating {
-//                self.eatingTime = Float(hour)
-//            } else {
-//                self.fastingTime = Float(hour)
-//            }
+//            print("hour", hour)
             
             self.time = String(format: "%02d : %02d : %02d", hour, minutes, seconds)
         }
@@ -140,6 +135,7 @@ extension HomePageView {
             if isEating {
                 startFasting(fastingTime: fastingTime)
             } else {
+                success = false
                 startEating(eatingTime: eatingTime)
             }
             

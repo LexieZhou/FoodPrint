@@ -11,13 +11,15 @@ import SwiftUICharts
 
 
 struct RecordPageView: View {
+    
     // the current date and time
     @State var selectedDate: Date = Date()
     // access records stored in db
     @State private var records: [Record] = []
+    @State private var data: [(String, Double)] = []
+    @State private var daily_data: [(String, Double)] = []
     
     var body: some View {
-        
         VStack{
             VStack() {
                 Text(selectedDate.formatted(date: .abbreviated, time: .omitted))
@@ -34,37 +36,35 @@ struct RecordPageView: View {
                 Divider()
             }
             BarChartView(
-                data: ChartData(
-                values: [
-                ("2023-09-01", 60),
-                ("2023-09-02", 59),
-                ("2023-09-03", 55),
-                ("2023-09-04", 53),
-                ("2023-09-05", 51),
-                ("2023-09-06", 50),
-                ("2023-09-07", 40),
-                ]),
-                title: "7-day Weight",
+                data: ChartData(values: daily_data),
+                title: "WeightPrint",
                 style: Styles.barChartStyleNeonBlueLight,
                 form: ChartForm.extraLarge
             ).padding()
-            let _ = retrieveRecords()
+        }.onAppear{
+            retrieveRecords()
         }
     }
     
     private func retrieveRecords() {
         FirebaseDataManager.retrieveRecords { records in
-            self.records = records // Store the retrieved records in the state property
-            // Perform any other actions with the retrieved records if needed
-            print(records[0].foodCategory)
-            print(records[0].weight)
-            print(records[0].calories)
+            self.records = records
+            self.data = Array(zip(records.map{$0.timestamp}, records.map{$0.weight}))
+            var dict: [String: String] = [:] // Last timestemp for each day
+                for (str, _) in data {
+                    let key = String(str.components(separatedBy: " ")[0])
+                    dict[key] = str
+                }
+            print(dict.values)
+            self.daily_data = data.filter { dict.values.contains($0.0) }
         }
     }
 }
+
 
 struct RecordPageView_Previews: PreviewProvider {
     static var previews: some View {
         RecordPageView()
     }
 }
+
