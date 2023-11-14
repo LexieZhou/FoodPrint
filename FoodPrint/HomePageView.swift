@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct HomePageView: View {
+    @State private var TOKEN: String = "" // DONOT PUSH ONTO GITHUB
+    
     @State var progress = 0.5
     @State private var showAlert = false
     @State private var showSheet: Bool = false
@@ -143,8 +145,8 @@ struct HomePageView: View {
                                     Image(systemName: "camera.circle.fill")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                        .frame(width: 70, height: 70)
-                                        .foregroundColor(Color(red: 0.3, green: 0.4, blue: 0.7))
+                                        .frame(width: 65, height: 65)
+                                        .foregroundColor(.blue)
                                         .padding(.bottom, 5)
                                 }
                                 .actionSheet(isPresented:$showSheet) {
@@ -168,8 +170,8 @@ struct HomePageView: View {
                                     Image(systemName: "pencil.circle.fill")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                        .frame(width: 70, height: 70)
-                                        .foregroundColor(Color(red: 0.3, green: 0.4, blue: 0.7))
+                                        .frame(width: 65, height: 65)
+                                        .foregroundColor(.blue)
                                 }.sheet(isPresented: $showingAddRecord) {
                                     AddRecordSheet(isPresented: $showingAddRecord)
                                 }
@@ -231,7 +233,7 @@ struct HomePageView: View {
                 var request = URLRequest(url: url)
                 request.httpMethod = "POST"
                 request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-                request.addValue("Bearer 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", forHTTPHeaderField: "Authorization")
+                request.addValue("Bearer \(TOKEN)", forHTTPHeaderField: "Authorization")
                 request.httpBody = payload
                 let semaphore = DispatchSemaphore(value: 0)
                 URLSession.shared.dataTask(with: request) { (data, response, error) in
@@ -319,7 +321,6 @@ struct BannerNotification: View {
 
 struct RecordInput: View {
     @State var food = ""
-//    @State var weight = ""
     @State var weight: Double = 0.0
     @ObservedObject var calories_data = ReadData()
 //    @Binding var totalCalories: Double
@@ -336,10 +337,10 @@ struct RecordInput: View {
             .background(Color.white)
             .cornerRadius(10)
             .shadow(color: .gray, radius: 1, x: 0, y: 1)
-            .frame(width: 100)
+            .frame(width: 130)
             
             VStack {
-                TextField("60", value: $weight, format: .number)
+                TextField("", value: $weight, format: .number)
                     .foregroundColor(.black)
                     .textFieldStyle(.plain)
                     .autocapitalization(.none)
@@ -355,8 +356,7 @@ struct RecordInput: View {
             if (food != "" && weight != 0.0) {
                 VStack {
                     if let matchingFood = calories_data.calories.first(where: { $0.Food.lowercased() == food.lowercased() }) {
-//                        if let weightValue = Double(weight), let caloriesValue = Double(matchingFood.Calories) {
-                        let calculatedCalories = matchingFood.Calories * Int(weight) / 100
+                        let calculatedCalories = Double(matchingFood.Calories) * weight / 100
                         let formattedCalories = String(format: "%.1f", calculatedCalories)
                         Text("\(formattedCalories)")
                             .foregroundColor(.black)
@@ -367,8 +367,14 @@ struct RecordInput: View {
 //                                    totalCalories += newValue
 //                                }
                         
-                    } else if let anyFood = calories_data.calories.first {
-                        Text("\(anyFood.Calories)")
+                    } else if let containFood = calories_data.calories.first(where: { $0.Food.lowercased().contains(food.lowercased()) }) {
+                        Text("\(containFood.Calories)")
+                            .foregroundColor(.black)
+                            .textFieldStyle(.plain)
+                            .autocapitalization(.none)
+                            .frame(width: 100, height: 20)
+                    } else {
+                        Text("Null")
                             .foregroundColor(.black)
                             .textFieldStyle(.plain)
                             .autocapitalization(.none)
@@ -466,15 +472,17 @@ struct AddRecordSheet: View {
                         .font(.custom("Kalam-Bold", size: 15))
                         .foregroundColor(.black)
                         .frame(width: 100)
+                        .offset(x: 20)
                     Text("Weight")
                         .font(.custom("Kalam-Bold", size: 15))
                         .foregroundColor(.black)
                         .frame(width: 100)
-                    Spacer()
+                        .offset(x: 30)
                     Text("Calculated Calories")
                         .font(.custom("Kalam-Bold", size: 15))
                         .foregroundColor(.black)
                         .frame(width: 200)
+                        .offset(x: 10)
                 }
                 .frame(maxWidth: 350)
                 .padding(.bottom, 0)

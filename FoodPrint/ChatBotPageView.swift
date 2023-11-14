@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct ChatbotPageView: View {
+    @State private var TOKEN: String = "" // DONOT PUSH ONTO GITHUB
+    
     @State private var messageText = ""
     @State var messages: [String] = ["Welcome to Foodprint Personal Diet Assistant!"]
     
@@ -46,7 +48,7 @@ struct ChatbotPageView: View {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Bearer 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", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer \(TOKEN)", forHTTPHeaderField: "Authorization")
         request.httpBody = payload
         let semaphore = DispatchSemaphore(value: 0)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
@@ -82,7 +84,7 @@ struct ChatbotPageView: View {
                     .font(.custom("Kalam-Bold", size: 40))
                     .bold()
                 Image(systemName: "bubble.left.fill")
-                    .foregroundColor(Color.cyan)
+                    .foregroundColor(Color.blue)
             }
             ScrollView {
                 ForEach(messages, id: \.self) { message in
@@ -93,7 +95,7 @@ struct ChatbotPageView: View {
                             Text(newMessage)
                                 .padding()
                                 .foregroundColor(Color.black)
-                                .background(Color.cyan.opacity(0.5))
+                                .background(Color.blue.opacity(0.4))
                                 .cornerRadius(20)
                                 .padding(.horizontal, 16)
                                 .padding(.bottom, 10)
