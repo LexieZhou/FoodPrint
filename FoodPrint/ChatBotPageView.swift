@@ -12,27 +12,39 @@ struct ChatbotPageView: View {
     @State private var TOKEN: String = "" // DONOT PUSH ONTO GITHUB
     
     @State private var messageText = ""
+    @State private var recordText = ""
+    @State private var records: [Record] = []
     @State var messages: [String] = ["Welcome to Foodprint Personal Diet Assistant!"]
     
+    private func retrieveRecords() {
+        FirebaseDataManager.retrieveRecords { records in
+            self.records = records
+            let timestamp = Array(records.map{$0.timestamp})
+            let height = Array(records.map{$0.height})
+            let weight = Array(records.map{$0.weight})
+            let foodCategory = Array(records.map{$0.foodCategory})
+            let calories = Array(records.map{$0.calories})
+            recordText = ""
+            for i in (max(timestamp.count - 100, 0) ..< timestamp.count) {
+                recordText = recordText + "\(i), \(timestamp[i]), \(height[i]), \(weight[i]), \(foodCategory[i]), \(calories[i])\\n"
+            }
+        }
+    }
+    
     func getBotResponse(messages: [String]) -> String {
-        
-        let tempMsg = messages.last!.replacingOccurrences(of: "[USER]", with: "")
+        retrieveRecords()
         var GPTResponse: String = "That's cool!"
-        
-//        TODO: Change the content to include all historical messages
-//        TODO: Modify the system message to make it a Diet Assistant
-//        let _ = print(messages) // What's to be fed into GPT
         
         guard let url = URL(string: "https://api.openai.com/v1/chat/completions"),
             let payload = """
   {
     "model": "gpt-4-1106-preview",
     "temperature": 0.7,
-    "max_tokens": 200,
+    "max_tokens": 1000,
     "messages": [
       {
         "role": "system",
-        "content": "You are a helpful Personal Diet Assistant providing diet advices to help the user. The user is currently practicing 16:8 intermittent fasting. It involves an 8-hour window for food consumption and fasting for 16 hours. Your answers need to be concise with no more than 50 words."
+        "content": "You are a helpful Personal Diet Assistant providing diet advices to help the user. Your answers need to be concise with no more than 50 words. The user is practicing 16:8 intermittent fasting, which involves an 8-hour window for food consumption and fasting for 16 hours. Please make use of the following user record to come up with personalized advice. The record is in comma-separated format, where new lines are denotted as \\n. \\n record_id, timestamp, user_height, user_weight, food_eaten, kilogram_calories_of_food_eaten\\n\(self.recordText)\\nThe current timestamp is 20/10/2023 19:00."
       },
       \(messageThread(messages: messages))
     ]
@@ -99,6 +111,7 @@ struct ChatbotPageView: View {
     }
     
     var body: some View {
+        let _ = retrieveRecords()
         VStack{
             HStack{
                 Text("iBot")
