@@ -34,10 +34,7 @@ struct ChatbotPageView: View {
         "role": "system",
         "content": "You are a helpful Personal Diet Assistant providing diet advices to help the user. The user is currently practicing 16:8 intermittent fasting. It involves an 8-hour window for food consumption and fasting for 16 hours. Your answers need to be concise with no more than 50 words."
       },
-      {
-        "role": "user",
-        "content": "\(tempMsg)"
-      }
+      \(messageThread(messages: messages))
     ]
   }
 """.data(using: .utf8) else
@@ -63,6 +60,30 @@ struct ChatbotPageView: View {
         }.resume()
         semaphore.wait()
         return GPTResponse
+    }
+    
+    func messageThread(messages: [String]) -> String {
+        var resStr: String = ""
+        var resArray: [String] = []
+        for i in (0 ..< messages.count) {
+            if messages[i].contains("[USER]"){
+                resArray.append("""
+      {
+        "role": "user",
+        "content": "\(messages[i].replacingOccurrences(of: "[USER]", with: ""))"
+      }
+""")
+            } else {
+                resArray.append("""
+      {
+        "role": "assistant",
+        "content": "\(messages[i])"
+      }
+""")
+            }
+        }
+        resStr = resArray.joined(separator: ",\n")
+        return resStr
     }
     
     func sendMessage(message: String) {
