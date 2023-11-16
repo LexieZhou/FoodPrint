@@ -134,10 +134,26 @@ struct HomePageView: View {
                                     vm.showingAlert = false
                                 }
                             }
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                         }
                         
                         //MARK: camera
-                        if vm.isActive {
+                        if vm.isActive && vm.isEating {
                             VStack {
                                 Button(action: {
                                     self.showSheet = true
@@ -175,6 +191,21 @@ struct HomePageView: View {
                                 }.sheet(isPresented: $showingAddRecord) {
                                     AddRecordSheet(isPresented: $showingAddRecord)
                                 }
+                            }.offset(x: 125, y: 50)
+                        } else if vm.isActive && !vm.isEating{
+                            VStack { 
+                                Image(systemName: "camera.circle.fill")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 65, height: 65)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.6356717139, green: 0.6356717139, blue: 0.6356717139, alpha: 1)))
+                                    .padding(.bottom, 5)
+                                
+                                Image(systemName: "pencil.circle.fill")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 65, height: 65)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.6356717139, green: 0.6356717139, blue: 0.6356717139, alpha: 1)))
                             }.offset(x: 125, y: 50)
                         }
                         
@@ -257,22 +288,7 @@ struct HomePageView: View {
         }
     }
         
-        
-//        ZStack(alignment: .top) {
-//            if showView {
-//                    RoundedRectangle(cornerRadius: 15)
-//                      .fill(Color.blue)
-//                      .frame(
-//                        width: UIScreen.main.bounds.width * 0.9,
-//                        height: UIScreen.main.bounds.height * 0.1
-//                      )
-//                      .transition(.asymmetric(
-//                        insertion: .move(edge: .top),
-//                        removal: .move(edge: .top)
-//                      ))
-//            }
-//        }
-//
+
     
     let formatter: DateFormatter = {
             let formatter = DateFormatter()

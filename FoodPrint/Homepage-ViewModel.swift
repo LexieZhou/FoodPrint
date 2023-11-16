@@ -27,38 +27,27 @@ extension HomePageView {
             didSet {
                 self.time = "\(Int(fastingTime)):00:00"
             }
-        }//fixed or can be defined by users, unit is hours
+        }
         
         @Published var initialTime = Date()//should not be 0, should be current time
         @Published var endDate = Date() //ending time
         @Published var batteryImg = Image("Battery6")
         
-//        let components = Calendar.current.dateComponents([.hour, .minute], from: someDate)
-//        let hour = components.hour ?? 0
-//        let minute = components.minute ?? 0
-//        Text(Date.now, format: .dateTime.hour().minute())
-//        Text(Date.now.formatted(date: .long, time: .shortened))
         
         func startEating(eatingTime: Float) {
-            //self.showingAlert = false
             self.isActive = true
             self.endDate = Date()
             self.isEating = true
             self.initialTime = Date()
             self.endDate = Calendar.current.date(byAdding: .hour, value: Int(eatingTime), to: endDate)!
-            //self.time = "\(Int(eatingCountingTime)):00:00"
-            //finishingTimeString
-//            print("end date ", endDate)
         }
         
         func startFasting(fastingTime: Float) {
-            //self.showingAlert = false
             self.isActive = true
             self.endDate = Date()
             self.isEating = false
+            self.initialTime = Date()
             self.endDate = Calendar.current.date(byAdding: .hour, value: Int(fastingTime), to: endDate)!
-            //self.time = "\(Int(fastingCountingTime)):00:00"
-            //finishingTimeString
         }
         
         func updateCountdown() {
