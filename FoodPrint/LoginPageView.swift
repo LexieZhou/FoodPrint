@@ -16,7 +16,7 @@ import FirebaseAuth
 struct LoginPageView: View {
     @State var email = ""
     @State var password = ""
-    @State var successLogin = false
+    @State private var successLogin = false
     @State private var showingUnsuccessAlert = false
     
     var body: some View {
@@ -84,11 +84,13 @@ struct LoginPageView: View {
                     .offset(y: 85)
                     .frame(width: 350)
                     
-                    Image("fastingClock")
-                        .resizable()
-                        .frame(width: 250, height: 140)
-                        .padding(.top)
-                        .offset(x: 100, y: 150)
+                    NavigationLink(destination: TabPageView().navigationBarBackButtonHidden(true)){
+                        Image("fastingClock")
+                            .resizable()
+                            .frame(width: 250, height: 140)
+                    }
+                    .padding(.top)
+                    .offset(x: 100, y: 150)
                 }
                 .frame(width: 280)
             }
