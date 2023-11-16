@@ -35,6 +35,28 @@ class FirebaseDataManager {
             completion(records)
         }
     }
+    static func writeRecord(record: Record) {
+        let databaseRef = Database.database().reference()
+        let newRecordRef = databaseRef.child("Records").childByAutoId()
+        
+        let recordData: [String: Any] = [
+            "UserId": record.userId,
+            "RecordID": record.recordId,
+            "Timestamp": record.timestamp,
+            "Weight": record.weight,
+            "Height": record.height,
+            "Food_category": record.foodCategory,
+            "Calories": record.calories
+        ]
+        
+        newRecordRef.setValue(recordData) { error, _ in
+            if let error = error {
+                print("Error writing record to Firebase: \(error.localizedDescription)")
+            } else {
+                print("Record written successfully.")
+            }
+        }
+    }
 }
 
 class Record {

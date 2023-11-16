@@ -29,7 +29,7 @@ struct LoginPageView: View {
     
     var content: some View {
         NavigationView {
-            ZStack{
+            ScrollView{
                 VStack{
                     Text("Login")
                         .font(.custom("Kalam-Bold", size: 50))
@@ -41,7 +41,8 @@ struct LoginPageView: View {
                         .foregroundColor(.gray)
                         .textFieldStyle(.plain)
                         .autocapitalization(.none)
-
+                        .offset(x: 60)
+                    
                     Rectangle()
                         .frame(width: 280, height: 1)
                         .foregroundColor(.gray)
@@ -50,7 +51,8 @@ struct LoginPageView: View {
                         .foregroundColor(.gray)
                         .textFieldStyle(.plain)
                         .autocapitalization(.none)
-
+                        .offset(x: 60)
+                    
                     Rectangle()
                         .frame(width: 280, height: 1)
                         .foregroundColor(.gray)
@@ -92,10 +94,10 @@ struct LoginPageView: View {
                     .padding(.top)
                     .offset(x: 100, y: 150)
                 }
-                .frame(width: 280)
+                .frame(width: 400, height: 600)
+                .ignoresSafeArea()
+                .padding(.bottom, 100)
             }
-            .ignoresSafeArea()
-            .padding(.bottom, 100)
         }
     }
     func login() {

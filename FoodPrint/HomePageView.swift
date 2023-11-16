@@ -384,7 +384,9 @@ struct RecordInput: View {
 //                                }
                         
                     } else if let containFood = calories_data.calories.first(where: { $0.Food.lowercased().contains(food.lowercased()) }) {
-                        Text("\(containFood.Calories)")
+                        let calculatedCalories = Double(containFood.Calories) * weight / 100
+                        let formattedCalories = String(format: "%.1f", calculatedCalories)
+                        Text("\(formattedCalories)")
                             .foregroundColor(.black)
                             .textFieldStyle(.plain)
                             .autocapitalization(.none)
@@ -439,6 +441,53 @@ class ReadData: ObservableObject  {
             print("Failed to decode JSON: \(error)")
         }
         
+    }
+}
+
+struct UserInfo: Codable, Identifiable {
+    
+    enum CodingKeys: CodingKey {
+        case UserID
+        case UserEmail
+        case Gender
+        case Height
+        case Weight
+        case Age
+        case FirstEat
+        case Streak
+    }
+    
+    var id = UUID()
+    var UserID: Int
+    var UserEmail: String
+    var Gender: String
+    var Height: Double
+    var Weight: Double
+    var Age: Int
+    var FirstEat: String
+    var Streak: Int
+    
+}
+
+class ReadUserData: ObservableObject  {
+    @Published var users = [UserInfo]()
+    init(){
+        loadUserData()
+    }
+    func loadUserData()  {
+        guard let url = Bundle.main.url(forResource: "User", withExtension: "json")
+            else {
+                print("Json file not found")
+                return
+            }
+        do {
+            let data = try Data(contentsOf: url)
+            let decoder = JSONDecoder()
+            let decodedUsers = try decoder.decode([UserInfo].self, from: data)
+            self.users = decodedUsers
+        } catch {
+            print("Failed to decode JSON: \(error)")
+        }
     }
 }
 
