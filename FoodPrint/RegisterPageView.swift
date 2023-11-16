@@ -99,12 +99,13 @@ struct RegisterPageView: View {
                             print("show next page")
                         }
                     }
-                    
-                    Image("fastingClock")
-                        .resizable()
-                        .frame(width: 250, height: 140)
-                        .padding(.top)
-                        .offset(x: 100, y: 170)
+                    NavigationLink(destination: TabPageView().navigationBarBackButtonHidden(true)){
+                        Image("fastingClock")
+                            .resizable()
+                            .frame(width: 250, height: 140)
+                    }
+                    .padding(.top)
+                    .offset(x: 100, y: 170)
                 }
                 .frame(width: 280)
             }
