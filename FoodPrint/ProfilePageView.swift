@@ -12,6 +12,7 @@ struct ProfilePageView: View {
     @State private var LogOut = false
     @State private var showingEditSheet = false
     @State private var showingRankingSheet = false
+    @ObservedObject var user_data = ReadUserData()
     @State var gender = "Female"
     @State var height = 160
     @State var weight = 55
@@ -61,7 +62,7 @@ struct ProfilePageView: View {
                     HStack (spacing: 20){
                         ZStack {
                             Rectangle()
-                                .foregroundColor(Color.yellow.opacity(0.2))
+                                .foregroundColor(Color.blue.opacity(0.2))
                                 .frame(width: 95, height: 60)
                                 .cornerRadius(10)
                                 .shadow(color: .gray, radius: 3, x: 0, y: 1)
@@ -78,7 +79,7 @@ struct ProfilePageView: View {
                         
                         ZStack {
                             Rectangle()
-                                .foregroundColor(Color.green.opacity(0.2))
+                                .foregroundColor(Color.blue.opacity(0.2))
                                 .frame(width: 95, height: 60)
                                 .cornerRadius(10)
                                 .shadow(color: .gray, radius: 3, x: 0, y: 1)
@@ -142,21 +143,20 @@ struct ProfilePageView: View {
                         .frame(width: 350, height: 1)
                         .foregroundColor(.gray)
                     
-                    NavigationLink(destination: WelcomePageView().navigationBarBackButtonHidden(true), isActive: $LogOut) {
-                        Button{
-                            LogOut = true
-                        } label: {
-                            Text("Log Out")
-                                .font(.custom("Kalam-Regular", size: 20))
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color(red: 0.7, green: 0.01, blue: 0.01))
-                            Image(systemName: "arrowshape.turn.up.backward")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 20, height: 20)
-                                .foregroundColor(Color(red: 0.7, green: 0.01, blue: 0.01))
-                        }
-                    }
+                    Button(action: {
+                        FoodPrintApp.resetToWelcomePage() // Call the resetToWelcomePage function
+                    }, label: {
+                        Text("Log Out")
+                            .font(.custom("Kalam-Regular", size: 20))
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color(red: 0.7, green: 0.01, blue: 0.01))
+                        Image(systemName: "arrowshape.turn.up.backward")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(Color(red: 0.7, green: 0.01, blue: 0.01))
+                    })
+                    
                     Rectangle()
                         .frame(width: 350, height: 1)
                         .foregroundColor(.gray)

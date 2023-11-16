@@ -36,13 +36,18 @@ struct FoodPrintApp: App {
         }
     }
     private func resetAppToWelcomePage() {
-        // Reset app state, such as user authentication, to log out the user
-        // ...
-        
-        // Create a new instance of the welcome page view
         let welcomePageView = WelcomePageView()
-        
-        // Reset the app's window root view controller to the welcome page view
+
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let window = windowScene.windows.first {
+            window.rootViewController = UIHostingController(rootView: welcomePageView)
+            window.makeKeyAndVisible()
+        }
+    }
+    
+    static func resetToWelcomePage() {
+        let welcomePageView = WelcomePageView()
+
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let window = windowScene.windows.first {
             window.rootViewController = UIHostingController(rootView: welcomePageView)

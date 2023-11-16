@@ -18,6 +18,7 @@
 		040979DC2AC16A0700E7AA7E /* Kalam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040979D92AC16A0600E7AA7E /* Kalam-Bold.ttf */; };
 		040979DD2AC16A0700E7AA7E /* Kalam-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */; };
 		040979E12AC16C3E00E7AA7E /* fastingImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 040979E02AC16C3E00E7AA7E /* fastingImg.png */; };
+		045354552B065B1E007BEBAE /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 045354542B065B1E007BEBAE /* User.json */; };
 		0485CB8C2AF7FAC30093B68E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485CB8B2AF7FAC30093B68E /* ViewController.swift */; };
 		0485CB902AF806240093B68E /* SwipingHeightPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485CB8F2AF806240093B68E /* SwipingHeightPage.swift */; };
 		0485CB922AF806CB0093B68E /* SwipingGenderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485CB912AF806CB0093B68E /* SwipingGenderPage.swift */; };
@@ -109,6 +110,7 @@
 		040979DA2AC16A0700E7AA7E /* Kalam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kalam-Regular.ttf"; path = "FoodPrint/Fonts/Kalam-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		040979DE2AC16B3B00E7AA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		040979E02AC16C3E00E7AA7E /* fastingImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fastingImg.png; path = FoodPrint/Imgs/fastingImg.png; sourceTree = SOURCE_ROOT; };
+		045354542B065B1E007BEBAE /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 		0485CB8B2AF7FAC30093B68E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0485CB8F2AF806240093B68E /* SwipingHeightPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingHeightPage.swift; sourceTree = "<group>"; };
 		0485CB912AF806CB0093B68E /* SwipingGenderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingGenderPage.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				04AAE4CC2ADB90E20016CE4C /* GoogleService-Info.plist */,
 				040979DE2AC16B3B00E7AA7E /* Info.plist */,
 				04AD1EAC2B03967B000E7AA3 /* Calories.json */,
+				045354542B065B1E007BEBAE /* User.json */,
 				040979DF2AC16C2000E7AA7E /* Imgs */,
 				040979D72AC1692200E7AA7E /* Fonts */,
 				040979AB2AC1635900E7AA7E /* FoodPrintApp.swift */,
@@ -465,6 +468,7 @@
 				0485CB9D2AF8B10B0093B68E /* age.jpg in Resources */,
 				9D03D8842AF9D56E009FDF47 /* Battery2.png in Resources */,
 				0485CB9C2AF8B10B0093B68E /* gender.jpg in Resources */,
+				045354552B065B1E007BEBAE /* User.json in Resources */,
 				040979B02AC1635A00E7AA7E /* Assets.xcassets in Resources */,
 				9D03D8802AF9D56E009FDF47 /* Battery1.png in Resources */,
 				9D03D8812AF9D56E009FDF47 /* Battery5.png in Resources */,
