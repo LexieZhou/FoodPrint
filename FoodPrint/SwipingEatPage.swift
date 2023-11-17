@@ -24,7 +24,7 @@ struct SwipingEatPageView: View {
             
             Image("eat")
                 .resizable()
-                .frame(width: 250, height: 230)
+                .frame(width: 200, height: 200)
                 .cornerRadius(30)
             
             DatePicker(
@@ -32,6 +32,7 @@ struct SwipingEatPageView: View {
                 selection: $selectedTime,
                 displayedComponents: [.hourAndMinute]
             )
+            .frame(width: 200)
             .datePickerStyle(.wheel)
             .labelsHidden()
             
