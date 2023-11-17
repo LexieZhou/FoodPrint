@@ -55,8 +55,11 @@ struct RecordPageView: View {
                     let key = String(str.components(separatedBy: " ")[0])
                     dict[key] = str
                 }
-            print(dict.values)
-            self.daily_data = data.filter { dict.values.contains($0.0) }
+            self.daily_data = data.filter { dict.values.contains($0.0) }.suffix(30).map {
+                (datetime, weight) in
+                let dateString = datetime.components(separatedBy: " ")[0]
+                return (dateString, weight)
+            }
         }
     }
 }
