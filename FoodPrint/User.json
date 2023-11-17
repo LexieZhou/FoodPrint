@@ -1,0 +1,21 @@
+[
+    {
+        "UserID": 1,
+        "UserEmail": "Jenny@gmail.com",
+        "gender": "Female",
+        "Height": 1.68,
+        "Weight": 60,
+        "Age": 21,
+        "FirstEat": "10:00AM",
+        "Streak": 113
+    },
+    {
+        "UserID": 2,
+        "UserEmail": "zihan2@connect.hku.hk",
+        "gender": "Female",
+        "Height": 1.66,
+        "Weight": 50,
+        "Age": 21,
+        "Streak": 113
+  }
+]

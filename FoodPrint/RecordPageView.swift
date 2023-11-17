@@ -1,4 +1,4 @@
-//
+
 //  RecordPageView.swift
 //  FoodPrint
 //
@@ -11,15 +11,15 @@ import SwiftUICharts
 
 
 struct RecordPageView: View {
-    private let data: [Double] = [42.0, 25.8, 88.19, 15.0, 17]
-    private let labels: [String] = ["The answer", "Birthday", "2021-11-21", "My number"]
+    
     // the current date and time
     @State var selectedDate: Date = Date()
-    
-    
+    // access records stored in db
+    @State private var records: [Record] = []
+    @State private var data: [(String, Double)] = []
+    @State private var daily_data: [(String, Double)] = []
     
     var body: some View {
-        
         VStack{
             VStack() {
                 Text(selectedDate.formatted(date: .abbreviated, time: .omitted))
@@ -35,17 +35,39 @@ struct RecordPageView: View {
                     .datePickerStyle(.graphical)
                 Divider()
             }
-            Spacer()
-            
-            LineChartView(data: data, title: "7-day Weight")
-                .frame(width: 700, height: 300)
+            BarChartView(
+                data: ChartData(values: daily_data),
+                title: "WeightPrint",
+                style: Styles.barChartStyleNeonBlueLight,
+                form: ChartForm.extraLarge
+            ).padding()
+        }.onAppear{
+            retrieveRecords()
         }
-        
+    }
+    
+    private func retrieveRecords() {
+        FirebaseDataManager.retrieveRecords { records in
+            self.records = records
+            self.data = Array(zip(records.map{$0.timestamp}, records.map{$0.weight}))
+            var dict: [String: String] = [:] // Last timestemp for each day
+                for (str, _) in data {
+                    let key = String(str.components(separatedBy: " ")[0])
+                    dict[key] = str
+                }
+            self.daily_data = data.filter { dict.values.contains($0.0) }.suffix(30).map {
+                (datetime, weight) in
+                let dateString = datetime.components(separatedBy: " ")[0]
+                return (dateString, weight)
+            }
+        }
     }
 }
+
 
 struct RecordPageView_Previews: PreviewProvider {
     static var previews: some View {
         RecordPageView()
     }
 }
+

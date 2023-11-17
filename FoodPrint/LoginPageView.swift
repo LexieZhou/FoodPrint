@@ -16,7 +16,7 @@ import FirebaseAuth
 struct LoginPageView: View {
     @State var email = ""
     @State var password = ""
-    @State var successLogin = false
+    @State private var successLogin = false
     @State private var showingUnsuccessAlert = false
     
     var body: some View {
@@ -29,12 +29,11 @@ struct LoginPageView: View {
     
     var content: some View {
         NavigationView {
-            ZStack{
+            ScrollView{
                 VStack{
                     Text("Login")
                         .font(.custom("Kalam-Bold", size: 50))
                         .padding(.bottom, 50)
-                        .padding(.top, 10)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.black)
                     
@@ -42,7 +41,8 @@ struct LoginPageView: View {
                         .foregroundColor(.gray)
                         .textFieldStyle(.plain)
                         .autocapitalization(.none)
-
+                        .offset(x: 60)
+                    
                     Rectangle()
                         .frame(width: 280, height: 1)
                         .foregroundColor(.gray)
@@ -51,11 +51,11 @@ struct LoginPageView: View {
                         .foregroundColor(.gray)
                         .textFieldStyle(.plain)
                         .autocapitalization(.none)
-
+                        .offset(x: 60)
+                    
                     Rectangle()
                         .frame(width: 280, height: 1)
                         .foregroundColor(.gray)
-                        .padding(.bottom)
                     
                     Button{
                         login()
@@ -74,7 +74,7 @@ struct LoginPageView: View {
                     .padding(.top)
                     .offset(y: 80)
                     
-                    NavigationLink(destination: RegisterPageView()){
+                    NavigationLink(destination: RegisterPageView().navigationBarBackButtonHidden(true)){
                         Text("No account? Register One!")
                             .bold()
                             .font(.custom("Kalam-Bold", size: 20))
@@ -82,12 +82,22 @@ struct LoginPageView: View {
                             .underline()
                     }
                     .padding(.top)
+                    .padding(.bottom, 10)
                     .offset(y: 85)
                     .frame(width: 350)
+                    
+                    NavigationLink(destination: TabPageView().navigationBarBackButtonHidden(true)){
+                        Image("fastingClock")
+                            .resizable()
+                            .frame(width: 250, height: 140)
+                    }
+                    .padding(.top)
+                    .offset(x: 100, y: 150)
                 }
-                .frame(width: 280)
+                .frame(width: 400, height: 600)
+                .ignoresSafeArea()
+                .padding(.bottom, 100)
             }
-            .ignoresSafeArea()
         }
     }
     func login() {
