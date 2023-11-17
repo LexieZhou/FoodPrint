@@ -22,7 +22,7 @@ struct SwipingGenderPageView: View {
             
             Image("gender")
                 .resizable()
-                .frame(width: 250, height: 250)
+                .frame(width: 200, height: 200)
                 .cornerRadius(30)
                 .padding(.bottom, 50)
             

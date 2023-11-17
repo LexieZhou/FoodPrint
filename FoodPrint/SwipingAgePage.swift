@@ -21,7 +21,7 @@ struct SwipingAgePageView: View {
                 .foregroundColor(.black)
             Image("age")
                 .resizable()
-                .frame(width: 250, height: 250)
+                .frame(width: 200, height: 200)
                 .cornerRadius(30)
                 .padding(.bottom, 30)
             
@@ -30,8 +30,10 @@ struct SwipingAgePageView: View {
                     Text("\(age)")
                 }
             }
+            .frame(width: 200)
             .pickerStyle(.wheel)
             .labelsHidden()
+            .padding(.bottom, 5)
             
             Text("Selected Age: \(selectedAge)")
                 .font(.custom("Kalam-Regular", size: 20))
