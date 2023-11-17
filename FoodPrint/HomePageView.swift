@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct HomePageView: View {
-    @State private var TOKEN: String = "" // DONOT PUSH ONTO GITHUB
+    @State private var TOKEN: String = "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" // DONOT PUSH ONTO GITHUB
     
     @State var progress = 0.5
     @State private var showAlert = false
@@ -134,22 +134,6 @@ struct HomePageView: View {
                                     vm.showingAlert = false
                                 }
                             }
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                         }
                         
                         //MARK: camera
@@ -220,6 +204,8 @@ struct HomePageView: View {
         }
         .sheet(isPresented: $showImagePicker, onDismiss: {
             var GPTResponse: String = "Ramen, 300 kcal."
+            var GPTResponseParsed: (String, Int?) = ("Unrecognized food", 0)
+            var notificationString: String = "Ramen, 300 kcal."
             var base64String = ""
             if let imageData = image?.jpegData(compressionQuality: 0.1) {
                 base64String = imageData.base64EncodedString()
@@ -243,7 +229,7 @@ struct HomePageView: View {
                 "content": [
                     {
                         "type": "text",
-                        "text": "Read the photo of a meal. Please responde with minimal number of words (at most 3 words) describing what food it is, and a number indicating the estimated energy this meal includes in kilogram calories."
+                        "text": "Read the photo of a meal. Please responde with minimal number of words (at most 3 words) describing what food it is, and a number (not a range) indicating the estimated energy this meal includes in kilogram calories. Format the response as: [FOOD] @ [ENERGY] kcal."
                     },
                     {
                         "type": "image_url",
@@ -274,17 +260,35 @@ struct HomePageView: View {
                     if let str = String(data: data, encoding: .utf8) {
                         print(str)
                         GPTResponse = String(String(str.components(separatedBy: "\"}, \"finish_details\": ")[0]).components(separatedBy: "content\": \"")[1])
+                        GPTResponseParsed = GPTResponseParser(GPTResponse: GPTResponse)
+                        notificationString = GPTResponseParsed.0 + ", " +  String(GPTResponseParsed.1 ?? 0) + " kcal."
+//                        GPTResponseParsed = GPTResponseParser(GPTResponse: GPTResponse).0 + ", " +  String(GPTResponseParser(GPTResponse: GPTResponse).1 ?? 0) + " kcal."
                         print(GPTResponse)
+                        print(GPTResponseParsed)
                     }
                 }.resume()
                 semaphore.wait()
-                notificationText = GPTResponse
+                notificationText = notificationString
                 showNotification = true
             }
         }) {
             let _ = print(self.$showImagePicker)
             ImagePicker(image: self.$image, isShown: self.$showImagePicker, sourceType: self.sourceType)
             
+        }
+    }
+    
+    func GPTResponseParser(GPTResponse: String) -> (String, Int?) {
+        if GPTResponse.contains("@") {
+            do {
+                let food = try GPTResponse.components(separatedBy: "@")[0].trimmingCharacters(in: .whitespacesAndNewlines)
+                let cal = try Int(GPTResponse.components(separatedBy: "@")[1].replacingOccurrences(of: "kcal.", with: "").trimmingCharacters(in: .whitespacesAndNewlines))
+                return (food, cal)
+            } catch {
+                return ("Unrecognized food", 0)
+            }
+        } else {
+            return ("Unrecognized food", 0)
         }
     }
         
