@@ -129,7 +129,7 @@ struct HomePageView: View {
                             .cornerRadius(10)
                             .offset(x: 0, y: 10)
                             .tint(.red)
-                            .alert("Are you sure you want to stop early? If you are fasting, you will fail today!", isPresented: $showAlert) {
+                            .alert(vm.isEating ? "Are you sure you don't want to eat any more?😎" : "If you give up, you will fail today😭...Remember to switch back to fasting after your little treat!", isPresented: $showAlert) {
                                 Button("Yes", action: vm.stopEarly)
                                 Button("Cancel", role: .cancel) {
                                     vm.showingAlert = false
