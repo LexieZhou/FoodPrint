@@ -7,9 +7,10 @@
 
 import Foundation
 import SwiftUI
+import Firebase
 
 struct HomePageView: View {
-    @State private var TOKEN: String = "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" // DONOT PUSH ONTO GITHUB
+    @State private var TOKEN: String = "" // DONOT PUSH ONTO GITHUB
     
     @State var progress = 0.5
     @State private var showAlert = false
@@ -151,17 +152,17 @@ struct HomePageView: View {
                                 }
                                 .actionSheet(isPresented:$showSheet) {
                                     ActionSheet(title: Text("Select Photo"),
-                                                message: Text("Take a photo to record your food"), buttons: [
-                                                    .default(Text("Photo Library")) {
-                                                        self.showImagePicker = true
-                                                        self.sourceType = .photoLibrary
-                                                    },
-                                                    .default(Text("Camera")) {
-                                                        self.showImagePicker = true
-                                                        self.sourceType = .camera
-                                                    },
-                                                    .cancel()
-                                                ])
+                                        message: Text("Take a photo to record your food"), buttons: [
+                                            .default(Text("Photo Library")) {
+                                                self.showImagePicker = true
+                                                self.sourceType = .photoLibrary
+                                            },
+                                            .default(Text("Camera")) {
+                                                self.showImagePicker = true
+                                                self.sourceType = .camera
+                                            },
+                                            .cancel()
+                                        ])
                                 }
                                 
                                 Button(action: {
@@ -320,6 +321,9 @@ struct BannerNotification: View {
                 .transition(.move(edge: .top))
                 .animation(.easeInOut)
                 .onAppear {
+                    if (text != "No photo selected.") {
+                        uploadRecordToDB(userId: 2, info: text)
+                    }
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         withAnimation {
                             self.hide()
@@ -331,87 +335,40 @@ struct BannerNotification: View {
         }
         
     }
+    // TODO: should be fine but haven't tested it yet
+    private func uploadRecordToDB(userId: Int, info: String) {
+        let userData = ReadUserData()
+        let users = userData.users
+        
+        var userHeight: Double = 0.0
+        var userWeight: Double = 0.0
+
+        if let user = users.first(where: { $0.UserID == userId }) {
+            userHeight = user.Height
+            userWeight = user.Weight
+        }
+        print("userHeight: \(userHeight)")
+        print("userWeight: \(userWeight)")
+        
+        let components = info.components(separatedBy: ", ")
+        let food = components.first ?? ""
+        let caloriesString = components.last?.replacingOccurrences(of: " kcal", with: "") ?? ""
+        let calories = Double(caloriesString) ?? 0.0
+        
+        print("food: \(food)")
+        print("calories: \(calories)")
+        
+        let timestamp = Timestamp()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+        let date = timestamp.dateValue()
+        let dateString = dateFormatter.string(from: date)
+        FirebaseDataManager.writeRecord(record: Record(userId: 2, recordId: 240, timestamp: dateString, weight: userWeight, height: userHeight, foodCategory: food, calories: Int(calories) ?? 0))
+    }
     
     private func hide() {
         //hide the notification
         showNotification = false
-    }
-}
-
-
-struct RecordInput: View {
-    @State var food = ""
-    @State var weight: Double = 0.0
-    @ObservedObject var calories_data = ReadData()
-//    @Binding var totalCalories: Double
-    
-    var body: some View {
-        HStack {
-            VStack {
-                TextField("Ramen", text: $food)
-                    .foregroundColor(.black)
-                    .textFieldStyle(.plain)
-                    .autocapitalization(.none)
-            }
-            .padding()
-            .background(Color.white)
-            .cornerRadius(10)
-            .shadow(color: .gray, radius: 1, x: 0, y: 1)
-            .frame(width: 130)
-            
-            VStack {
-                TextField("", value: $weight, format: .number)
-                    .foregroundColor(.black)
-                    .textFieldStyle(.plain)
-                    .autocapitalization(.none)
-            }
-            .padding()
-            .background(Color.white)
-            .cornerRadius(10)
-            .shadow(color: .gray, radius: 1, x: 0, y: 1)
-            .frame(width: 100)
-            
-            Spacer()
-            
-            if (food != "" && weight != 0.0) {
-                VStack {
-                    if let matchingFood = calories_data.calories.first(where: { $0.Food.lowercased() == food.lowercased() }) {
-                        let calculatedCalories = Double(matchingFood.Calories) * weight / 100
-                        let formattedCalories = String(format: "%.1f", calculatedCalories)
-                        Text("\(formattedCalories)")
-                            .foregroundColor(.black)
-                            .textFieldStyle(.plain)
-                            .autocapitalization(.none)
-                            .frame(width: 100, height: 20)
-//                                .onChange(of: calculatedCalories) { newValue in
-//                                    totalCalories += newValue
-//                                }
-                        
-                    } else if let containFood = calories_data.calories.first(where: { $0.Food.lowercased().contains(food.lowercased()) }) {
-                        let calculatedCalories = Double(containFood.Calories) * weight / 100
-                        let formattedCalories = String(format: "%.1f", calculatedCalories)
-                        Text("\(formattedCalories)")
-                            .foregroundColor(.black)
-                            .textFieldStyle(.plain)
-                            .autocapitalization(.none)
-                            .frame(width: 100, height: 20)
-                    } else {
-                        Text("Null")
-                            .foregroundColor(.black)
-                            .textFieldStyle(.plain)
-                            .autocapitalization(.none)
-                            .frame(width: 100, height: 20)
-                    }
-                }
-                .padding()
-                .background(Color.white)
-                .cornerRadius(10)
-                .shadow(color: .gray, radius: 1, x: 0, y: 1)
-            }
-            
-        }
-        .frame(maxWidth: 400)
-        .padding()
     }
 }
 
@@ -447,9 +404,8 @@ class ReadData: ObservableObject  {
         
     }
 }
-
+// user info
 struct UserInfo: Codable, Identifiable {
-    
     enum CodingKeys: CodingKey {
         case UserID
         case UserEmail
@@ -500,7 +456,9 @@ struct AddRecordSheet: View {
     @Binding var isPresented: Bool
     @State private var recordInputCount = 1
     @State private var showRecordOutBoundAlert = false
-//    @State var totalCalories = 0.0
+    @State var allFood = ""
+    @State var totalCalories = 0.0
+    
     
     var body: some View {
         ScrollView {
@@ -519,7 +477,6 @@ struct AddRecordSheet: View {
                         .padding()
                     
                     Button(action: {
-                        // add record
                         recordInputCount += 1
                         if (recordInputCount > 4) {
                             showRecordOutBoundAlert = true
@@ -557,18 +514,17 @@ struct AddRecordSheet: View {
                 .padding(.bottom, 0)
                 
                 ForEach(0..<recordInputCount, id: \.self) { index in
-//                    RecordInput(totalCalories: $totalCalories)
-                    RecordInput()
+                    RecordInput(allFood: $allFood, totalCalories: $totalCalories)
                 }
                 
                 VStack {
                     Rectangle()
                         .frame(width: 350, height: 1)
                         .foregroundColor(.gray)
-//                    Text("Total Calories Calculated: \(totalCalories)")
-//                        .font(.custom("Kalam-Bold", size: 20))
-//                        .foregroundColor(.gray)
-//                        .padding()
+                    Text("Total Calories Calculated: \(String(format: "%.2f", totalCalories))")
+                        .font(.custom("Kalam-Bold", size: 20))
+                        .foregroundColor(.gray)
+                        .padding()
                 }.padding(.bottom, 5)
                 
                 ZStack {
@@ -577,8 +533,8 @@ struct AddRecordSheet: View {
                         .frame(width: 120, height: 60)
                     
                     Button(action: {
-                        // save action
                         isPresented = false
+                        uploadRecord(userId: 2, food: allFood, calories: totalCalories)
                         
                     }) {
                         Text("Record")
@@ -598,7 +554,132 @@ struct AddRecordSheet: View {
         .frame(maxWidth: .infinity, maxHeight: 800)
         .padding(.top, 16)
     }
+    
+    func uploadRecord(userId: Int, food: String, calories: Double) {
+        let userData = ReadUserData()
+        let users = userData.users
+        
+        var userHeight: Double = 0.0
+        var userWeight: Double = 0.0
+
+        if let user = users.first(where: { $0.UserID == userId }) {
+            userHeight = user.Height
+            userWeight = user.Weight
+        }
+        
+        let timestamp = Timestamp()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+        let date = timestamp.dateValue()
+        let dateString = dateFormatter.string(from: date)
+        FirebaseDataManager.writeRecord(record: Record(userId: 2, recordId: 240, timestamp: dateString, weight: userWeight, height: userHeight, foodCategory: allFood, calories: Int(totalCalories)))
+    }
 }
+
+struct RecordInput: View {
+    @State var food = ""
+    @State var weight: Double = 0.0
+    @ObservedObject var calories_data = ReadData()
+    @Binding var allFood: String
+    @Binding var totalCalories: Double
+    @State private var previousValue: Double = 0.0
+    @State private var previousFood: String = ""
+    
+    var body: some View {
+        HStack {
+            VStack {
+                TextField("Ramen", text: $food)
+                    .foregroundColor(.black)
+                    .textFieldStyle(.plain)
+                    .autocapitalization(.none)
+            }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+            .shadow(color: .gray, radius: 1, x: 0, y: 1)
+            .frame(width: 130)
+            
+            VStack {
+                TextField("", value: $weight, format: .number)
+                    .foregroundColor(.black)
+                    .textFieldStyle(.plain)
+                    .autocapitalization(.none)
+            }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+            .shadow(color: .gray, radius: 1, x: 0, y: 1)
+            .frame(width: 100)
+            
+            Spacer()
+            
+            if (food != "" && weight != 0.0) {
+                VStack {
+                    if let matchingFood = calories_data.calories.first(where: { $0.Food.lowercased() == food.lowercased() }) {
+                        let calculatedCalories = Double(matchingFood.Calories) * weight / 100
+                        let formattedCalories = String(format: "%.1f", calculatedCalories)
+                        Text("\(formattedCalories)")
+                            .foregroundColor(.black)
+                            .textFieldStyle(.plain)
+                            .autocapitalization(.none)
+                            .frame(width: 100, height: 20)
+                            .onChange(of: calculatedCalories) { newValue in
+                                totalCalories = totalCalories - previousValue + newValue
+                                previousValue = newValue
+                            }
+                            .onAppear {
+                                updateAllFood(food)
+                            }
+                        
+                    } else if let containFood = calories_data.calories.first(where: { $0.Food.lowercased().contains(food.lowercased()) }) {
+                        let calculatedCalories = Double(containFood.Calories) * weight / 100
+                        let formattedCalories = String(format: "%.1f", calculatedCalories)
+                        Text("\(formattedCalories)")
+                            .foregroundColor(.black)
+                            .textFieldStyle(.plain)
+                            .autocapitalization(.none)
+                            .frame(width: 100, height: 20)
+                            .onChange(of: calculatedCalories) { newValue in
+                                totalCalories = totalCalories - previousValue + newValue
+                                previousValue = newValue
+                            }
+                            .onAppear {
+                                updateAllFood(food)
+                            }
+                    } else {
+                        Text("Null")
+                            .foregroundColor(.black)
+                            .textFieldStyle(.plain)
+                            .autocapitalization(.none)
+                            .frame(width: 100, height: 20)
+                    }
+                }
+                .padding()
+                .background(Color.white)
+                .cornerRadius(10)
+                .shadow(color: .gray, radius: 1, x: 0, y: 1)
+            }
+            
+        }
+        .frame(maxWidth: 400)
+        .padding()
+    }
+    func updateAllFood(_ newFood: String) {
+        if !previousFood.isEmpty {
+            if allFood.contains(", \(previousFood)") {
+                allFood = allFood.replacingOccurrences(of: ", \(previousFood)", with: "")
+            } else {
+                allFood = allFood.replacingOccurrences(of: previousFood, with: "")
+            }
+        }
+        if !allFood.isEmpty && !newFood.isEmpty {
+            allFood.append(", ")
+        }
+        allFood.append(newFood)
+        previousFood = newFood
+    }
+}
+
 
 
 struct HomePageView_Previews: PreviewProvider {

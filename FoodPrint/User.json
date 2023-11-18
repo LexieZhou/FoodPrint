@@ -2,7 +2,7 @@
     {
         "UserID": 1,
         "UserEmail": "Jenny@gmail.com",
-        "gender": "Female",
+        "Gender": "Female",
         "Height": 1.68,
         "Weight": 60,
         "Age": 21,
@@ -12,10 +12,11 @@
     {
         "UserID": 2,
         "UserEmail": "zihan2@connect.hku.hk",
-        "gender": "Female",
+        "Gender": "Female",
         "Height": 1.66,
         "Weight": 50,
         "Age": 21,
+        "FirstEat": "11:32AM",
         "Streak": 113
   }
 ]
