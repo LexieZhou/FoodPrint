@@ -32,7 +32,7 @@ struct HomePageView: View {
             
             ZStack {
                 if showNotification {
-                    BannerNotification(text: notificationText, color: .green, showNotification: $showNotification)
+                    BannerNotification(text: notificationText, color: notificationText == "No photo selected." ? .red : .green, showNotification: $showNotification)
                         .transition(.move(edge: .top))
                         .animation(.easeInOut)
                         .offset(x:0, y: -350)
