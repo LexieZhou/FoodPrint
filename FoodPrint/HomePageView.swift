@@ -322,7 +322,7 @@ struct BannerNotification: View {
                 .animation(.easeInOut)
                 .onAppear {
                     if (text != "No photo selected.") {
-                        uploadRecordToDB(userId: 2, info: text)
+                        uploadRecordToDB(userId: 1, info: text)
                     }
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         withAnimation {
@@ -335,7 +335,6 @@ struct BannerNotification: View {
         }
         
     }
-    // TODO: should be fine but haven't tested it yet
     private func uploadRecordToDB(userId: Int, info: String) {
         let userData = ReadUserData()
         let users = userData.users
@@ -347,23 +346,18 @@ struct BannerNotification: View {
             userHeight = user.Height
             userWeight = user.Weight
         }
-        print("userHeight: \(userHeight)")
-        print("userWeight: \(userWeight)")
         
         let components = info.components(separatedBy: ", ")
         let food = components.first ?? ""
         let caloriesString = components.last?.replacingOccurrences(of: " kcal", with: "") ?? ""
         let calories = Double(caloriesString) ?? 0.0
         
-        print("food: \(food)")
-        print("calories: \(calories)")
-        
         let timestamp = Timestamp()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
         let date = timestamp.dateValue()
         let dateString = dateFormatter.string(from: date)
-        FirebaseDataManager.writeRecord(record: Record(userId: 2, recordId: 240, timestamp: dateString, weight: userWeight, height: userHeight, foodCategory: food, calories: Int(calories) ?? 0))
+        FirebaseDataManager.writeRecord(record: Record(userId: 1, recordId: 240, timestamp: dateString, weight: userWeight, height: userHeight, foodCategory: food, calories: Int(calories) ?? 0))
     }
     
     private func hide() {
@@ -499,7 +493,7 @@ struct AddRecordSheet: View {
                         .foregroundColor(.black)
                         .frame(width: 100)
                         .offset(x: 20)
-                    Text("Weight")
+                    Text("Mass")
                         .font(.custom("Kalam-Bold", size: 15))
                         .foregroundColor(.black)
                         .frame(width: 100)
@@ -534,7 +528,7 @@ struct AddRecordSheet: View {
                     
                     Button(action: {
                         isPresented = false
-                        uploadRecord(userId: 2, food: allFood, calories: totalCalories)
+                        uploadRecord(userId: 1, food: allFood, calories: totalCalories)
                         
                     }) {
                         Text("Record")
@@ -572,7 +566,7 @@ struct AddRecordSheet: View {
         dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
         let date = timestamp.dateValue()
         let dateString = dateFormatter.string(from: date)
-        FirebaseDataManager.writeRecord(record: Record(userId: 2, recordId: 240, timestamp: dateString, weight: userWeight, height: userHeight, foodCategory: allFood, calories: Int(totalCalories)))
+        FirebaseDataManager.writeRecord(record: Record(userId: 1, recordId: 240, timestamp: dateString, weight: userWeight, height: userHeight, foodCategory: allFood, calories: Int(totalCalories)))
     }
 }
 
@@ -588,7 +582,7 @@ struct RecordInput: View {
     var body: some View {
         HStack {
             VStack {
-                TextField("Ramen", text: $food)
+                TextField("Salmon", text: $food)
                     .foregroundColor(.black)
                     .textFieldStyle(.plain)
                     .autocapitalization(.none)

@@ -87,7 +87,7 @@ struct CalendarView: UIViewRepresentable {
             } else if selectedDate > today {
                 return nil
             } else if day % 5 == 0 {// when data is missing
-                return UIColor.gray.withAlphaComponent(0.3)
+                return UIColor.white
             } else if day % 4 != 0 {// when data shows that fasting is success
                 return UIColor.green.withAlphaComponent(0.3)
             } else if day % 4 == 0 {// when data shows that fasting is unsucess
