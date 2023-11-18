@@ -19,12 +19,12 @@ struct TabPageView: View {
             ChatbotPageView()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .tabItem{
-                    Label("Chatbot", systemImage: "message.circle.fill")
+                    Label("ChatBot", systemImage: "message.circle.fill")
                 }
             RecordPageView()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .tabItem{
-                    Label("Records", systemImage: "calendar.circle.fill")
+                    Label("Record", systemImage: "calendar.circle.fill")
                 }
             ProfilePageView()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)

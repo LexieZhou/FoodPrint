@@ -39,7 +39,7 @@ class FirebaseDataManager {
         let databaseRef = Database.database().reference()
         
         databaseRef.observeSingleEvent(of: .value) { snapshot in
-            let databaseLength = snapshot.childrenCount - 1
+            let databaseLength = snapshot.childrenCount
             let newRecordRef = databaseRef.child("\(databaseLength)")
             
             let recordData: [String: Any] = [

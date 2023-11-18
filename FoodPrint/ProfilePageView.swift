@@ -14,8 +14,8 @@ struct ProfilePageView: View {
     @State private var showingRankingSheet = false
     @ObservedObject var user_data = ReadUserData()
     @State var gender = "Female"
-    @State var height = 160
-    @State var weight = 55
+    @State var height = 168
+    @State var weight = 57
     
     var body: some View {
         NavigationView {

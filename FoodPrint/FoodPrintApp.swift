@@ -22,6 +22,7 @@ struct FoodPrintApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @Environment(\.scenePhase) private var scenePhase
+    @State private var showSheet = true
     
     var body: some Scene {
         WindowGroup {
@@ -56,11 +57,11 @@ struct FoodPrintApp: App {
     }
     
     static func resetToHomePage() {
-        let HomePageView = HomePageView()
+        let TabPageView = TabPageView()
 
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let window = windowScene.windows.first {
-            window.rootViewController = UIHostingController(rootView: HomePageView)
+            window.rootViewController = UIHostingController(rootView: TabPageView)
             window.makeKeyAndVisible()
         }
     }
