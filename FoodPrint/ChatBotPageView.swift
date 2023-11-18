@@ -14,7 +14,7 @@ struct ChatbotPageView: View {
     @State private var messageText = ""
     @State private var recordText = ""
     @State private var records: [Record] = []
-    @State var messages: [String] = ["Welcome to FoodPrint Personal Diet Assistant!"]
+    @State var messages: [String] = ["Welcome to Foodprint Personal Diet Assistant!"]
     
     private func retrieveRecords() {
         FirebaseDataManager.retrieveRecords { records in
@@ -54,7 +54,7 @@ struct ChatbotPageView: View {
     "messages": [
       {
         "role": "system",
-        "content": "You are a helpful FoodPrint Personal Diet Assistant providing diet advice to help the user. Your answers need to be concise with no more than 50 words. The user is practicing 16:8 intermittent fasting, which involves an 8-hour window for food consumption and fasting for 16 hours. The 8-hour window starts upon the record of the first meal of the day. Please make use of the following user record to come up with personalized advice. The record is in comma-separated format and in chronological order.\\n record_id, timestamp, user_height, user_weight, food_eaten, kilogram_calories_of_food_eaten\\n\(self.recordText)\\nThe current timestamp is 20/11/2023 12:14."
+        "content": "You are a helpful Personal Diet Assistant providing diet advices to help the user. Your answers need to be concise with no more than 50 words. The user is practicing 16:8 intermittent fasting, which involves an 8-hour window for food consumption and fasting for 16 hours. The 8-hour window starts upon the record of the first meal of the day. Please make use of the following user record to come up with personalized advice. The record is in comma-separated format and in chronological order.\\n record_id, timestamp, user_height, user_weight, food_eaten, kilogram_calories_of_food_eaten\\n\(self.recordText)\\nThe current timestamp is 20/11/2023 12:14."
       },
       \(messageThread(messages: messages))
     ]
@@ -124,7 +124,7 @@ struct ChatbotPageView: View {
         let _ = retrieveRecords()
         VStack{
             HStack{
-                Text("ChatBot")
+                Text("iBot")
                     .font(.custom("Kalam-Bold", size: 40))
                     .bold()
                 Image(systemName: "bubble.left.fill")
