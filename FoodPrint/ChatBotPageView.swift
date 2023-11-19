@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct ChatbotPageView: View {
-    @State private var TOKEN: String = "" // DO NOT PUSH ONTO GITHUB
+    @State private var TOKEN: String = "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" // DO NOT PUSH ONTO GITHUB
     
     @State private var messageText = ""
     @State private var recordText = ""
