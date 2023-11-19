@@ -19,7 +19,10 @@ struct RecordShortcuts: AppShortcutsProvider {
         "Record a meal",
         "Open Foodprint and record a meal",
         "Open Foodprint to record a meal",
-        "I have just eaten a meal. Could you help me record it?"
+        "I have just eaten a meal. Could you help me record it?",
+        "I am having my breakfast. Could you help me record it?",
+        "I am having my lunch. Could you help me record it?",
+        "I am having my dinner. Could you help me record it?"
       ],
       shortTitle: "Create a Meal Record",
       systemImageName: "camera.fill"

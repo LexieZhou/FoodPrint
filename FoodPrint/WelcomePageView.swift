@@ -19,7 +19,7 @@ struct WelcomePageView: View {
                         .aspectRatio(contentMode: .fill)
                         .edgesIgnoringSafeArea(.all)
                     VStack {
-                        Text("Welcome to\nFoodprint")
+                        Text("Welcome to\nFoodPrint 🐾")
                             .font(.custom("Kalam-Bold", size: 40))
                             .padding(.bottom, 200)
                             .padding(.top, 10)
