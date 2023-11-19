@@ -186,22 +186,41 @@ struct MealRecordSheet: View {
     }
 }
 
-// TODO: retrieve data !!!
+
 struct CalendarView: View {
+    @State private var isDataFetched = false
     @State var selectedDate: Date = Date()
     @State var isSheetVisible = false
-    @StateObject private var recordStore = RecordStore()
+    @State private var records: [Record] = []
     
     var body: some View {
-        CalendarViewRepresentable(selectedDate: $selectedDate, isSheetVisible: $isSheetVisible, records: $recordStore.records)
-            .sheet(isPresented: $isSheetVisible) {
-                MealRecordSheet(selectedDate: $selectedDate)
+        VStack {
+            if isDataFetched {
+                CalendarViewRepresentable(selectedDate: $selectedDate, isSheetVisible: $isSheetVisible, records: $records)
+                    .sheet(isPresented: $isSheetVisible) {
+                        MealRecordSheet(selectedDate: $selectedDate)
+                    }
+            }else {
+                Text("Loading...")
+                    .font(.custom("Kalam-Bold", size: 30))
+                    .foregroundColor(.black)
+                    .padding(.bottom, 50)
+            }
         }
         .onAppear{
-            recordStore.retrieveRecords()
+            fetchDataFromDatabase { fetchedRecords in
+                records = fetchedRecords
+                isDataFetched = true
+            }
+        }
+    }
+    func fetchDataFromDatabase(completion: @escaping ([Record]) -> Void) {
+        FirebaseDataManager.retrieveRecords { records in
+            completion(records)
         }
     }
 }
+
 class RecordStore: ObservableObject {
     @Published var records: [Record] = []
     
@@ -216,128 +235,108 @@ class RecordStore: ObservableObject {
 }
     
 struct CalendarViewRepresentable: UIViewRepresentable {
-    typealias UIViewType = FSCalendar
-    @Binding var selectedDate: Date
-    @Binding var isSheetVisible: Bool
-    @Binding var records: [Record]
-    
-    func makeUIView(context: Context) -> FSCalendar {
-        let calendar = FSCalendar()
-        calendar.appearance.headerTitleFont = UIFont(name: "Kalam-Bold", size: 25)
-        calendar.appearance.headerTitleColor = .blue
-        calendar.appearance.headerDateFormat = "MMMM"
-        calendar.appearance.titleFont = UIFont(name: "Kalam-Bold", size: 17)
-        calendar.appearance.weekdayFont = UIFont(name: "Kalam-Bold", size: 17)
-        calendar.appearance.weekdayTextColor = .blue.withAlphaComponent(0.5)
-        calendar.dataSource = context.coordinator
-        calendar.delegate = context.coordinator
-        calendar.scrollDirection = .horizontal
-        return calendar
-    }
-    func updateUIView(_ uiView: FSCalendar, context: Context) {
-
-    }
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-    
-    class Coordinator: NSObject, FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
-        var parent: CalendarViewRepresentable
-
-        init(_ parent: CalendarViewRepresentable) {
-            self.parent = parent
-        }
+        typealias UIViewType = FSCalendar
+        @Binding var selectedDate: Date
+        @Binding var isSheetVisible: Bool
+        @Binding var records: [Record]
         
-        func handleFetchedData() {
-            let records = parent.records
+        func makeUIView(context: Context) -> FSCalendar {
+            let calendar = FSCalendar()
+            calendar.appearance.headerTitleFont = UIFont(name: "Kalam-Bold", size: 25)
+            calendar.appearance.headerTitleColor = .blue
+            calendar.appearance.headerDateFormat = "MMMM"
+            calendar.appearance.titleFont = UIFont(name: "Kalam-Bold", size: 17)
+            calendar.appearance.weekdayFont = UIFont(name: "Kalam-Bold", size: 17)
+            calendar.appearance.weekdayTextColor = .blue.withAlphaComponent(0.5)
+            calendar.dataSource = context.coordinator
+            calendar.delegate = context.coordinator
+            calendar.scrollDirection = .horizontal
+            return calendar
         }
-        
-        func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
-            let calendar = Calendar.current
-            let day = calendar.component(.day, from: date)
-            return day % 2 == 0 ? 0 : 0
-
-        }
-        
-        func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-//            parent.selectedDate = date
-            parent.$selectedDate.wrappedValue = date
-            parent.isSheetVisible = true
-        }
-        func maximumDate(for calendar: FSCalendar) -> Date {
-            Date.now.addingTimeInterval(86400 * 30)
-        }
-        
-        func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, fillDefaultColorFor date: Date) -> UIColor? {
-            let calendar = Calendar.current
-            let today = calendar.startOfDay(for: Date())
-            let selectedDate = calendar.startOfDay(for: date)
-            let day = calendar.component(.day, from: date)
-            if selectedDate == today {
-                return UIColor.blue.withAlphaComponent(0.3)
-            } else if selectedDate > today {
-                return nil
-            } else if day % 5 == 0 {// when data is missing
-                return UIColor.white
-            } else if day % 4 != 0 {// when data shows that fasting is success
-                return UIColor.green.withAlphaComponent(0.3)
-            } else if day % 4 == 0 {// when data shows that fasting is unsucess
-                return UIColor.red.withAlphaComponent(0.3)
-            } else {
-                return UIColor.black.withAlphaComponent(0.5)
-            }
-//            if selectedDate == today {
-//                return UIColor.blue.withAlphaComponent(0.3)
-//            } else if SuccessOrNot(date: date) {
-//                return UIColor.green.withAlphaComponent(0.3)
-//            } else if !SuccessOrNot(date: date) {
-//                return UIColor.red.withAlphaComponent(0.3)
-//            } else {
-//                return UIColor.white
-//            }
-        }
-        
-        func SuccessOrNot(date: Date) -> Bool {
-            if parent.records.isEmpty {
-                print("Records array is empty")
-                return false
-            }
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+        func updateUIView(_ uiView: FSCalendar, context: Context) {
             
-            let filteredRecords = parent.records.filter { record in
-                guard let recordDate = dateFormatter.date(from: record.timestamp) else {
+        }
+        
+        func makeCoordinator() -> Coordinator {
+            Coordinator(self)
+        }
+        
+        class Coordinator: NSObject, FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
+            var parent: CalendarViewRepresentable
+            
+            init(_ parent: CalendarViewRepresentable) {
+                self.parent = parent
+                print(parent.records)
+            }
+            
+            func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
+                let calendar = Calendar.current
+                let day = calendar.component(.day, from: date)
+                return day % 2 == 0 ? 0 : 0
+                
+            }
+            
+            func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+                //            parent.selectedDate = date
+                parent.$selectedDate.wrappedValue = date
+                parent.isSheetVisible = true
+            }
+            func maximumDate(for calendar: FSCalendar) -> Date {
+                Date.now.addingTimeInterval(86400 * 30)
+            }
+            
+            func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, fillDefaultColorFor date: Date) -> UIColor? {
+                let calendar = Calendar.current
+                let today = calendar.startOfDay(for: Date())
+                let selectedDate = calendar.startOfDay(for: date)
+                if selectedDate == today {
+                    return UIColor.blue.withAlphaComponent(0.3)
+                } else if selectedDate > today {
+                    return nil
+                } else if selectedDate < calendar.date(from: DateComponents(year: calendar.component(.year, from: today), month: 9, day: 1))! { // no data before 9/1
+                    return UIColor.white
+                } else if SuccessOrNot(date: date) {
+                    return UIColor.green.withAlphaComponent(0.3)
+                } else if !SuccessOrNot(date: date) {
+                    return UIColor.red.withAlphaComponent(0.3)
+                } else {
+                    return UIColor.white
+                }
+            }
+            
+            func SuccessOrNot(date: Date) -> Bool {
+                if parent.records.isEmpty {
+                    print("Records array is empty")
+                    return false
+                }
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+                
+                let filteredRecords = parent.records.filter { record in
+                    guard let recordDate = dateFormatter.date(from: record.timestamp) else {
+                        return false // Invalid timestamp format
+                    }
+                    return Calendar.current.isDate(recordDate, inSameDayAs: date)
+                }
+                
+                guard let firstRecord = filteredRecords.min(by: { dateFormatter.date(from: $0.timestamp)! < dateFormatter.date(from: $1.timestamp)! }),
+                      let lastRecord = filteredRecords.max(by: { dateFormatter.date(from: $0.timestamp)! < dateFormatter.date(from: $1.timestamp)! }) else {
+                    print("No records found for the specified date")
+                    return false // No records found for the specified date
+                }
+                
+                guard let firstRecordDate = dateFormatter.date(from: firstRecord.timestamp),
+                      let lastRecordDate = dateFormatter.date(from: lastRecord.timestamp) else {
+                    print("Invalid timestamp format")
                     return false // Invalid timestamp format
                 }
-                return Calendar.current.isDate(recordDate, inSameDayAs: date)
-            }
-            print("Filtered Records: \(filteredRecords)")
-            
-            guard let firstRecord = filteredRecords.min(by: { dateFormatter.date(from: $0.timestamp)! < dateFormatter.date(from: $1.timestamp)! }),
-                  let lastRecord = filteredRecords.max(by: { dateFormatter.date(from: $0.timestamp)! < dateFormatter.date(from: $1.timestamp)! }) else {
-                print("No records found for the specified date")
-                return false // No records found for the specified date
-            }
-            print("First Record: \(firstRecord)")
-            print("Last Record: \(lastRecord)")
-            
-            guard let firstRecordDate = dateFormatter.date(from: firstRecord.timestamp),
-                  let lastRecordDate = dateFormatter.date(from: lastRecord.timestamp) else {
-                print("Invalid timestamp format")
-                return false // Invalid timestamp format
-            }
-            print("First Record Date: \(firstRecordDate)")
-            print("Last Record Date: \(lastRecordDate)")
 
-            let timeDifference = lastRecordDate.timeIntervalSince(firstRecordDate)
-            let hoursDifference = timeDifference / 3600 // Convert seconds to hours
-            print("Hours Difference: \(hoursDifference)")
-            return hoursDifference < 8
+                let timeDifference = lastRecordDate.timeIntervalSince(firstRecordDate)
+                let hoursDifference = timeDifference / 3600 // Convert seconds to hours
+                return hoursDifference < 8
+            }
         }
     }
-
-}
 
 struct RecordPageView_Previews: PreviewProvider {
     static var previews: some View {
