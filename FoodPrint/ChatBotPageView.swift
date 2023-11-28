@@ -10,11 +10,209 @@ import SwiftUI
 
 struct ChatbotPageView: View {
     @State private var TOKEN: String = "" // DO NOT PUSH ONTO GITHUB
-    
+        
     @State private var messageText = ""
     @State private var recordText = ""
     @State private var records: [Record] = []
-    @State var messages: [String] = ["Welcome to FoodPrint Personal Diet Assistant!"]
+//    @State var messages: [String] = ["Welcome to FoodPrint Personal Diet Assistant!"]
+    @StateObject var allMessages = Messages()
+    @State private var showSheet: Bool = false
+    @State private var showNotification: Bool = false
+    @State private var showImagePicker: Bool = false
+    @State private var image: UIImage?
+    @State private var sourceType: UIImagePickerController.SourceType = .camera
+    @State private var notificationText: String = "Photo selected!"
+    
+    var body: some View {
+        let _ = retrieveRecords()
+        VStack{
+            HStack{
+                Text("ChatBot")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .bold()
+                Image(systemName: "bubble.left.fill")
+                    .foregroundColor(Color.blue)
+            }
+            ScrollView (){
+                ForEach(allMessages.messages){ msg in
+                    if (msg.message.contains("[USER]")) {
+                        let newMessage = msg.message.replacingOccurrences(of: "[USER]", with: "")
+                        HStack {
+                            Spacer()
+                            
+                            if msg.photo == nil {
+                                Text(newMessage)
+                                    .padding()
+                                    .foregroundColor(Color.black)
+                                    .background(Color.blue.opacity(0.4))
+                                    .cornerRadius(20)
+                                    .padding(.horizontal, 16)
+                                    .padding(.bottom, 10)
+                            }
+                            else {
+                                Image(uiImage: UIImage(data: msg.photo!)!)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .cornerRadius(20)
+                                    .frame(width: 100, height: 100)
+                                    .padding(.horizontal, 16)
+                                    .padding(.top, 7)
+                                    .padding(.bottom, 20)
+                            }
+                            
+                        }
+                    } else {
+                        HStack {
+                            Text(msg.message)
+                                .padding()
+                                .foregroundColor(Color.black)
+                                .background(Color.gray.opacity(0.15))
+                                .cornerRadius(20)
+                                .padding(.horizontal, 16)
+                                .padding(.bottom, 10)
+                            Spacer()
+                        }
+                    }
+                }.rotationEffect(.degrees(180))
+            }.rotationEffect(.degrees(180))
+            .background(Color.gray.opacity(0.05))
+            
+            HStack {
+                TextField("Type Something ...", text: $messageText)
+                    .padding()
+                    .background(Color.gray.opacity(0.1))
+                    .cornerRadius(20)
+                    .onSubmit {
+                        if messageText != "" {
+//                            sendMessage(message: messageText, photo: nil)
+                            allMessages.messages.append(Message(id: UUID(), message: "[USER]" + messageText))
+                            allMessages.messages.append(Message(id: UUID(), message: getBotResponse(messages: allMessages.messages.map { $0.message })))
+                            messageText = ""
+                        }
+                    }
+                
+                // send message button
+                Button{
+                    if messageText != "" {
+//                        sendMessage(message: messageText, photo: nil)
+                        allMessages.messages.append(Message(id: UUID(), message: "[USER]" + messageText))
+                        // get GPT response
+                        allMessages.messages.append(Message(id: UUID(), message: getBotResponse(messages: allMessages.messages.map { $0.message })))
+                        messageText = ""
+                    }
+                } label: {
+                    Image(systemName: "paperplane.fill")
+                }
+                .font(.system(size: 26))
+                .padding(.horizontal, 2)
+                
+                // select image button
+                Button(action: {
+                    self.showSheet = true
+                }){
+                    Image(systemName: "camera.fill")
+                        .font(.system(size: 26))
+                        .padding(.horizontal, 2)
+                }
+                .actionSheet(isPresented:$showSheet) {
+                    ActionSheet(title: Text("Select Photo"),
+                        message: Text("Take a photo to record your food"), buttons: [
+                            .default(Text("Photo Library")) {
+                                self.showImagePicker = true
+                                self.sourceType = .photoLibrary
+                            },
+                            .default(Text("Camera")) {
+                                self.showImagePicker = true
+                                self.sourceType = .camera
+                            },
+                            .cancel()
+                        ])
+                }
+            }
+            .padding()
+        }
+        .sheet(isPresented: $showImagePicker, onDismiss:dismissImagePicker) {
+            let _ = print(self.$showImagePicker)
+            ImagePicker(image: self.$image, isShown: self.$showImagePicker, sourceType: self.sourceType)
+            
+            }
+        }
+    
+    func dismissImagePicker() {
+        var GPTResponse: String = "Ramen, 300 kcal."
+        var GPTResponseParsed: (String, Int?) = ("Unrecognized food", 0)
+        var notificationString: String = "Ramen, 300 kcal."
+        var base64String = ""
+        if let imageData = image?.jpegData(compressionQuality: 0.1) {
+            base64String = imageData.base64EncodedString()
+        }
+        if base64String == "" {
+            notificationText = "No photo selected."
+            // showNotification = true
+            // do nothing
+        } else {
+            // image is not nil
+            if let imageData = image?.jpegData(compressionQuality: 0.1) {
+                allMessages.writeMessage(id: UUID(), message: "[USER]", photo: imageData)
+            }
+            guard let url = URL(string: "https://api.openai.com/v1/chat/completions"),
+                  let payload = """
+                      {
+                        "model": "gpt-4-vision-preview",
+                        "max_tokens": 30,
+                        "messages": [
+                            {
+                                "role": "system",
+                                "content": [{"type": "text", "text": "You are a helpful and professional Diat Analyst."}]
+                            },
+                            {
+                                "role": "user",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Read the photo of a meal. Please responde with minimal number of words (at most 3 words) describing what food it is, and a number (not a range) indicating the estimated energy this meal includes in kilogram calories. Format the response as: [FOOD] @ [ENERGY] kcal."
+                                    },
+                                    {
+                                        "type": "image_url",
+                                        "image_url": {
+                                            "url": "data:image/jpeg;base64,{\(base64String)}",
+                                            "detail": "low"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                      }
+                    """.data(using: .utf8) else{return}
+
+                    var request = URLRequest(url: url)
+                    request.httpMethod = "POST"
+                    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+                    request.addValue("Bearer \(TOKEN)", forHTTPHeaderField: "Authorization")
+                    request.httpBody = payload
+                    let semaphore = DispatchSemaphore(value: 0)
+                    URLSession.shared.dataTask(with: request) { (data, response, error) in
+                        defer { semaphore.signal() }
+                        guard error == nil else { print(error!.localizedDescription); return }
+                        guard let data = data else { print("Empty data"); return }
+                        if let str = String(data: data, encoding: .utf8) {
+                            print(str)
+                            GPTResponse = String(String(str.components(separatedBy: "\"}, \"finish_details\": ")[0]).components(separatedBy: "content\": \"")[1])
+                            GPTResponseParsed = GPTResponseParser(GPTResponse: GPTResponse)
+                            notificationString = GPTResponseParsed.0 + ", " +  String(GPTResponseParsed.1 ?? 0) + " kcal."
+    //                        GPTResponseParsed = GPTResponseParser(GPTResponse: GPTResponse).0 + ", " +  String(GPTResponseParser(GPTResponse: GPTResponse).1 ?? 0) + " kcal."
+                            print(GPTResponse)
+                            print(GPTResponseParsed)
+                            }
+                        }.resume()
+                        semaphore.wait()
+                    // GPT respond
+                    allMessages.writeMessage(id: UUID(), message: notificationString, photo: nil)
+//                        notificationText = notificationString
+//                        showNotification = true
+                    }
+    }
     
     private func retrieveRecords() {
         FirebaseDataManager.retrieveRecords { records in
@@ -90,95 +288,50 @@ struct ChatbotPageView: View {
         for i in (0 ..< messages.count) {
             if messages[i].contains("[USER]"){
                 resArray.append("""
-      {
-        "role": "user",
-        "content": "\(messages[i].replacingOccurrences(of: "[USER]", with: ""))"
-      }
-""")
-            } else {
-                resArray.append("""
-      {
-        "role": "assistant",
-        "content": "\(messages[i].replacingOccurrences(of: "\n", with: "\\n"))"
-      }
-""")
-            }
-        }
+                  {
+                    "role": "user",
+                    "content": "\(messages[i].replacingOccurrences(of: "[USER]", with: ""))"
+                  }
+            """)
+                        } else {
+                            resArray.append("""
+                  {
+                    "role": "assistant",
+                    "content": "\(messages[i].replacingOccurrences(of: "\n", with: "\\n"))"
+                  }
+            """)
+                        }
+                    }
         resStr = resArray.joined(separator: ",\n")
         return resStr
     }
-    
-    func sendMessage(message: String) {
-        withAnimation {
-            messages.append("[USER]" + message)
-            self.messageText = ""
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            withAnimation {
-                messages.append(getBotResponse(messages: messages))
+    func GPTResponseParser(GPTResponse: String) -> (String, Int?) {
+        if GPTResponse.contains("@") {
+            do {
+                let food = try GPTResponse.components(separatedBy: "@")[0].trimmingCharacters(in: .whitespacesAndNewlines)
+                let cal = try Int(GPTResponse.components(separatedBy: "@")[1].replacingOccurrences(of: "kcal.", with: "").trimmingCharacters(in: .whitespacesAndNewlines))
+                return (food, cal)
+            } catch {
+                return ("Unrecognized food", 0)
             }
+        } else {
+            return ("Unrecognized food", 0)
         }
     }
-    
-    var body: some View {
-        let _ = retrieveRecords()
-        VStack{
-            HStack{
-                Text("ChatBot")
-                    .font(.custom("Kalam-Bold", size: 40))
-                    .bold()
-                Image(systemName: "bubble.left.fill")
-                    .foregroundColor(Color.blue)
-            }
-            ScrollView {
-                ForEach(messages, id: \.self) { message in
-                    if (message.contains("[USER]")) {
-                        let newMessage = message.replacingOccurrences(of: "[USER]", with: "")
-                        HStack {
-                            Spacer()
-                            Text(newMessage)
-                                .padding()
-                                .foregroundColor(Color.black)
-                                .background(Color.blue.opacity(0.4))
-                                .cornerRadius(20)
-                                .padding(.horizontal, 16)
-                                .padding(.bottom, 10)
-                            
-                        }
-                    } else {
-                        HStack {
-                            Text(message)
-                                .padding()
-                                .foregroundColor(Color.black)
-                                .background(Color.gray.opacity(0.15))
-                                .cornerRadius(20)
-                                .padding(.horizontal, 16)
-                                .padding(.bottom, 10)
-                            Spacer()
-                        }
-                    }
-                }.rotationEffect(.degrees(180))
-            }.rotationEffect(.degrees(180))
-                .background(Color.gray.opacity(0.05))
-            
-            HStack {
-                TextField("Type Something ...", text: $messageText)
-                    .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(20)
-                    .onSubmit {
-                        sendMessage(message: messageText)
-                    }
-                Button{
-                    sendMessage(message: messageText)
-                } label: {
-                    Image(systemName: "paperplane.fill")
-                }
-                .font(.system(size: 26))
-                .padding(.horizontal, 10)
-            }
-            .padding()
-        }
+}
+struct Message : Identifiable {
+    var id : UUID
+    var message: String
+    var photo: Data?
+}
+class Messages : ObservableObject {
+    @Published var messages : [Message] = []
+    init() {
+        messages.append(Message(id: UUID(), message: "Welcome to FoodPrint Personal Diet Assistant!"))
+    }
+    func writeMessage(id: UUID, message: String, photo: Data?) {
+        let newMessage = Message(id: id, message: message, photo: photo)
+        messages.append(newMessage)
     }
 }
 struct ChatbotPageView_Previews: PreviewProvider {
