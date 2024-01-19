@@ -31,5 +31,5 @@ Additionally, the WeightPrint block evaluates user weight changes and helps user
 Moving to the profile page, you'll find the basic information you recorded during the sign-up process. From the Profile Page, you can easily edit your information or explore the streak rankings. Also, you may choose to log out back to the welcome page. 
 
 ## Reference
- - [FSCalendar](https://github.com/WenchaoD/FSCalendar) 
- - [SwiftUIChart](https://github.com/willdale/SwiftUICharts)
+ - [FSCalendar](https://github.com/WenchaoD/FSCalendar)https://github.com/WenchaoD/FSCalendar 
+ - [SwiftUIChart](https://github.com/willdale/SwiftUICharts)https://github.com/willdale/SwiftUICharts
