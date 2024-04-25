@@ -260,10 +260,11 @@ struct HomePageView: View {
                     guard let data = data else { print("Empty data"); return }
                     if let str = String(data: data, encoding: .utf8) {
                         print(str)
-                        GPTResponse = String(String(str.components(separatedBy: "\"}, \"finish_details\": ")[0]).components(separatedBy: "content\": \"")[1])
+                        
+                        GPTResponse = String(str.components(separatedBy: "content\": \"")[1].components(separatedBy: "\"")[0])
                         GPTResponseParsed = GPTResponseParser(GPTResponse: GPTResponse)
-                        notificationString = GPTResponseParsed.0 + ", " +  String(GPTResponseParsed.1 ?? 0) + " kcal."
-//                        GPTResponseParsed = GPTResponseParser(GPTResponse: GPTResponse).0 + ", " +  String(GPTResponseParser(GPTResponse: GPTResponse).1 ?? 0) + " kcal."
+                        let caloriesString = String(GPTResponseParsed.1 ?? 0)
+                        notificationString = GPTResponseParsed.0 + ", " +  caloriesString + " kcal."
                         print(GPTResponse)
                         print(GPTResponseParsed)
                     }
@@ -283,10 +284,10 @@ struct HomePageView: View {
         if GPTResponse.contains("@") {
             do {
                 let food = try GPTResponse.components(separatedBy: "@")[0].trimmingCharacters(in: .whitespacesAndNewlines)
-                let cal = try Int(GPTResponse.components(separatedBy: "@")[1].replacingOccurrences(of: "kcal.", with: "").trimmingCharacters(in: .whitespacesAndNewlines))
+                let calString = try GPTResponse.components(separatedBy: "@")[1].replacingOccurrences(of: "kcal.", with: "").trimmingCharacters(in: .whitespacesAndNewlines)
+                print("calString: " + calString)
+                let cal = Int(calString)
                 return (food, cal)
-            } catch {
-                return ("Unrecognized food", 0)
             }
         } else {
             return ("Unrecognized food", 0)
