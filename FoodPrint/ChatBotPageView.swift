@@ -209,8 +209,7 @@ struct ChatbotPageView: View {
             guard let data = data else { print("Empty data"); return }
             if let str = String(data: data, encoding: .utf8) {
                 print(str)
-//                GPTResponse = String(String(String(str.components(separatedBy: "\n")[10]).components(separatedBy: "\"content\": ")[1]).dropLast().dropFirst())
-                GPTResponse = String(String(str.components(separatedBy: "\"}, \"finish_details\": ")[0]).components(separatedBy: "content\": \"")[1])
+                GPTResponse = String(str.components(separatedBy: "content\": \"")[1].components(separatedBy: "\"")[0])
                 print(GPTResponse)
             }
         }.resume()
