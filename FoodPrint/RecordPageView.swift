@@ -38,7 +38,7 @@ struct RecordPageView: View {
             self.dailyData = data.filter { dict.values.contains($0.0) }.suffix(30).map {
                 (datetime, weight) in
                 let dateString = datetime.components(separatedBy: " ")[0]
-                return (dateString, weight)
+                return (dateString, weight + 40) // TODO: the generated weight is too small
             }
         }
     }
@@ -263,6 +263,11 @@ struct CalendarViewRepresentable: UIViewRepresentable {
         
         class Coordinator: NSObject, FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
             var parent: CalendarViewRepresentable
+            let dateFormatter1: DateFormatter = {
+                let formatter = DateFormatter()
+                formatter.dateFormat = "yyyy-MM-dd"
+                return formatter
+            }()
             
             init(_ parent: CalendarViewRepresentable) {
                 self.parent = parent
@@ -281,6 +286,9 @@ struct CalendarViewRepresentable: UIViewRepresentable {
                 parent.$selectedDate.wrappedValue = date
                 parent.isSheetVisible = true
             }
+            func minimumDate(for calendar: FSCalendar) -> Date {
+                return self.dateFormatter1.date(from: "2023-09-01")!
+            }
             func maximumDate(for calendar: FSCalendar) -> Date {
                 Date.now.addingTimeInterval(86400 * 30)
             }
@@ -289,11 +297,12 @@ struct CalendarViewRepresentable: UIViewRepresentable {
                 let calendar = Calendar.current
                 let today = calendar.startOfDay(for: Date())
                 let selectedDate = calendar.startOfDay(for: date)
+                
                 if selectedDate == today {
                     return UIColor.blue.withAlphaComponent(0.3)
                 } else if selectedDate > today {
                     return nil
-                } else if selectedDate < calendar.date(from: DateComponents(year: calendar.component(.year, from: today), month: 9, day: 1))! { // no data before 9/1
+                } else if selectedDate < calendar.date(from: DateComponents(year: 2023, month: 9, day: 1))! { // no data before 2023/9/1
                     return UIColor.white
                 } else if SuccessOrNot(date: date) {
                     return UIColor.green.withAlphaComponent(0.3)

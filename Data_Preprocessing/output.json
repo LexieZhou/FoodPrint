@@ -1,0 +1,6077 @@
+[
+    {
+        "UserId": 1,
+        "RecordID": 1,
+        "Timestamp": "1/9/2023 9:13",
+        "Weight": 79.7,
+        "Height": 1.68,
+        "Food_category": "Pastrami",
+        "Calories": 510
+    },
+    {
+        "UserId": 1,
+        "RecordID": 2,
+        "Timestamp": "1/9/2023 12:47",
+        "Weight": 79.5,
+        "Height": 1.68,
+        "Food_category": "Sausages",
+        "Calories": 270
+    },
+    {
+        "UserId": 1,
+        "RecordID": 3,
+        "Timestamp": "1/9/2023 15:24",
+        "Weight": 79.4,
+        "Height": 1.68,
+        "Food_category": "Egg Rolls",
+        "Calories": 230
+    },
+    {
+        "UserId": 1,
+        "RecordID": 4,
+        "Timestamp": "2/9/2023 7:09",
+        "Weight": 79.5,
+        "Height": 1.68,
+        "Food_category": "Jerk Chicken",
+        "Calories": 330
+    },
+    {
+        "UserId": 1,
+        "RecordID": 5,
+        "Timestamp": "2/9/2023 13:23",
+        "Weight": 79.6,
+        "Height": 1.68,
+        "Food_category": "Pancake",
+        "Calories": 330
+    },
+    {
+        "UserId": 1,
+        "RecordID": 6,
+        "Timestamp": "2/9/2023 15:36",
+        "Weight": 79.7,
+        "Height": 1.68,
+        "Food_category": "Indian Curry",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 7,
+        "Timestamp": "3/9/2023 9:17",
+        "Weight": 79.4,
+        "Height": 1.68,
+        "Food_category": "Hash Browns",
+        "Calories": 810
+    },
+    {
+        "UserId": 1,
+        "RecordID": 8,
+        "Timestamp": "3/9/2023 12:58",
+        "Weight": 79.2,
+        "Height": 1.68,
+        "Food_category": "Lasagna",
+        "Calories": 720
+    },
+    {
+        "UserId": 1,
+        "RecordID": 9,
+        "Timestamp": "3/9/2023 16:59",
+        "Weight": 78.9,
+        "Height": 1.68,
+        "Food_category": "Hamburger",
+        "Calories": 220
+    },
+    {
+        "UserId": 1,
+        "RecordID": 10,
+        "Timestamp": "4/9/2023 7:53",
+        "Weight": 78.7,
+        "Height": 1.68,
+        "Food_category": "Jerk Chicken",
+        "Calories": 980
+    },
+    {
+        "UserId": 1,
+        "RecordID": 11,
+        "Timestamp": "4/9/2023 12:54",
+        "Weight": 78.8,
+        "Height": 1.68,
+        "Food_category": "Ratatouille",
+        "Calories": 310
+    },
+    {
+        "UserId": 1,
+        "RecordID": 12,
+        "Timestamp": "4/9/2023 15:39",
+        "Weight": 78.7,
+        "Height": 1.68,
+        "Food_category": "Macaroni and Cheese",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 13,
+        "Timestamp": "5/9/2023 9:07",
+        "Weight": 78.8,
+        "Height": 1.68,
+        "Food_category": "Ziti",
+        "Calories": 630
+    },
+    {
+        "UserId": 1,
+        "RecordID": 14,
+        "Timestamp": "5/9/2023 12:40",
+        "Weight": 78.7,
+        "Height": 1.68,
+        "Food_category": "Pasta",
+        "Calories": 340
+    },
+    {
+        "UserId": 1,
+        "RecordID": 15,
+        "Timestamp": "5/9/2023 16:19",
+        "Weight": 78.7,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 160
+    },
+    {
+        "UserId": 1,
+        "RecordID": 16,
+        "Timestamp": "6/9/2023 8:53",
+        "Weight": 78.7,
+        "Height": 1.68,
+        "Food_category": "Pad Thai",
+        "Calories": 580
+    },
+    {
+        "UserId": 1,
+        "RecordID": 17,
+        "Timestamp": "6/9/2023 13:24",
+        "Weight": 78.6,
+        "Height": 1.68,
+        "Food_category": "Fish and Chips",
+        "Calories": 700
+    },
+    {
+        "UserId": 1,
+        "RecordID": 18,
+        "Timestamp": "6/9/2023 16:15",
+        "Weight": 78.5,
+        "Height": 1.68,
+        "Food_category": "Donuts",
+        "Calories": 680
+    },
+    {
+        "UserId": 1,
+        "RecordID": 19,
+        "Timestamp": "7/9/2023 9:36",
+        "Weight": 78.6,
+        "Height": 1.68,
+        "Food_category": "Croissant",
+        "Calories": 560
+    },
+    {
+        "UserId": 1,
+        "RecordID": 20,
+        "Timestamp": "7/9/2023 13:49",
+        "Weight": 78.6,
+        "Height": 1.68,
+        "Food_category": "Gumbo",
+        "Calories": 550
+    },
+    {
+        "UserId": 1,
+        "RecordID": 21,
+        "Timestamp": "7/9/2023 16:32",
+        "Weight": 78.7,
+        "Height": 1.68,
+        "Food_category": "Tiramisu",
+        "Calories": 330
+    },
+    {
+        "UserId": 1,
+        "RecordID": 22,
+        "Timestamp": "8/9/2023 8:06",
+        "Weight": 78.5,
+        "Height": 1.68,
+        "Food_category": "Taco",
+        "Calories": 460
+    },
+    {
+        "UserId": 1,
+        "RecordID": 23,
+        "Timestamp": "8/9/2023 12:30",
+        "Weight": 78.2,
+        "Height": 1.68,
+        "Food_category": "Bagel",
+        "Calories": 840
+    },
+    {
+        "UserId": 1,
+        "RecordID": 24,
+        "Timestamp": "8/9/2023 15:13",
+        "Weight": 78.0,
+        "Height": 1.68,
+        "Food_category": "Vegan Burger",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 25,
+        "Timestamp": "9/9/2023 7:59",
+        "Weight": 77.7,
+        "Height": 1.68,
+        "Food_category": "Poutine",
+        "Calories": 430
+    },
+    {
+        "UserId": 1,
+        "RecordID": 26,
+        "Timestamp": "9/9/2023 12:43",
+        "Weight": 77.4,
+        "Height": 1.68,
+        "Food_category": "Pasta",
+        "Calories": 400
+    },
+    {
+        "UserId": 1,
+        "RecordID": 27,
+        "Timestamp": "9/9/2023 15:31",
+        "Weight": 77.3,
+        "Height": 1.68,
+        "Food_category": "Gyoza",
+        "Calories": 330
+    },
+    {
+        "UserId": 1,
+        "RecordID": 28,
+        "Timestamp": "10/9/2023 8:50",
+        "Weight": 77.2,
+        "Height": 1.68,
+        "Food_category": "Omelette",
+        "Calories": 370
+    },
+    {
+        "UserId": 1,
+        "RecordID": 29,
+        "Timestamp": "10/9/2023 12:44",
+        "Weight": 76.9,
+        "Height": 1.68,
+        "Food_category": "Moussaka",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 30,
+        "Timestamp": "10/9/2023 15:20",
+        "Weight": 76.7,
+        "Height": 1.68,
+        "Food_category": "Ice Cream",
+        "Calories": 340
+    },
+    {
+        "UserId": 1,
+        "RecordID": 31,
+        "Timestamp": "11/9/2023 9:22",
+        "Weight": 76.6,
+        "Height": 1.68,
+        "Food_category": "Ravioli",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 32,
+        "Timestamp": "11/9/2023 12:24",
+        "Weight": 76.6,
+        "Height": 1.68,
+        "Food_category": "Hamburger",
+        "Calories": 580
+    },
+    {
+        "UserId": 1,
+        "RecordID": 33,
+        "Timestamp": "11/9/2023 16:12",
+        "Weight": 76.4,
+        "Height": 1.68,
+        "Food_category": "Bubble Tea",
+        "Calories": 840
+    },
+    {
+        "UserId": 1,
+        "RecordID": 34,
+        "Timestamp": "12/9/2023 9:14",
+        "Weight": 76.1,
+        "Height": 1.68,
+        "Food_category": "Pizza",
+        "Calories": 550
+    },
+    {
+        "UserId": 1,
+        "RecordID": 35,
+        "Timestamp": "12/9/2023 13:25",
+        "Weight": 75.8,
+        "Height": 1.68,
+        "Food_category": "Hainanese Chicken Rice",
+        "Calories": 440
+    },
+    {
+        "UserId": 1,
+        "RecordID": 36,
+        "Timestamp": "12/9/2023 16:11",
+        "Weight": 75.6,
+        "Height": 1.68,
+        "Food_category": "Taco",
+        "Calories": 210
+    },
+    {
+        "UserId": 1,
+        "RecordID": 37,
+        "Timestamp": "13/9/2023 10:43",
+        "Weight": 75.7,
+        "Height": 1.68,
+        "Food_category": "Escargot",
+        "Calories": 860
+    },
+    {
+        "UserId": 1,
+        "RecordID": 38,
+        "Timestamp": "13/9/2023 12:17",
+        "Weight": 75.7,
+        "Height": 1.68,
+        "Food_category": "Egg Rolls",
+        "Calories": 310
+    },
+    {
+        "UserId": 1,
+        "RecordID": 39,
+        "Timestamp": "13/9/2023 16:10",
+        "Weight": 75.7,
+        "Height": 1.68,
+        "Food_category": "Meatballs",
+        "Calories": 990
+    },
+    {
+        "UserId": 1,
+        "RecordID": 40,
+        "Timestamp": "14/9/2023 7:24",
+        "Weight": 75.4,
+        "Height": 1.68,
+        "Food_category": "Barbeque",
+        "Calories": 380
+    },
+    {
+        "UserId": 1,
+        "RecordID": 41,
+        "Timestamp": "14/9/2023 12:20",
+        "Weight": 75.5,
+        "Height": 1.68,
+        "Food_category": "Poutine",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 42,
+        "Timestamp": "14/9/2023 16:51",
+        "Weight": 75.4,
+        "Height": 1.68,
+        "Food_category": "Vindaloo",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 43,
+        "Timestamp": "15/9/2023 10:32",
+        "Weight": 75.2,
+        "Height": 1.68,
+        "Food_category": "Avocado Toast",
+        "Calories": 280
+    },
+    {
+        "UserId": 1,
+        "RecordID": 44,
+        "Timestamp": "15/9/2023 11:26",
+        "Weight": 75.1,
+        "Height": 1.68,
+        "Food_category": "Ratatouille",
+        "Calories": 960
+    },
+    {
+        "UserId": 1,
+        "RecordID": 45,
+        "Timestamp": "15/9/2023 15:47",
+        "Weight": 75.1,
+        "Height": 1.68,
+        "Food_category": "Pancake",
+        "Calories": 840
+    },
+    {
+        "UserId": 1,
+        "RecordID": 46,
+        "Timestamp": "16/9/2023 10:04",
+        "Weight": 75.0,
+        "Height": 1.68,
+        "Food_category": "Churros",
+        "Calories": 810
+    },
+    {
+        "UserId": 1,
+        "RecordID": 47,
+        "Timestamp": "16/9/2023 12:35",
+        "Weight": 74.9,
+        "Height": 1.68,
+        "Food_category": "Pancake",
+        "Calories": 510
+    },
+    {
+        "UserId": 1,
+        "RecordID": 48,
+        "Timestamp": "16/9/2023 15:43",
+        "Weight": 74.8,
+        "Height": 1.68,
+        "Food_category": "Meatballs",
+        "Calories": 270
+    },
+    {
+        "UserId": 1,
+        "RecordID": 49,
+        "Timestamp": "17/9/2023 7:24",
+        "Weight": 74.6,
+        "Height": 1.68,
+        "Food_category": "Bread",
+        "Calories": 750
+    },
+    {
+        "UserId": 1,
+        "RecordID": 50,
+        "Timestamp": "17/9/2023 11:57",
+        "Weight": 74.6,
+        "Height": 1.68,
+        "Food_category": "Bagel",
+        "Calories": 610
+    },
+    {
+        "UserId": 1,
+        "RecordID": 51,
+        "Timestamp": "17/9/2023 16:06",
+        "Weight": 74.3,
+        "Height": 1.68,
+        "Food_category": "Hot Dog",
+        "Calories": 220
+    },
+    {
+        "UserId": 1,
+        "RecordID": 52,
+        "Timestamp": "18/9/2023 7:20",
+        "Weight": 74.0,
+        "Height": 1.68,
+        "Food_category": "Pancake",
+        "Calories": 100
+    },
+    {
+        "UserId": 1,
+        "RecordID": 53,
+        "Timestamp": "18/9/2023 11:22",
+        "Weight": 74.1,
+        "Height": 1.68,
+        "Food_category": "Hamburger",
+        "Calories": 350
+    },
+    {
+        "UserId": 1,
+        "RecordID": 54,
+        "Timestamp": "18/9/2023 15:04",
+        "Weight": 73.8,
+        "Height": 1.68,
+        "Food_category": "Macaroni and Cheese",
+        "Calories": 380
+    },
+    {
+        "UserId": 1,
+        "RecordID": 55,
+        "Timestamp": "19/9/2023 8:53",
+        "Weight": 73.9,
+        "Height": 1.68,
+        "Food_category": "French Fries",
+        "Calories": 850
+    },
+    {
+        "UserId": 1,
+        "RecordID": 56,
+        "Timestamp": "19/9/2023 11:48",
+        "Weight": 73.9,
+        "Height": 1.68,
+        "Food_category": "Yakitori",
+        "Calories": 110
+    },
+    {
+        "UserId": 1,
+        "RecordID": 57,
+        "Timestamp": "19/9/2023 15:52",
+        "Weight": 73.9,
+        "Height": 1.68,
+        "Food_category": "Sushi",
+        "Calories": 570
+    },
+    {
+        "UserId": 1,
+        "RecordID": 58,
+        "Timestamp": "20/9/2023 8:01",
+        "Weight": 73.9,
+        "Height": 1.68,
+        "Food_category": "Fish and Chips",
+        "Calories": 200
+    },
+    {
+        "UserId": 1,
+        "RecordID": 59,
+        "Timestamp": "20/9/2023 13:36",
+        "Weight": 73.8,
+        "Height": 1.68,
+        "Food_category": "Gyudon",
+        "Calories": 810
+    },
+    {
+        "UserId": 1,
+        "RecordID": 60,
+        "Timestamp": "20/9/2023 16:52",
+        "Weight": 73.9,
+        "Height": 1.68,
+        "Food_category": "Salmon",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 61,
+        "Timestamp": "21/9/2023 10:06",
+        "Weight": 74.0,
+        "Height": 1.68,
+        "Food_category": "Oysters",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 62,
+        "Timestamp": "21/9/2023 11:44",
+        "Weight": 74.1,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 63,
+        "Timestamp": "21/9/2023 15:33",
+        "Weight": 74.0,
+        "Height": 1.68,
+        "Food_category": "Moussaka",
+        "Calories": 670
+    },
+    {
+        "UserId": 1,
+        "RecordID": 64,
+        "Timestamp": "22/9/2023 8:26",
+        "Weight": 73.7,
+        "Height": 1.68,
+        "Food_category": "Oysters",
+        "Calories": 150
+    },
+    {
+        "UserId": 1,
+        "RecordID": 65,
+        "Timestamp": "22/9/2023 13:34",
+        "Weight": 73.6,
+        "Height": 1.68,
+        "Food_category": "Meatballs",
+        "Calories": 630
+    },
+    {
+        "UserId": 1,
+        "RecordID": 66,
+        "Timestamp": "22/9/2023 16:58",
+        "Weight": 73.3,
+        "Height": 1.68,
+        "Food_category": "Macaroni and Cheese",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 67,
+        "Timestamp": "23/9/2023 9:48",
+        "Weight": 73.0,
+        "Height": 1.68,
+        "Food_category": "Cannoli",
+        "Calories": 300
+    },
+    {
+        "UserId": 1,
+        "RecordID": 68,
+        "Timestamp": "23/9/2023 12:53",
+        "Weight": 72.7,
+        "Height": 1.68,
+        "Food_category": "Goulash",
+        "Calories": 930
+    },
+    {
+        "UserId": 1,
+        "RecordID": 69,
+        "Timestamp": "23/9/2023 16:06",
+        "Weight": 72.7,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 820
+    },
+    {
+        "UserId": 1,
+        "RecordID": 70,
+        "Timestamp": "24/9/2023 8:51",
+        "Weight": 72.5,
+        "Height": 1.68,
+        "Food_category": "Indian Curry",
+        "Calories": 650
+    },
+    {
+        "UserId": 1,
+        "RecordID": 71,
+        "Timestamp": "24/9/2023 12:54",
+        "Weight": 72.6,
+        "Height": 1.68,
+        "Food_category": "Fried Chicken",
+        "Calories": 600
+    },
+    {
+        "UserId": 1,
+        "RecordID": 72,
+        "Timestamp": "24/9/2023 15:05",
+        "Weight": 72.7,
+        "Height": 1.68,
+        "Food_category": "Ice Cream",
+        "Calories": 370
+    },
+    {
+        "UserId": 1,
+        "RecordID": 73,
+        "Timestamp": "25/9/2023 7:14",
+        "Weight": 72.8,
+        "Height": 1.68,
+        "Food_category": "Goulash",
+        "Calories": 800
+    },
+    {
+        "UserId": 1,
+        "RecordID": 74,
+        "Timestamp": "25/9/2023 11:14",
+        "Weight": 72.5,
+        "Height": 1.68,
+        "Food_category": "Pizza",
+        "Calories": 760
+    },
+    {
+        "UserId": 1,
+        "RecordID": 75,
+        "Timestamp": "25/9/2023 15:01",
+        "Weight": 72.4,
+        "Height": 1.68,
+        "Food_category": "Fajitas",
+        "Calories": 850
+    },
+    {
+        "UserId": 1,
+        "RecordID": 76,
+        "Timestamp": "26/9/2023 7:45",
+        "Weight": 72.3,
+        "Height": 1.68,
+        "Food_category": "Fish and Chips",
+        "Calories": 350
+    },
+    {
+        "UserId": 1,
+        "RecordID": 77,
+        "Timestamp": "26/9/2023 12:40",
+        "Weight": 72.2,
+        "Height": 1.68,
+        "Food_category": "Burger",
+        "Calories": 820
+    },
+    {
+        "UserId": 1,
+        "RecordID": 78,
+        "Timestamp": "26/9/2023 15:47",
+        "Weight": 72.2,
+        "Height": 1.68,
+        "Food_category": "Zucchini Noodles",
+        "Calories": 580
+    },
+    {
+        "UserId": 1,
+        "RecordID": 79,
+        "Timestamp": "27/9/2023 7:11",
+        "Weight": 72.1,
+        "Height": 1.68,
+        "Food_category": "Gyudon",
+        "Calories": 490
+    },
+    {
+        "UserId": 1,
+        "RecordID": 80,
+        "Timestamp": "27/9/2023 12:48",
+        "Weight": 72.0,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 790
+    },
+    {
+        "UserId": 1,
+        "RecordID": 81,
+        "Timestamp": "27/9/2023 16:50",
+        "Weight": 71.8,
+        "Height": 1.68,
+        "Food_category": "Pho",
+        "Calories": 620
+    },
+    {
+        "UserId": 1,
+        "RecordID": 82,
+        "Timestamp": "28/9/2023 9:15",
+        "Weight": 71.7,
+        "Height": 1.68,
+        "Food_category": "Baklava",
+        "Calories": 520
+    },
+    {
+        "UserId": 1,
+        "RecordID": 83,
+        "Timestamp": "28/9/2023 12:59",
+        "Weight": 71.8,
+        "Height": 1.68,
+        "Food_category": "Onigiri",
+        "Calories": 790
+    },
+    {
+        "UserId": 1,
+        "RecordID": 84,
+        "Timestamp": "28/9/2023 16:43",
+        "Weight": 71.6,
+        "Height": 1.68,
+        "Food_category": "Jerk Chicken",
+        "Calories": 350
+    },
+    {
+        "UserId": 1,
+        "RecordID": 85,
+        "Timestamp": "29/9/2023 10:42",
+        "Weight": 71.5,
+        "Height": 1.68,
+        "Food_category": "Quiche",
+        "Calories": 130
+    },
+    {
+        "UserId": 1,
+        "RecordID": 86,
+        "Timestamp": "29/9/2023 11:58",
+        "Weight": 71.2,
+        "Height": 1.68,
+        "Food_category": "Escargot",
+        "Calories": 930
+    },
+    {
+        "UserId": 1,
+        "RecordID": 87,
+        "Timestamp": "29/9/2023 15:16",
+        "Weight": 71.3,
+        "Height": 1.68,
+        "Food_category": "Dumplings",
+        "Calories": 770
+    },
+    {
+        "UserId": 1,
+        "RecordID": 88,
+        "Timestamp": "30/9/2023 8:19",
+        "Weight": 71.0,
+        "Height": 1.68,
+        "Food_category": "Yakisoba",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 89,
+        "Timestamp": "30/9/2023 12:13",
+        "Weight": 70.7,
+        "Height": 1.68,
+        "Food_category": "Chimichanga",
+        "Calories": 880
+    },
+    {
+        "UserId": 1,
+        "RecordID": 90,
+        "Timestamp": "30/9/2023 15:57",
+        "Weight": 70.5,
+        "Height": 1.68,
+        "Food_category": "Gyudon",
+        "Calories": 140
+    },
+    {
+        "UserId": 1,
+        "RecordID": 91,
+        "Timestamp": "1/10/2023 8:13",
+        "Weight": 70.2,
+        "Height": 1.68,
+        "Food_category": "Wontons",
+        "Calories": 620
+    },
+    {
+        "UserId": 1,
+        "RecordID": 92,
+        "Timestamp": "1/10/2023 12:09",
+        "Weight": 70.3,
+        "Height": 1.68,
+        "Food_category": "Croissant",
+        "Calories": 220
+    },
+    {
+        "UserId": 1,
+        "RecordID": 93,
+        "Timestamp": "1/10/2023 16:27",
+        "Weight": 70.2,
+        "Height": 1.68,
+        "Food_category": "Vegan Burger",
+        "Calories": 210
+    },
+    {
+        "UserId": 1,
+        "RecordID": 94,
+        "Timestamp": "2/10/2023 7:36",
+        "Weight": 69.9,
+        "Height": 1.68,
+        "Food_category": "Pad Thai",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 95,
+        "Timestamp": "2/10/2023 12:38",
+        "Weight": 69.9,
+        "Height": 1.68,
+        "Food_category": "Hamburger",
+        "Calories": 200
+    },
+    {
+        "UserId": 1,
+        "RecordID": 96,
+        "Timestamp": "2/10/2023 15:17",
+        "Weight": 69.8,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 97,
+        "Timestamp": "3/10/2023 8:20",
+        "Weight": 69.8,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 640
+    },
+    {
+        "UserId": 1,
+        "RecordID": 98,
+        "Timestamp": "3/10/2023 11:14",
+        "Weight": 69.6,
+        "Height": 1.68,
+        "Food_category": "Tiramisu",
+        "Calories": 250
+    },
+    {
+        "UserId": 1,
+        "RecordID": 99,
+        "Timestamp": "3/10/2023 16:46",
+        "Weight": 69.7,
+        "Height": 1.68,
+        "Food_category": "Fajitas",
+        "Calories": 680
+    },
+    {
+        "UserId": 1,
+        "RecordID": 100,
+        "Timestamp": "4/10/2023 7:23",
+        "Weight": 69.4,
+        "Height": 1.68,
+        "Food_category": "Barbeque",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 101,
+        "Timestamp": "4/10/2023 13:35",
+        "Weight": 69.2,
+        "Height": 1.68,
+        "Food_category": "Okonomiyaki",
+        "Calories": 960
+    },
+    {
+        "UserId": 1,
+        "RecordID": 102,
+        "Timestamp": "4/10/2023 16:40",
+        "Weight": 69.2,
+        "Height": 1.68,
+        "Food_category": "Kebab",
+        "Calories": 650
+    },
+    {
+        "UserId": 1,
+        "RecordID": 103,
+        "Timestamp": "5/10/2023 10:19",
+        "Weight": 69.0,
+        "Height": 1.68,
+        "Food_category": "Churros",
+        "Calories": 510
+    },
+    {
+        "UserId": 1,
+        "RecordID": 104,
+        "Timestamp": "5/10/2023 13:48",
+        "Weight": 69.1,
+        "Height": 1.68,
+        "Food_category": "Nasi Goreng",
+        "Calories": 600
+    },
+    {
+        "UserId": 1,
+        "RecordID": 105,
+        "Timestamp": "5/10/2023 15:13",
+        "Weight": 69.0,
+        "Height": 1.68,
+        "Food_category": "Tiramisu",
+        "Calories": 420
+    },
+    {
+        "UserId": 1,
+        "RecordID": 106,
+        "Timestamp": "6/10/2023 7:19",
+        "Weight": 69.1,
+        "Height": 1.68,
+        "Food_category": "Beef Steak",
+        "Calories": 340
+    },
+    {
+        "UserId": 1,
+        "RecordID": 107,
+        "Timestamp": "6/10/2023 13:48",
+        "Weight": 69.2,
+        "Height": 1.68,
+        "Food_category": "Pho",
+        "Calories": 630
+    },
+    {
+        "UserId": 1,
+        "RecordID": 108,
+        "Timestamp": "6/10/2023 15:14",
+        "Weight": 69.1,
+        "Height": 1.68,
+        "Food_category": "Quesadilla",
+        "Calories": 240
+    },
+    {
+        "UserId": 1,
+        "RecordID": 109,
+        "Timestamp": "7/10/2023 10:34",
+        "Weight": 69.0,
+        "Height": 1.68,
+        "Food_category": "Lobster",
+        "Calories": 590
+    },
+    {
+        "UserId": 1,
+        "RecordID": 110,
+        "Timestamp": "7/10/2023 12:39",
+        "Weight": 68.8,
+        "Height": 1.68,
+        "Food_category": "Dumplings",
+        "Calories": 930
+    },
+    {
+        "UserId": 1,
+        "RecordID": 111,
+        "Timestamp": "7/10/2023 16:11",
+        "Weight": 68.7,
+        "Height": 1.68,
+        "Food_category": "Meatballs",
+        "Calories": 370
+    },
+    {
+        "UserId": 1,
+        "RecordID": 112,
+        "Timestamp": "8/10/2023 9:47",
+        "Weight": 68.5,
+        "Height": 1.68,
+        "Food_category": "Pancake",
+        "Calories": 320
+    },
+    {
+        "UserId": 1,
+        "RecordID": 113,
+        "Timestamp": "8/10/2023 11:42",
+        "Weight": 68.5,
+        "Height": 1.68,
+        "Food_category": "Laksa",
+        "Calories": 660
+    },
+    {
+        "UserId": 1,
+        "RecordID": 114,
+        "Timestamp": "8/10/2023 16:50",
+        "Weight": 68.6,
+        "Height": 1.68,
+        "Food_category": "Gumbo",
+        "Calories": 950
+    },
+    {
+        "UserId": 1,
+        "RecordID": 115,
+        "Timestamp": "9/10/2023 10:56",
+        "Weight": 68.5,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 950
+    },
+    {
+        "UserId": 1,
+        "RecordID": 116,
+        "Timestamp": "9/10/2023 12:45",
+        "Weight": 68.6,
+        "Height": 1.68,
+        "Food_category": "Barbeque",
+        "Calories": 150
+    },
+    {
+        "UserId": 1,
+        "RecordID": 117,
+        "Timestamp": "9/10/2023 15:59",
+        "Weight": 68.3,
+        "Height": 1.68,
+        "Food_category": "Jambalaya",
+        "Calories": 240
+    },
+    {
+        "UserId": 1,
+        "RecordID": 118,
+        "Timestamp": "10/10/2023 10:25",
+        "Weight": 68.3,
+        "Height": 1.68,
+        "Food_category": "Tzatziki",
+        "Calories": 690
+    },
+    {
+        "UserId": 1,
+        "RecordID": 119,
+        "Timestamp": "10/10/2023 13:14",
+        "Weight": 68.3,
+        "Height": 1.68,
+        "Food_category": "Churros",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 120,
+        "Timestamp": "10/10/2023 15:03",
+        "Weight": 68.3,
+        "Height": 1.68,
+        "Food_category": "Hummus",
+        "Calories": 620
+    },
+    {
+        "UserId": 1,
+        "RecordID": 121,
+        "Timestamp": "11/10/2023 8:55",
+        "Weight": 68.3,
+        "Height": 1.68,
+        "Food_category": "Poutine",
+        "Calories": 790
+    },
+    {
+        "UserId": 1,
+        "RecordID": 122,
+        "Timestamp": "11/10/2023 13:27",
+        "Weight": 68.0,
+        "Height": 1.68,
+        "Food_category": "Bread",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 123,
+        "Timestamp": "11/10/2023 16:20",
+        "Weight": 68.0,
+        "Height": 1.68,
+        "Food_category": "Irish Stew",
+        "Calories": 880
+    },
+    {
+        "UserId": 1,
+        "RecordID": 124,
+        "Timestamp": "12/10/2023 10:59",
+        "Weight": 67.7,
+        "Height": 1.68,
+        "Food_category": "French Fries",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 125,
+        "Timestamp": "12/10/2023 13:34",
+        "Weight": 67.5,
+        "Height": 1.68,
+        "Food_category": "Ice Cream",
+        "Calories": 380
+    },
+    {
+        "UserId": 1,
+        "RecordID": 126,
+        "Timestamp": "12/10/2023 15:46",
+        "Weight": 67.5,
+        "Height": 1.68,
+        "Food_category": "Quiche",
+        "Calories": 220
+    },
+    {
+        "UserId": 1,
+        "RecordID": 127,
+        "Timestamp": "13/10/2023 8:20",
+        "Weight": 67.5,
+        "Height": 1.68,
+        "Food_category": "Poutine",
+        "Calories": 210
+    },
+    {
+        "UserId": 1,
+        "RecordID": 128,
+        "Timestamp": "13/10/2023 13:50",
+        "Weight": 67.3,
+        "Height": 1.68,
+        "Food_category": "Wontons",
+        "Calories": 560
+    },
+    {
+        "UserId": 1,
+        "RecordID": 129,
+        "Timestamp": "13/10/2023 16:39",
+        "Weight": 67.2,
+        "Height": 1.68,
+        "Food_category": "Macaroni and Cheese",
+        "Calories": 730
+    },
+    {
+        "UserId": 1,
+        "RecordID": 130,
+        "Timestamp": "14/10/2023 9:09",
+        "Weight": 67.3,
+        "Height": 1.68,
+        "Food_category": "Bread",
+        "Calories": 960
+    },
+    {
+        "UserId": 1,
+        "RecordID": 131,
+        "Timestamp": "14/10/2023 13:14",
+        "Weight": 67.4,
+        "Height": 1.68,
+        "Food_category": "Onigiri",
+        "Calories": 820
+    },
+    {
+        "UserId": 1,
+        "RecordID": 132,
+        "Timestamp": "14/10/2023 16:21",
+        "Weight": 67.3,
+        "Height": 1.68,
+        "Food_category": "Yakitori",
+        "Calories": 230
+    },
+    {
+        "UserId": 1,
+        "RecordID": 133,
+        "Timestamp": "15/10/2023 9:45",
+        "Weight": 67.0,
+        "Height": 1.68,
+        "Food_category": "Taco",
+        "Calories": 180
+    },
+    {
+        "UserId": 1,
+        "RecordID": 134,
+        "Timestamp": "15/10/2023 13:55",
+        "Weight": 66.7,
+        "Height": 1.68,
+        "Food_category": "Chicken Wings",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 135,
+        "Timestamp": "15/10/2023 16:49",
+        "Weight": 66.5,
+        "Height": 1.68,
+        "Food_category": "Pastrami",
+        "Calories": 850
+    },
+    {
+        "UserId": 1,
+        "RecordID": 136,
+        "Timestamp": "16/10/2023 10:13",
+        "Weight": 66.2,
+        "Height": 1.68,
+        "Food_category": "Vindaloo",
+        "Calories": 300
+    },
+    {
+        "UserId": 1,
+        "RecordID": 137,
+        "Timestamp": "16/10/2023 13:07",
+        "Weight": 66.3,
+        "Height": 1.68,
+        "Food_category": "Udon",
+        "Calories": 300
+    },
+    {
+        "UserId": 1,
+        "RecordID": 138,
+        "Timestamp": "16/10/2023 16:25",
+        "Weight": 66.1,
+        "Height": 1.68,
+        "Food_category": "Fried Rice",
+        "Calories": 610
+    },
+    {
+        "UserId": 1,
+        "RecordID": 139,
+        "Timestamp": "17/10/2023 10:50",
+        "Weight": 65.9,
+        "Height": 1.68,
+        "Food_category": "Samosa",
+        "Calories": 840
+    },
+    {
+        "UserId": 1,
+        "RecordID": 140,
+        "Timestamp": "17/10/2023 13:12",
+        "Weight": 65.7,
+        "Height": 1.68,
+        "Food_category": "Udon",
+        "Calories": 340
+    },
+    {
+        "UserId": 1,
+        "RecordID": 141,
+        "Timestamp": "17/10/2023 15:27",
+        "Weight": 65.7,
+        "Height": 1.68,
+        "Food_category": "Burger",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 142,
+        "Timestamp": "18/10/2023 9:53",
+        "Weight": 65.8,
+        "Height": 1.68,
+        "Food_category": "Chimichanga",
+        "Calories": 280
+    },
+    {
+        "UserId": 1,
+        "RecordID": 143,
+        "Timestamp": "18/10/2023 13:39",
+        "Weight": 65.5,
+        "Height": 1.68,
+        "Food_category": "Moussaka",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 144,
+        "Timestamp": "18/10/2023 16:58",
+        "Weight": 65.2,
+        "Height": 1.68,
+        "Food_category": "Chimichanga",
+        "Calories": 770
+    },
+    {
+        "UserId": 1,
+        "RecordID": 145,
+        "Timestamp": "19/10/2023 9:36",
+        "Weight": 65.2,
+        "Height": 1.68,
+        "Food_category": "Fajitas",
+        "Calories": 460
+    },
+    {
+        "UserId": 1,
+        "RecordID": 146,
+        "Timestamp": "19/10/2023 12:56",
+        "Weight": 65.2,
+        "Height": 1.68,
+        "Food_category": "Goulash",
+        "Calories": 680
+    },
+    {
+        "UserId": 1,
+        "RecordID": 147,
+        "Timestamp": "19/10/2023 15:45",
+        "Weight": 65.3,
+        "Height": 1.68,
+        "Food_category": "Bubble Tea",
+        "Calories": 420
+    },
+    {
+        "UserId": 1,
+        "RecordID": 148,
+        "Timestamp": "20/10/2023 7:44",
+        "Weight": 65.4,
+        "Height": 1.68,
+        "Food_category": "Moussaka",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 149,
+        "Timestamp": "20/10/2023 13:22",
+        "Weight": 65.3,
+        "Height": 1.68,
+        "Food_category": "Cannoli",
+        "Calories": 650
+    },
+    {
+        "UserId": 1,
+        "RecordID": 150,
+        "Timestamp": "20/10/2023 15:47",
+        "Weight": 65.3,
+        "Height": 1.68,
+        "Food_category": "Irish Stew",
+        "Calories": 380
+    },
+    {
+        "UserId": 1,
+        "RecordID": 151,
+        "Timestamp": "21/10/2023 10:28",
+        "Weight": 65.3,
+        "Height": 1.68,
+        "Food_category": "Muffin",
+        "Calories": 240
+    },
+    {
+        "UserId": 1,
+        "RecordID": 152,
+        "Timestamp": "21/10/2023 12:45",
+        "Weight": 65.4,
+        "Height": 1.68,
+        "Food_category": "Noodles",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 153,
+        "Timestamp": "21/10/2023 15:13",
+        "Weight": 65.3,
+        "Height": 1.68,
+        "Food_category": "Fried Chicken",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 154,
+        "Timestamp": "22/10/2023 8:23",
+        "Weight": 65.4,
+        "Height": 1.68,
+        "Food_category": "Wiener Schnitzel",
+        "Calories": 100
+    },
+    {
+        "UserId": 1,
+        "RecordID": 155,
+        "Timestamp": "22/10/2023 13:46",
+        "Weight": 65.2,
+        "Height": 1.68,
+        "Food_category": "Nasi Goreng",
+        "Calories": 990
+    },
+    {
+        "UserId": 1,
+        "RecordID": 156,
+        "Timestamp": "22/10/2023 15:24",
+        "Weight": 65.2,
+        "Height": 1.68,
+        "Food_category": "Pancake",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 157,
+        "Timestamp": "23/10/2023 9:25",
+        "Weight": 65.1,
+        "Height": 1.68,
+        "Food_category": "Muffin",
+        "Calories": 930
+    },
+    {
+        "UserId": 1,
+        "RecordID": 158,
+        "Timestamp": "23/10/2023 13:58",
+        "Weight": 64.9,
+        "Height": 1.68,
+        "Food_category": "Egg Rolls",
+        "Calories": 240
+    },
+    {
+        "UserId": 1,
+        "RecordID": 159,
+        "Timestamp": "23/10/2023 16:44",
+        "Weight": 64.6,
+        "Height": 1.68,
+        "Food_category": "Gumbo",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 160,
+        "Timestamp": "24/10/2023 7:56",
+        "Weight": 64.5,
+        "Height": 1.68,
+        "Food_category": "Yakitori",
+        "Calories": 300
+    },
+    {
+        "UserId": 1,
+        "RecordID": 161,
+        "Timestamp": "24/10/2023 11:32",
+        "Weight": 64.4,
+        "Height": 1.68,
+        "Food_category": "Cupcake",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 162,
+        "Timestamp": "24/10/2023 15:00",
+        "Weight": 64.2,
+        "Height": 1.68,
+        "Food_category": "Salmon",
+        "Calories": 160
+    },
+    {
+        "UserId": 1,
+        "RecordID": 163,
+        "Timestamp": "25/10/2023 8:07",
+        "Weight": 64.2,
+        "Height": 1.68,
+        "Food_category": "Hot Pot",
+        "Calories": 610
+    },
+    {
+        "UserId": 1,
+        "RecordID": 164,
+        "Timestamp": "25/10/2023 11:00",
+        "Weight": 64.1,
+        "Height": 1.68,
+        "Food_category": "Chimichanga",
+        "Calories": 980
+    },
+    {
+        "UserId": 1,
+        "RecordID": 165,
+        "Timestamp": "25/10/2023 15:59",
+        "Weight": 64.2,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 360
+    },
+    {
+        "UserId": 1,
+        "RecordID": 166,
+        "Timestamp": "26/10/2023 8:57",
+        "Weight": 63.9,
+        "Height": 1.68,
+        "Food_category": "Ratatouille",
+        "Calories": 500
+    },
+    {
+        "UserId": 1,
+        "RecordID": 167,
+        "Timestamp": "26/10/2023 11:36",
+        "Weight": 63.8,
+        "Height": 1.68,
+        "Food_category": "Ravioli",
+        "Calories": 100
+    },
+    {
+        "UserId": 1,
+        "RecordID": 168,
+        "Timestamp": "26/10/2023 16:47",
+        "Weight": 63.5,
+        "Height": 1.68,
+        "Food_category": "Hash Browns",
+        "Calories": 240
+    },
+    {
+        "UserId": 1,
+        "RecordID": 169,
+        "Timestamp": "27/10/2023 7:10",
+        "Weight": 63.5,
+        "Height": 1.68,
+        "Food_category": "Ramen",
+        "Calories": 680
+    },
+    {
+        "UserId": 1,
+        "RecordID": 170,
+        "Timestamp": "27/10/2023 13:53",
+        "Weight": 63.6,
+        "Height": 1.68,
+        "Food_category": "Bagel",
+        "Calories": 220
+    },
+    {
+        "UserId": 1,
+        "RecordID": 171,
+        "Timestamp": "27/10/2023 16:27",
+        "Weight": 63.3,
+        "Height": 1.68,
+        "Food_category": "Pho",
+        "Calories": 310
+    },
+    {
+        "UserId": 1,
+        "RecordID": 172,
+        "Timestamp": "28/10/2023 10:06",
+        "Weight": 63.3,
+        "Height": 1.68,
+        "Food_category": "Pastrami",
+        "Calories": 100
+    },
+    {
+        "UserId": 1,
+        "RecordID": 173,
+        "Timestamp": "28/10/2023 11:31",
+        "Weight": 63.0,
+        "Height": 1.68,
+        "Food_category": "Pad Thai",
+        "Calories": 320
+    },
+    {
+        "UserId": 1,
+        "RecordID": 174,
+        "Timestamp": "28/10/2023 16:52",
+        "Weight": 62.7,
+        "Height": 1.68,
+        "Food_category": "Hot Pot",
+        "Calories": 800
+    },
+    {
+        "UserId": 1,
+        "RecordID": 175,
+        "Timestamp": "29/10/2023 7:37",
+        "Weight": 62.4,
+        "Height": 1.68,
+        "Food_category": "Quiche",
+        "Calories": 280
+    },
+    {
+        "UserId": 1,
+        "RecordID": 176,
+        "Timestamp": "29/10/2023 12:02",
+        "Weight": 62.3,
+        "Height": 1.68,
+        "Food_category": "Moussaka",
+        "Calories": 230
+    },
+    {
+        "UserId": 1,
+        "RecordID": 177,
+        "Timestamp": "29/10/2023 16:32",
+        "Weight": 62.2,
+        "Height": 1.68,
+        "Food_category": "Chicken Wings",
+        "Calories": 480
+    },
+    {
+        "UserId": 1,
+        "RecordID": 178,
+        "Timestamp": "30/10/2023 8:59",
+        "Weight": 62.2,
+        "Height": 1.68,
+        "Food_category": "Bubble Tea",
+        "Calories": 210
+    },
+    {
+        "UserId": 1,
+        "RecordID": 179,
+        "Timestamp": "30/10/2023 11:42",
+        "Weight": 61.9,
+        "Height": 1.68,
+        "Food_category": "Sashimi Bowl",
+        "Calories": 700
+    },
+    {
+        "UserId": 1,
+        "RecordID": 180,
+        "Timestamp": "30/10/2023 16:28",
+        "Weight": 61.6,
+        "Height": 1.68,
+        "Food_category": "Yakisoba",
+        "Calories": 140
+    },
+    {
+        "UserId": 1,
+        "RecordID": 181,
+        "Timestamp": "31/10/2023 7:50",
+        "Weight": 61.7,
+        "Height": 1.68,
+        "Food_category": "Ramen",
+        "Calories": 840
+    },
+    {
+        "UserId": 1,
+        "RecordID": 182,
+        "Timestamp": "31/10/2023 12:54",
+        "Weight": 61.5,
+        "Height": 1.68,
+        "Food_category": "Sausages",
+        "Calories": 300
+    },
+    {
+        "UserId": 1,
+        "RecordID": 183,
+        "Timestamp": "31/10/2023 16:29",
+        "Weight": 61.5,
+        "Height": 1.68,
+        "Food_category": "Poutine",
+        "Calories": 680
+    },
+    {
+        "UserId": 1,
+        "RecordID": 184,
+        "Timestamp": "1/11/2023 10:30",
+        "Weight": 61.5,
+        "Height": 1.68,
+        "Food_category": "Ratatouille",
+        "Calories": 250
+    },
+    {
+        "UserId": 1,
+        "RecordID": 185,
+        "Timestamp": "1/11/2023 13:04",
+        "Weight": 61.2,
+        "Height": 1.68,
+        "Food_category": "Croissant",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 186,
+        "Timestamp": "1/11/2023 15:48",
+        "Weight": 61.0,
+        "Height": 1.68,
+        "Food_category": "Quiche",
+        "Calories": 360
+    },
+    {
+        "UserId": 1,
+        "RecordID": 187,
+        "Timestamp": "2/11/2023 10:33",
+        "Weight": 60.8,
+        "Height": 1.68,
+        "Food_category": "Donuts",
+        "Calories": 970
+    },
+    {
+        "UserId": 1,
+        "RecordID": 188,
+        "Timestamp": "2/11/2023 12:33",
+        "Weight": 60.8,
+        "Height": 1.68,
+        "Food_category": "Wontons",
+        "Calories": 780
+    },
+    {
+        "UserId": 1,
+        "RecordID": 189,
+        "Timestamp": "2/11/2023 16:34",
+        "Weight": 60.5,
+        "Height": 1.68,
+        "Food_category": "Ravioli",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 190,
+        "Timestamp": "3/11/2023 10:00",
+        "Weight": 60.4,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 191,
+        "Timestamp": "3/11/2023 13:45",
+        "Weight": 60.3,
+        "Height": 1.68,
+        "Food_category": "Poutine",
+        "Calories": 460
+    },
+    {
+        "UserId": 1,
+        "RecordID": 192,
+        "Timestamp": "3/11/2023 15:57",
+        "Weight": 60.2,
+        "Height": 1.68,
+        "Food_category": "Indian Curry",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 193,
+        "Timestamp": "4/11/2023 10:45",
+        "Weight": 60.0,
+        "Height": 1.68,
+        "Food_category": "Bagel",
+        "Calories": 730
+    },
+    {
+        "UserId": 1,
+        "RecordID": 194,
+        "Timestamp": "4/11/2023 12:25",
+        "Weight": 59.9,
+        "Height": 1.68,
+        "Food_category": "Pasta",
+        "Calories": 190
+    },
+    {
+        "UserId": 1,
+        "RecordID": 195,
+        "Timestamp": "4/11/2023 16:19",
+        "Weight": 59.9,
+        "Height": 1.68,
+        "Food_category": "Beef Steak",
+        "Calories": 750
+    },
+    {
+        "UserId": 1,
+        "RecordID": 196,
+        "Timestamp": "5/11/2023 10:34",
+        "Weight": 59.8,
+        "Height": 1.68,
+        "Food_category": "Gumbo",
+        "Calories": 830
+    },
+    {
+        "UserId": 1,
+        "RecordID": 197,
+        "Timestamp": "5/11/2023 12:55",
+        "Weight": 59.7,
+        "Height": 1.68,
+        "Food_category": "Indian Curry",
+        "Calories": 790
+    },
+    {
+        "UserId": 1,
+        "RecordID": 198,
+        "Timestamp": "5/11/2023 15:54",
+        "Weight": 59.4,
+        "Height": 1.68,
+        "Food_category": "Nachos",
+        "Calories": 250
+    },
+    {
+        "UserId": 1,
+        "RecordID": 199,
+        "Timestamp": "6/11/2023 8:20",
+        "Weight": 59.2,
+        "Height": 1.68,
+        "Food_category": "Samosa",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 200,
+        "Timestamp": "6/11/2023 13:36",
+        "Weight": 59.0,
+        "Height": 1.68,
+        "Food_category": "Beef Steak",
+        "Calories": 110
+    },
+    {
+        "UserId": 1,
+        "RecordID": 201,
+        "Timestamp": "6/11/2023 15:02",
+        "Weight": 58.9,
+        "Height": 1.68,
+        "Food_category": "Ceviche",
+        "Calories": 730
+    },
+    {
+        "UserId": 1,
+        "RecordID": 202,
+        "Timestamp": "7/11/2023 8:49",
+        "Weight": 58.6,
+        "Height": 1.68,
+        "Food_category": "Hummus",
+        "Calories": 180
+    },
+    {
+        "UserId": 1,
+        "RecordID": 203,
+        "Timestamp": "7/11/2023 11:04",
+        "Weight": 58.4,
+        "Height": 1.68,
+        "Food_category": "Hainanese Chicken Rice",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 204,
+        "Timestamp": "7/11/2023 16:43",
+        "Weight": 58.5,
+        "Height": 1.68,
+        "Food_category": "Salmon",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 205,
+        "Timestamp": "8/11/2023 9:37",
+        "Weight": 58.2,
+        "Height": 1.68,
+        "Food_category": "Chicken Wings",
+        "Calories": 510
+    },
+    {
+        "UserId": 1,
+        "RecordID": 206,
+        "Timestamp": "8/11/2023 11:41",
+        "Weight": 57.9,
+        "Height": 1.68,
+        "Food_category": "Ziti",
+        "Calories": 930
+    },
+    {
+        "UserId": 1,
+        "RecordID": 207,
+        "Timestamp": "8/11/2023 16:47",
+        "Weight": 57.8,
+        "Height": 1.68,
+        "Food_category": "Katsu",
+        "Calories": 520
+    },
+    {
+        "UserId": 1,
+        "RecordID": 208,
+        "Timestamp": "9/11/2023 7:11",
+        "Weight": 57.5,
+        "Height": 1.68,
+        "Food_category": "Meatballs",
+        "Calories": 600
+    },
+    {
+        "UserId": 1,
+        "RecordID": 209,
+        "Timestamp": "9/11/2023 13:12",
+        "Weight": 57.5,
+        "Height": 1.68,
+        "Food_category": "Pasta",
+        "Calories": 450
+    },
+    {
+        "UserId": 1,
+        "RecordID": 210,
+        "Timestamp": "9/11/2023 15:00",
+        "Weight": 57.5,
+        "Height": 1.68,
+        "Food_category": "Tzatziki",
+        "Calories": 790
+    },
+    {
+        "UserId": 1,
+        "RecordID": 211,
+        "Timestamp": "10/11/2023 10:15",
+        "Weight": 57.3,
+        "Height": 1.68,
+        "Food_category": "Bagel",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 212,
+        "Timestamp": "10/11/2023 12:50",
+        "Weight": 57.0,
+        "Height": 1.68,
+        "Food_category": "Fried Rice",
+        "Calories": 660
+    },
+    {
+        "UserId": 1,
+        "RecordID": 213,
+        "Timestamp": "10/11/2023 16:41",
+        "Weight": 57.1,
+        "Height": 1.68,
+        "Food_category": "Lobster",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 214,
+        "Timestamp": "11/11/2023 9:59",
+        "Weight": 56.9,
+        "Height": 1.68,
+        "Food_category": "Jerk Chicken",
+        "Calories": 860
+    },
+    {
+        "UserId": 1,
+        "RecordID": 215,
+        "Timestamp": "11/11/2023 13:55",
+        "Weight": 56.8,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 780
+    },
+    {
+        "UserId": 1,
+        "RecordID": 216,
+        "Timestamp": "11/11/2023 16:23",
+        "Weight": 56.6,
+        "Height": 1.68,
+        "Food_category": "Katsu",
+        "Calories": 920
+    },
+    {
+        "UserId": 1,
+        "RecordID": 217,
+        "Timestamp": "12/11/2023 10:45",
+        "Weight": 56.5,
+        "Height": 1.68,
+        "Food_category": "Nachos",
+        "Calories": 900
+    },
+    {
+        "UserId": 1,
+        "RecordID": 218,
+        "Timestamp": "12/11/2023 13:07",
+        "Weight": 56.5,
+        "Height": 1.68,
+        "Food_category": "Naan",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 219,
+        "Timestamp": "12/11/2023 16:12",
+        "Weight": 56.2,
+        "Height": 1.68,
+        "Food_category": "Lasagna",
+        "Calories": 900
+    },
+    {
+        "UserId": 1,
+        "RecordID": 220,
+        "Timestamp": "13/11/2023 10:15",
+        "Weight": 56.2,
+        "Height": 1.68,
+        "Food_category": "Escargot",
+        "Calories": 750
+    },
+    {
+        "UserId": 1,
+        "RecordID": 221,
+        "Timestamp": "13/11/2023 11:08",
+        "Weight": 56.2,
+        "Height": 1.68,
+        "Food_category": "Barbeque",
+        "Calories": 810
+    },
+    {
+        "UserId": 1,
+        "RecordID": 222,
+        "Timestamp": "13/11/2023 15:11",
+        "Weight": 56.3,
+        "Height": 1.68,
+        "Food_category": "Bagel",
+        "Calories": 150
+    },
+    {
+        "UserId": 1,
+        "RecordID": 223,
+        "Timestamp": "14/11/2023 10:25",
+        "Weight": 56.3,
+        "Height": 1.68,
+        "Food_category": "Irish Stew",
+        "Calories": 780
+    },
+    {
+        "UserId": 1,
+        "RecordID": 224,
+        "Timestamp": "14/11/2023 12:03",
+        "Weight": 56.0,
+        "Height": 1.68,
+        "Food_category": "Wontons",
+        "Calories": 930
+    },
+    {
+        "UserId": 1,
+        "RecordID": 225,
+        "Timestamp": "14/11/2023 16:42",
+        "Weight": 56.0,
+        "Height": 1.68,
+        "Food_category": "Irish Stew",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 226,
+        "Timestamp": "15/11/2023 10:56",
+        "Weight": 56.0,
+        "Height": 1.68,
+        "Food_category": "Churros",
+        "Calories": 730
+    },
+    {
+        "UserId": 1,
+        "RecordID": 227,
+        "Timestamp": "15/11/2023 13:46",
+        "Weight": 55.8,
+        "Height": 1.68,
+        "Food_category": "Ziti",
+        "Calories": 180
+    },
+    {
+        "UserId": 1,
+        "RecordID": 228,
+        "Timestamp": "15/11/2023 15:28",
+        "Weight": 55.7,
+        "Height": 1.68,
+        "Food_category": "Pizza",
+        "Calories": 180
+    },
+    {
+        "UserId": 1,
+        "RecordID": 229,
+        "Timestamp": "16/11/2023 9:33",
+        "Weight": 55.6,
+        "Height": 1.68,
+        "Food_category": "Ravioli",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 230,
+        "Timestamp": "16/11/2023 11:28",
+        "Weight": 55.5,
+        "Height": 1.68,
+        "Food_category": "Cinnamon Roll",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 231,
+        "Timestamp": "16/11/2023 15:23",
+        "Weight": 55.4,
+        "Height": 1.68,
+        "Food_category": "Naan",
+        "Calories": 140
+    },
+    {
+        "UserId": 1,
+        "RecordID": 232,
+        "Timestamp": "17/11/2023 7:18",
+        "Weight": 55.4,
+        "Height": 1.68,
+        "Food_category": "Omelette",
+        "Calories": 470
+    },
+    {
+        "UserId": 1,
+        "RecordID": 233,
+        "Timestamp": "17/11/2023 11:44",
+        "Weight": 55.5,
+        "Height": 1.68,
+        "Food_category": "Gyoza",
+        "Calories": 430
+    },
+    {
+        "UserId": 1,
+        "RecordID": 234,
+        "Timestamp": "17/11/2023 16:00",
+        "Weight": 55.2,
+        "Height": 1.68,
+        "Food_category": "Jollof Rice",
+        "Calories": 790
+    },
+    {
+        "UserId": 1,
+        "RecordID": 235,
+        "Timestamp": "18/11/2023 8:11",
+        "Weight": 55.1,
+        "Height": 1.68,
+        "Food_category": "Waffles",
+        "Calories": 190
+    },
+    {
+        "UserId": 1,
+        "RecordID": 236,
+        "Timestamp": "18/11/2023 13:50",
+        "Weight": 55.2,
+        "Height": 1.68,
+        "Food_category": "Avocado Toast",
+        "Calories": 590
+    },
+    {
+        "UserId": 1,
+        "RecordID": 237,
+        "Timestamp": "18/11/2023 15:02",
+        "Weight": 55.0,
+        "Height": 1.68,
+        "Food_category": "Noodles",
+        "Calories": 740
+    },
+    {
+        "UserId": 1,
+        "RecordID": 238,
+        "Timestamp": "19/11/2023 9:45",
+        "Weight": 54.9,
+        "Height": 1.68,
+        "Food_category": "Lasagna",
+        "Calories": 490
+    },
+    {
+        "UserId": 1,
+        "RecordID": 239,
+        "Timestamp": "19/11/2023 11:51",
+        "Weight": 54.7,
+        "Height": 1.68,
+        "Food_category": "Goulash",
+        "Calories": 180
+    },
+    {
+        "UserId": 1,
+        "RecordID": 240,
+        "Timestamp": "19/11/2023 15:30",
+        "Weight": 54.7,
+        "Height": 1.68,
+        "Food_category": "Noodles",
+        "Calories": 450
+    },
+    {
+        "UserId": 1,
+        "RecordID": 241,
+        "Timestamp": "1/12/2023 10:31",
+        "Weight": 54.5,
+        "Height": 1.68,
+        "Food_category": "Gyoza",
+        "Calories": 160
+    },
+    {
+        "UserId": 1,
+        "RecordID": 242,
+        "Timestamp": "1/12/2023 13:14",
+        "Weight": 54.3,
+        "Height": 1.68,
+        "Food_category": "Burger",
+        "Calories": 770
+    },
+    {
+        "UserId": 1,
+        "RecordID": 243,
+        "Timestamp": "1/12/2023 15:37",
+        "Weight": 54.2,
+        "Height": 1.68,
+        "Food_category": "Chicken Wings",
+        "Calories": 970
+    },
+    {
+        "UserId": 1,
+        "RecordID": 244,
+        "Timestamp": "2/12/2023 9:50",
+        "Weight": 54.1,
+        "Height": 1.68,
+        "Food_category": "Escargot",
+        "Calories": 580
+    },
+    {
+        "UserId": 1,
+        "RecordID": 245,
+        "Timestamp": "2/12/2023 12:37",
+        "Weight": 54.2,
+        "Height": 1.68,
+        "Food_category": "Bread",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 246,
+        "Timestamp": "2/12/2023 16:17",
+        "Weight": 54.0,
+        "Height": 1.68,
+        "Food_category": "Pad Thai",
+        "Calories": 800
+    },
+    {
+        "UserId": 1,
+        "RecordID": 247,
+        "Timestamp": "3/12/2023 9:20",
+        "Weight": 53.8,
+        "Height": 1.68,
+        "Food_category": "Ramen",
+        "Calories": 260
+    },
+    {
+        "UserId": 1,
+        "RecordID": 248,
+        "Timestamp": "3/12/2023 11:28",
+        "Weight": 53.5,
+        "Height": 1.68,
+        "Food_category": "Baklava",
+        "Calories": 950
+    },
+    {
+        "UserId": 1,
+        "RecordID": 249,
+        "Timestamp": "3/12/2023 16:23",
+        "Weight": 53.2,
+        "Height": 1.68,
+        "Food_category": "Beef Steak",
+        "Calories": 820
+    },
+    {
+        "UserId": 1,
+        "RecordID": 250,
+        "Timestamp": "4/12/2023 9:25",
+        "Weight": 52.9,
+        "Height": 1.68,
+        "Food_category": "Vindaloo",
+        "Calories": 970
+    },
+    {
+        "UserId": 1,
+        "RecordID": 251,
+        "Timestamp": "4/12/2023 11:53",
+        "Weight": 52.6,
+        "Height": 1.68,
+        "Food_category": "Bubble Tea",
+        "Calories": 630
+    },
+    {
+        "UserId": 1,
+        "RecordID": 252,
+        "Timestamp": "4/12/2023 15:35",
+        "Weight": 52.6,
+        "Height": 1.68,
+        "Food_category": "Bubble Tea",
+        "Calories": 230
+    },
+    {
+        "UserId": 1,
+        "RecordID": 253,
+        "Timestamp": "5/12/2023 7:41",
+        "Weight": 52.6,
+        "Height": 1.68,
+        "Food_category": "French Fries",
+        "Calories": 600
+    },
+    {
+        "UserId": 1,
+        "RecordID": 254,
+        "Timestamp": "5/12/2023 11:10",
+        "Weight": 52.5,
+        "Height": 1.68,
+        "Food_category": "Onigiri",
+        "Calories": 120
+    },
+    {
+        "UserId": 1,
+        "RecordID": 255,
+        "Timestamp": "5/12/2023 15:59",
+        "Weight": 52.4,
+        "Height": 1.68,
+        "Food_category": "Waffles",
+        "Calories": 210
+    },
+    {
+        "UserId": 1,
+        "RecordID": 256,
+        "Timestamp": "6/12/2023 10:14",
+        "Weight": 52.5,
+        "Height": 1.68,
+        "Food_category": "Cinnamon Roll",
+        "Calories": 180
+    },
+    {
+        "UserId": 1,
+        "RecordID": 257,
+        "Timestamp": "6/12/2023 13:22",
+        "Weight": 52.4,
+        "Height": 1.68,
+        "Food_category": "Avocado Toast",
+        "Calories": 840
+    },
+    {
+        "UserId": 1,
+        "RecordID": 258,
+        "Timestamp": "6/12/2023 15:39",
+        "Weight": 52.5,
+        "Height": 1.68,
+        "Food_category": "Muffin",
+        "Calories": 970
+    },
+    {
+        "UserId": 1,
+        "RecordID": 259,
+        "Timestamp": "7/12/2023 10:38",
+        "Weight": 52.6,
+        "Height": 1.68,
+        "Food_category": "Ravioli",
+        "Calories": 360
+    },
+    {
+        "UserId": 1,
+        "RecordID": 260,
+        "Timestamp": "7/12/2023 11:15",
+        "Weight": 52.3,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 960
+    },
+    {
+        "UserId": 1,
+        "RecordID": 261,
+        "Timestamp": "7/12/2023 15:47",
+        "Weight": 52.2,
+        "Height": 1.68,
+        "Food_category": "Hamburger",
+        "Calories": 310
+    },
+    {
+        "UserId": 1,
+        "RecordID": 262,
+        "Timestamp": "8/12/2023 10:09",
+        "Weight": 52.2,
+        "Height": 1.68,
+        "Food_category": "Laksa",
+        "Calories": 250
+    },
+    {
+        "UserId": 1,
+        "RecordID": 263,
+        "Timestamp": "8/12/2023 11:22",
+        "Weight": 51.9,
+        "Height": 1.68,
+        "Food_category": "Hummus",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 264,
+        "Timestamp": "8/12/2023 15:56",
+        "Weight": 51.8,
+        "Height": 1.68,
+        "Food_category": "Bubble Tea",
+        "Calories": 740
+    },
+    {
+        "UserId": 1,
+        "RecordID": 265,
+        "Timestamp": "9/12/2023 9:14",
+        "Weight": 51.8,
+        "Height": 1.68,
+        "Food_category": "Oysters",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 266,
+        "Timestamp": "9/12/2023 12:56",
+        "Weight": 51.9,
+        "Height": 1.68,
+        "Food_category": "Noodles",
+        "Calories": 240
+    },
+    {
+        "UserId": 1,
+        "RecordID": 267,
+        "Timestamp": "9/12/2023 16:22",
+        "Weight": 51.9,
+        "Height": 1.68,
+        "Food_category": "Avocado Toast",
+        "Calories": 350
+    },
+    {
+        "UserId": 1,
+        "RecordID": 268,
+        "Timestamp": "10/12/2023 7:14",
+        "Weight": 51.7,
+        "Height": 1.68,
+        "Food_category": "Yakitori",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 269,
+        "Timestamp": "10/12/2023 12:42",
+        "Weight": 51.7,
+        "Height": 1.68,
+        "Food_category": "Barbeque",
+        "Calories": 700
+    },
+    {
+        "UserId": 1,
+        "RecordID": 270,
+        "Timestamp": "10/12/2023 15:10",
+        "Weight": 51.7,
+        "Height": 1.68,
+        "Food_category": "Croissant",
+        "Calories": 810
+    },
+    {
+        "UserId": 1,
+        "RecordID": 271,
+        "Timestamp": "11/12/2023 7:32",
+        "Weight": 51.4,
+        "Height": 1.68,
+        "Food_category": "Enchiladas",
+        "Calories": 560
+    },
+    {
+        "UserId": 1,
+        "RecordID": 272,
+        "Timestamp": "11/12/2023 13:14",
+        "Weight": 51.3,
+        "Height": 1.68,
+        "Food_category": "Tiramisu",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 273,
+        "Timestamp": "11/12/2023 16:16",
+        "Weight": 51.1,
+        "Height": 1.68,
+        "Food_category": "Chimichanga",
+        "Calories": 730
+    },
+    {
+        "UserId": 1,
+        "RecordID": 274,
+        "Timestamp": "12/12/2023 10:51",
+        "Weight": 51.0,
+        "Height": 1.68,
+        "Food_category": "Vegan Burger",
+        "Calories": 660
+    },
+    {
+        "UserId": 1,
+        "RecordID": 275,
+        "Timestamp": "12/12/2023 12:41",
+        "Weight": 50.7,
+        "Height": 1.68,
+        "Food_category": "Wiener Schnitzel",
+        "Calories": 160
+    },
+    {
+        "UserId": 1,
+        "RecordID": 276,
+        "Timestamp": "12/12/2023 15:15",
+        "Weight": 50.4,
+        "Height": 1.68,
+        "Food_category": "Oysters",
+        "Calories": 990
+    },
+    {
+        "UserId": 1,
+        "RecordID": 277,
+        "Timestamp": "13/12/2023 7:55",
+        "Weight": 50.4,
+        "Height": 1.68,
+        "Food_category": "Kebab",
+        "Calories": 110
+    },
+    {
+        "UserId": 1,
+        "RecordID": 278,
+        "Timestamp": "13/12/2023 11:38",
+        "Weight": 50.4,
+        "Height": 1.68,
+        "Food_category": "Wontons",
+        "Calories": 900
+    },
+    {
+        "UserId": 1,
+        "RecordID": 279,
+        "Timestamp": "13/12/2023 16:26",
+        "Weight": 50.1,
+        "Height": 1.68,
+        "Food_category": "Cannoli",
+        "Calories": 640
+    },
+    {
+        "UserId": 1,
+        "RecordID": 280,
+        "Timestamp": "14/12/2023 7:11",
+        "Weight": 49.8,
+        "Height": 1.68,
+        "Food_category": "Waffles",
+        "Calories": 860
+    },
+    {
+        "UserId": 1,
+        "RecordID": 281,
+        "Timestamp": "14/12/2023 11:47",
+        "Weight": 49.8,
+        "Height": 1.68,
+        "Food_category": "Pad Thai",
+        "Calories": 860
+    },
+    {
+        "UserId": 1,
+        "RecordID": 282,
+        "Timestamp": "14/12/2023 16:51",
+        "Weight": 49.6,
+        "Height": 1.68,
+        "Food_category": "Fajitas",
+        "Calories": 870
+    },
+    {
+        "UserId": 1,
+        "RecordID": 283,
+        "Timestamp": "15/12/2023 7:54",
+        "Weight": 49.7,
+        "Height": 1.68,
+        "Food_category": "Nachos",
+        "Calories": 560
+    },
+    {
+        "UserId": 1,
+        "RecordID": 284,
+        "Timestamp": "15/12/2023 13:21",
+        "Weight": 49.8,
+        "Height": 1.68,
+        "Food_category": "Pastrami",
+        "Calories": 260
+    },
+    {
+        "UserId": 1,
+        "RecordID": 285,
+        "Timestamp": "15/12/2023 15:57",
+        "Weight": 49.5,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 710
+    },
+    {
+        "UserId": 1,
+        "RecordID": 286,
+        "Timestamp": "16/12/2023 8:14",
+        "Weight": 49.3,
+        "Height": 1.68,
+        "Food_category": "Kebab",
+        "Calories": 630
+    },
+    {
+        "UserId": 1,
+        "RecordID": 287,
+        "Timestamp": "16/12/2023 11:04",
+        "Weight": 49.0,
+        "Height": 1.68,
+        "Food_category": "Avocado Toast",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 288,
+        "Timestamp": "16/12/2023 16:16",
+        "Weight": 48.9,
+        "Height": 1.68,
+        "Food_category": "Nasi Goreng",
+        "Calories": 120
+    },
+    {
+        "UserId": 1,
+        "RecordID": 289,
+        "Timestamp": "17/12/2023 10:55",
+        "Weight": 48.6,
+        "Height": 1.68,
+        "Food_category": "Ceviche",
+        "Calories": 820
+    },
+    {
+        "UserId": 1,
+        "RecordID": 290,
+        "Timestamp": "17/12/2023 12:26",
+        "Weight": 48.6,
+        "Height": 1.68,
+        "Food_category": "Yakisoba",
+        "Calories": 330
+    },
+    {
+        "UserId": 1,
+        "RecordID": 291,
+        "Timestamp": "17/12/2023 15:35",
+        "Weight": 48.3,
+        "Height": 1.68,
+        "Food_category": "Macaroni and Cheese",
+        "Calories": 670
+    },
+    {
+        "UserId": 1,
+        "RecordID": 292,
+        "Timestamp": "18/12/2023 7:46",
+        "Weight": 48.4,
+        "Height": 1.68,
+        "Food_category": "Udon",
+        "Calories": 180
+    },
+    {
+        "UserId": 1,
+        "RecordID": 293,
+        "Timestamp": "18/12/2023 12:48",
+        "Weight": 48.1,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 730
+    },
+    {
+        "UserId": 1,
+        "RecordID": 294,
+        "Timestamp": "18/12/2023 16:36",
+        "Weight": 47.9,
+        "Height": 1.68,
+        "Food_category": "Wontons",
+        "Calories": 230
+    },
+    {
+        "UserId": 1,
+        "RecordID": 295,
+        "Timestamp": "19/12/2023 9:16",
+        "Weight": 47.7,
+        "Height": 1.68,
+        "Food_category": "Vindaloo",
+        "Calories": 600
+    },
+    {
+        "UserId": 1,
+        "RecordID": 296,
+        "Timestamp": "19/12/2023 11:02",
+        "Weight": 47.4,
+        "Height": 1.68,
+        "Food_category": "Lobster",
+        "Calories": 600
+    },
+    {
+        "UserId": 1,
+        "RecordID": 297,
+        "Timestamp": "19/12/2023 15:13",
+        "Weight": 47.5,
+        "Height": 1.68,
+        "Food_category": "Yakisoba",
+        "Calories": 770
+    },
+    {
+        "UserId": 1,
+        "RecordID": 298,
+        "Timestamp": "20/12/2023 9:43",
+        "Weight": 47.5,
+        "Height": 1.68,
+        "Food_category": "Moussaka",
+        "Calories": 540
+    },
+    {
+        "UserId": 1,
+        "RecordID": 299,
+        "Timestamp": "20/12/2023 12:21",
+        "Weight": 47.3,
+        "Height": 1.68,
+        "Food_category": "Croissant",
+        "Calories": 480
+    },
+    {
+        "UserId": 1,
+        "RecordID": 300,
+        "Timestamp": "20/12/2023 15:18",
+        "Weight": 47.4,
+        "Height": 1.68,
+        "Food_category": "Vegan Burger",
+        "Calories": 370
+    },
+    {
+        "UserId": 1,
+        "RecordID": 301,
+        "Timestamp": "21/12/2023 7:55",
+        "Weight": 47.5,
+        "Height": 1.68,
+        "Food_category": "Salmon",
+        "Calories": 190
+    },
+    {
+        "UserId": 1,
+        "RecordID": 302,
+        "Timestamp": "21/12/2023 13:49",
+        "Weight": 47.2,
+        "Height": 1.68,
+        "Food_category": "Indian Curry",
+        "Calories": 990
+    },
+    {
+        "UserId": 1,
+        "RecordID": 303,
+        "Timestamp": "21/12/2023 15:39",
+        "Weight": 47.2,
+        "Height": 1.68,
+        "Food_category": "Cupcake",
+        "Calories": 750
+    },
+    {
+        "UserId": 1,
+        "RecordID": 304,
+        "Timestamp": "22/12/2023 8:21",
+        "Weight": 46.9,
+        "Height": 1.68,
+        "Food_category": "Pad Thai",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 305,
+        "Timestamp": "22/12/2023 13:15",
+        "Weight": 46.7,
+        "Height": 1.68,
+        "Food_category": "Gumbo",
+        "Calories": 330
+    },
+    {
+        "UserId": 1,
+        "RecordID": 306,
+        "Timestamp": "22/12/2023 15:08",
+        "Weight": 46.4,
+        "Height": 1.68,
+        "Food_category": "Lasagna",
+        "Calories": 630
+    },
+    {
+        "UserId": 1,
+        "RecordID": 307,
+        "Timestamp": "23/12/2023 9:31",
+        "Weight": 46.5,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 540
+    },
+    {
+        "UserId": 1,
+        "RecordID": 308,
+        "Timestamp": "23/12/2023 11:33",
+        "Weight": 46.6,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 150
+    },
+    {
+        "UserId": 1,
+        "RecordID": 309,
+        "Timestamp": "23/12/2023 16:17",
+        "Weight": 46.3,
+        "Height": 1.68,
+        "Food_category": "Jambalaya",
+        "Calories": 550
+    },
+    {
+        "UserId": 1,
+        "RecordID": 310,
+        "Timestamp": "24/12/2023 7:06",
+        "Weight": 46.1,
+        "Height": 1.68,
+        "Food_category": "Nasi Goreng",
+        "Calories": 350
+    },
+    {
+        "UserId": 1,
+        "RecordID": 311,
+        "Timestamp": "24/12/2023 12:41",
+        "Weight": 46.1,
+        "Height": 1.68,
+        "Food_category": "Jerk Chicken",
+        "Calories": 740
+    },
+    {
+        "UserId": 1,
+        "RecordID": 312,
+        "Timestamp": "24/12/2023 16:11",
+        "Weight": 45.8,
+        "Height": 1.68,
+        "Food_category": "Laksa",
+        "Calories": 760
+    },
+    {
+        "UserId": 1,
+        "RecordID": 313,
+        "Timestamp": "25/12/2023 9:32",
+        "Weight": 45.6,
+        "Height": 1.68,
+        "Food_category": "Cupcake",
+        "Calories": 880
+    },
+    {
+        "UserId": 1,
+        "RecordID": 314,
+        "Timestamp": "25/12/2023 11:00",
+        "Weight": 45.6,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 100
+    },
+    {
+        "UserId": 1,
+        "RecordID": 315,
+        "Timestamp": "25/12/2023 15:55",
+        "Weight": 45.3,
+        "Height": 1.68,
+        "Food_category": "Chicken Wings",
+        "Calories": 190
+    },
+    {
+        "UserId": 1,
+        "RecordID": 316,
+        "Timestamp": "26/12/2023 7:05",
+        "Weight": 45.0,
+        "Height": 1.68,
+        "Food_category": "Salmon",
+        "Calories": 640
+    },
+    {
+        "UserId": 1,
+        "RecordID": 317,
+        "Timestamp": "26/12/2023 11:56",
+        "Weight": 45.1,
+        "Height": 1.68,
+        "Food_category": "Goulash",
+        "Calories": 470
+    },
+    {
+        "UserId": 1,
+        "RecordID": 318,
+        "Timestamp": "26/12/2023 15:08",
+        "Weight": 45.0,
+        "Height": 1.68,
+        "Food_category": "Burger",
+        "Calories": 160
+    },
+    {
+        "UserId": 1,
+        "RecordID": 319,
+        "Timestamp": "27/12/2023 10:50",
+        "Weight": 45.1,
+        "Height": 1.68,
+        "Food_category": "Oysters",
+        "Calories": 110
+    },
+    {
+        "UserId": 1,
+        "RecordID": 320,
+        "Timestamp": "27/12/2023 13:06",
+        "Weight": 44.8,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 510
+    },
+    {
+        "UserId": 1,
+        "RecordID": 321,
+        "Timestamp": "27/12/2023 16:39",
+        "Weight": 44.9,
+        "Height": 1.68,
+        "Food_category": "Oysters",
+        "Calories": 510
+    },
+    {
+        "UserId": 1,
+        "RecordID": 322,
+        "Timestamp": "28/12/2023 9:12",
+        "Weight": 44.9,
+        "Height": 1.68,
+        "Food_category": "Sushi",
+        "Calories": 220
+    },
+    {
+        "UserId": 1,
+        "RecordID": 323,
+        "Timestamp": "28/12/2023 13:43",
+        "Weight": 45.0,
+        "Height": 1.68,
+        "Food_category": "Sushi",
+        "Calories": 580
+    },
+    {
+        "UserId": 1,
+        "RecordID": 324,
+        "Timestamp": "28/12/2023 16:17",
+        "Weight": 44.9,
+        "Height": 1.68,
+        "Food_category": "Irish Stew",
+        "Calories": 630
+    },
+    {
+        "UserId": 1,
+        "RecordID": 325,
+        "Timestamp": "29/12/2023 10:35",
+        "Weight": 44.6,
+        "Height": 1.68,
+        "Food_category": "Pastrami",
+        "Calories": 230
+    },
+    {
+        "UserId": 1,
+        "RecordID": 326,
+        "Timestamp": "29/12/2023 13:16",
+        "Weight": 44.5,
+        "Height": 1.68,
+        "Food_category": "Paella",
+        "Calories": 830
+    },
+    {
+        "UserId": 1,
+        "RecordID": 327,
+        "Timestamp": "29/12/2023 16:29",
+        "Weight": 44.4,
+        "Height": 1.68,
+        "Food_category": "Pad Thai",
+        "Calories": 210
+    },
+    {
+        "UserId": 1,
+        "RecordID": 328,
+        "Timestamp": "30/12/2023 7:00",
+        "Weight": 44.2,
+        "Height": 1.68,
+        "Food_category": "Ceviche",
+        "Calories": 200
+    },
+    {
+        "UserId": 1,
+        "RecordID": 329,
+        "Timestamp": "30/12/2023 11:03",
+        "Weight": 44.2,
+        "Height": 1.68,
+        "Food_category": "Burger",
+        "Calories": 300
+    },
+    {
+        "UserId": 1,
+        "RecordID": 330,
+        "Timestamp": "30/12/2023 15:34",
+        "Weight": 44.3,
+        "Height": 1.68,
+        "Food_category": "Irish Stew",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 331,
+        "Timestamp": "1/1/2024 7:14",
+        "Weight": 44.2,
+        "Height": 1.68,
+        "Food_category": "Nasi Goreng",
+        "Calories": 550
+    },
+    {
+        "UserId": 1,
+        "RecordID": 332,
+        "Timestamp": "1/1/2024 13:40",
+        "Weight": 43.9,
+        "Height": 1.68,
+        "Food_category": "Croissant",
+        "Calories": 590
+    },
+    {
+        "UserId": 1,
+        "RecordID": 333,
+        "Timestamp": "1/1/2024 16:09",
+        "Weight": 43.6,
+        "Height": 1.68,
+        "Food_category": "Croissant",
+        "Calories": 560
+    },
+    {
+        "UserId": 1,
+        "RecordID": 334,
+        "Timestamp": "2/1/2024 7:10",
+        "Weight": 43.3,
+        "Height": 1.68,
+        "Food_category": "Dumplings",
+        "Calories": 270
+    },
+    {
+        "UserId": 1,
+        "RecordID": 335,
+        "Timestamp": "2/1/2024 11:58",
+        "Weight": 43.1,
+        "Height": 1.68,
+        "Food_category": "Muffin",
+        "Calories": 800
+    },
+    {
+        "UserId": 1,
+        "RecordID": 336,
+        "Timestamp": "2/1/2024 16:26",
+        "Weight": 42.8,
+        "Height": 1.68,
+        "Food_category": "Beef Steak",
+        "Calories": 110
+    },
+    {
+        "UserId": 1,
+        "RecordID": 337,
+        "Timestamp": "3/1/2024 10:55",
+        "Weight": 42.7,
+        "Height": 1.68,
+        "Food_category": "Hainanese Chicken Rice",
+        "Calories": 490
+    },
+    {
+        "UserId": 1,
+        "RecordID": 338,
+        "Timestamp": "3/1/2024 13:53",
+        "Weight": 42.5,
+        "Height": 1.68,
+        "Food_category": "Sausages",
+        "Calories": 700
+    },
+    {
+        "UserId": 1,
+        "RecordID": 339,
+        "Timestamp": "3/1/2024 15:45",
+        "Weight": 42.6,
+        "Height": 1.68,
+        "Food_category": "Jambalaya",
+        "Calories": 920
+    },
+    {
+        "UserId": 1,
+        "RecordID": 340,
+        "Timestamp": "4/1/2024 10:16",
+        "Weight": 42.5,
+        "Height": 1.68,
+        "Food_category": "Lasagna",
+        "Calories": 860
+    },
+    {
+        "UserId": 1,
+        "RecordID": 341,
+        "Timestamp": "4/1/2024 13:25",
+        "Weight": 42.6,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 670
+    },
+    {
+        "UserId": 1,
+        "RecordID": 342,
+        "Timestamp": "4/1/2024 15:23",
+        "Weight": 42.7,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 580
+    },
+    {
+        "UserId": 1,
+        "RecordID": 343,
+        "Timestamp": "5/1/2024 8:25",
+        "Weight": 42.4,
+        "Height": 1.68,
+        "Food_category": "Hamburger",
+        "Calories": 970
+    },
+    {
+        "UserId": 1,
+        "RecordID": 344,
+        "Timestamp": "5/1/2024 12:33",
+        "Weight": 42.2,
+        "Height": 1.68,
+        "Food_category": "Egg Rolls",
+        "Calories": 620
+    },
+    {
+        "UserId": 1,
+        "RecordID": 345,
+        "Timestamp": "5/1/2024 16:01",
+        "Weight": 41.9,
+        "Height": 1.68,
+        "Food_category": "Indian Curry",
+        "Calories": 810
+    },
+    {
+        "UserId": 1,
+        "RecordID": 346,
+        "Timestamp": "6/1/2024 10:43",
+        "Weight": 41.6,
+        "Height": 1.68,
+        "Food_category": "Onigiri",
+        "Calories": 420
+    },
+    {
+        "UserId": 1,
+        "RecordID": 347,
+        "Timestamp": "6/1/2024 12:16",
+        "Weight": 41.7,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 460
+    },
+    {
+        "UserId": 1,
+        "RecordID": 348,
+        "Timestamp": "6/1/2024 16:25",
+        "Weight": 41.6,
+        "Height": 1.68,
+        "Food_category": "Irish Stew",
+        "Calories": 110
+    },
+    {
+        "UserId": 1,
+        "RecordID": 349,
+        "Timestamp": "7/1/2024 7:21",
+        "Weight": 41.3,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 980
+    },
+    {
+        "UserId": 1,
+        "RecordID": 350,
+        "Timestamp": "7/1/2024 12:04",
+        "Weight": 41.0,
+        "Height": 1.68,
+        "Food_category": "Yakitori",
+        "Calories": 130
+    },
+    {
+        "UserId": 1,
+        "RecordID": 351,
+        "Timestamp": "7/1/2024 15:23",
+        "Weight": 41.0,
+        "Height": 1.68,
+        "Food_category": "Ravioli",
+        "Calories": 670
+    },
+    {
+        "UserId": 1,
+        "RecordID": 352,
+        "Timestamp": "8/1/2024 10:33",
+        "Weight": 40.8,
+        "Height": 1.68,
+        "Food_category": "Ravioli",
+        "Calories": 280
+    },
+    {
+        "UserId": 1,
+        "RecordID": 353,
+        "Timestamp": "8/1/2024 11:39",
+        "Weight": 40.9,
+        "Height": 1.68,
+        "Food_category": "Ramen",
+        "Calories": 990
+    },
+    {
+        "UserId": 1,
+        "RecordID": 354,
+        "Timestamp": "8/1/2024 16:10",
+        "Weight": 40.7,
+        "Height": 1.68,
+        "Food_category": "Cinnamon Roll",
+        "Calories": 570
+    },
+    {
+        "UserId": 1,
+        "RecordID": 355,
+        "Timestamp": "9/1/2024 7:32",
+        "Weight": 40.5,
+        "Height": 1.68,
+        "Food_category": "Naan",
+        "Calories": 440
+    },
+    {
+        "UserId": 1,
+        "RecordID": 356,
+        "Timestamp": "9/1/2024 11:44",
+        "Weight": 40.4,
+        "Height": 1.68,
+        "Food_category": "Baklava",
+        "Calories": 660
+    },
+    {
+        "UserId": 1,
+        "RecordID": 357,
+        "Timestamp": "9/1/2024 16:42",
+        "Weight": 40.2,
+        "Height": 1.68,
+        "Food_category": "Udon",
+        "Calories": 930
+    },
+    {
+        "UserId": 1,
+        "RecordID": 358,
+        "Timestamp": "10/1/2024 9:24",
+        "Weight": 39.9,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 359,
+        "Timestamp": "10/1/2024 11:48",
+        "Weight": 39.8,
+        "Height": 1.68,
+        "Food_category": "Baklava",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 360,
+        "Timestamp": "10/1/2024 15:53",
+        "Weight": 39.6,
+        "Height": 1.68,
+        "Food_category": "Jambalaya",
+        "Calories": 190
+    },
+    {
+        "UserId": 1,
+        "RecordID": 361,
+        "Timestamp": "11/1/2024 8:52",
+        "Weight": 39.3,
+        "Height": 1.68,
+        "Food_category": "Muffin",
+        "Calories": 100
+    },
+    {
+        "UserId": 1,
+        "RecordID": 362,
+        "Timestamp": "11/1/2024 11:19",
+        "Weight": 39.1,
+        "Height": 1.68,
+        "Food_category": "Cupcake",
+        "Calories": 400
+    },
+    {
+        "UserId": 1,
+        "RecordID": 363,
+        "Timestamp": "11/1/2024 16:05",
+        "Weight": 39.2,
+        "Height": 1.68,
+        "Food_category": "Hamburger",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 364,
+        "Timestamp": "12/1/2024 8:53",
+        "Weight": 39.1,
+        "Height": 1.68,
+        "Food_category": "Wiener Schnitzel",
+        "Calories": 530
+    },
+    {
+        "UserId": 1,
+        "RecordID": 365,
+        "Timestamp": "12/1/2024 11:58",
+        "Weight": 39.1,
+        "Height": 1.68,
+        "Food_category": "Hot Dog",
+        "Calories": 630
+    },
+    {
+        "UserId": 1,
+        "RecordID": 366,
+        "Timestamp": "12/1/2024 16:47",
+        "Weight": 39.2,
+        "Height": 1.68,
+        "Food_category": "Katsu",
+        "Calories": 180
+    },
+    {
+        "UserId": 1,
+        "RecordID": 367,
+        "Timestamp": "13/1/2024 7:18",
+        "Weight": 39.3,
+        "Height": 1.68,
+        "Food_category": "Omelette",
+        "Calories": 660
+    },
+    {
+        "UserId": 1,
+        "RecordID": 368,
+        "Timestamp": "13/1/2024 13:51",
+        "Weight": 39.1,
+        "Height": 1.68,
+        "Food_category": "Naan",
+        "Calories": 690
+    },
+    {
+        "UserId": 1,
+        "RecordID": 369,
+        "Timestamp": "13/1/2024 15:59",
+        "Weight": 39.0,
+        "Height": 1.68,
+        "Food_category": "Baklava",
+        "Calories": 670
+    },
+    {
+        "UserId": 1,
+        "RecordID": 370,
+        "Timestamp": "14/1/2024 7:55",
+        "Weight": 38.8,
+        "Height": 1.68,
+        "Food_category": "Kebab",
+        "Calories": 760
+    },
+    {
+        "UserId": 1,
+        "RecordID": 371,
+        "Timestamp": "14/1/2024 13:43",
+        "Weight": 38.9,
+        "Height": 1.68,
+        "Food_category": "Hot Pot",
+        "Calories": 550
+    },
+    {
+        "UserId": 1,
+        "RecordID": 372,
+        "Timestamp": "14/1/2024 16:03",
+        "Weight": 38.8,
+        "Height": 1.68,
+        "Food_category": "Gyoza",
+        "Calories": 340
+    },
+    {
+        "UserId": 1,
+        "RecordID": 373,
+        "Timestamp": "15/1/2024 10:12",
+        "Weight": 38.7,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 690
+    },
+    {
+        "UserId": 1,
+        "RecordID": 374,
+        "Timestamp": "15/1/2024 13:30",
+        "Weight": 38.4,
+        "Height": 1.68,
+        "Food_category": "Nasi Goreng",
+        "Calories": 110
+    },
+    {
+        "UserId": 1,
+        "RecordID": 375,
+        "Timestamp": "15/1/2024 15:36",
+        "Weight": 38.4,
+        "Height": 1.68,
+        "Food_category": "Gumbo",
+        "Calories": 690
+    },
+    {
+        "UserId": 1,
+        "RecordID": 376,
+        "Timestamp": "16/1/2024 10:00",
+        "Weight": 38.2,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 377,
+        "Timestamp": "16/1/2024 11:07",
+        "Weight": 38.3,
+        "Height": 1.68,
+        "Food_category": "Poutine",
+        "Calories": 860
+    },
+    {
+        "UserId": 1,
+        "RecordID": 378,
+        "Timestamp": "16/1/2024 16:31",
+        "Weight": 38.0,
+        "Height": 1.68,
+        "Food_category": "Barbeque",
+        "Calories": 120
+    },
+    {
+        "UserId": 1,
+        "RecordID": 379,
+        "Timestamp": "17/1/2024 10:58",
+        "Weight": 37.7,
+        "Height": 1.68,
+        "Food_category": "Onigiri",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 380,
+        "Timestamp": "17/1/2024 13:18",
+        "Weight": 37.7,
+        "Height": 1.68,
+        "Food_category": "Ceviche",
+        "Calories": 520
+    },
+    {
+        "UserId": 1,
+        "RecordID": 381,
+        "Timestamp": "17/1/2024 16:17",
+        "Weight": 37.8,
+        "Height": 1.68,
+        "Food_category": "Vegan Burger",
+        "Calories": 810
+    },
+    {
+        "UserId": 1,
+        "RecordID": 382,
+        "Timestamp": "18/1/2024 10:10",
+        "Weight": 37.8,
+        "Height": 1.68,
+        "Food_category": "Dumplings",
+        "Calories": 690
+    },
+    {
+        "UserId": 1,
+        "RecordID": 383,
+        "Timestamp": "18/1/2024 13:50",
+        "Weight": 37.7,
+        "Height": 1.68,
+        "Food_category": "Sashimi Bowl",
+        "Calories": 480
+    },
+    {
+        "UserId": 1,
+        "RecordID": 384,
+        "Timestamp": "18/1/2024 15:30",
+        "Weight": 37.8,
+        "Height": 1.68,
+        "Food_category": "Bread",
+        "Calories": 200
+    },
+    {
+        "UserId": 1,
+        "RecordID": 385,
+        "Timestamp": "19/1/2024 10:36",
+        "Weight": 37.9,
+        "Height": 1.68,
+        "Food_category": "Naan",
+        "Calories": 140
+    },
+    {
+        "UserId": 1,
+        "RecordID": 386,
+        "Timestamp": "19/1/2024 12:17",
+        "Weight": 37.7,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 790
+    },
+    {
+        "UserId": 1,
+        "RecordID": 387,
+        "Timestamp": "19/1/2024 15:46",
+        "Weight": 37.7,
+        "Height": 1.68,
+        "Food_category": "Indian Curry",
+        "Calories": 720
+    },
+    {
+        "UserId": 1,
+        "RecordID": 388,
+        "Timestamp": "20/1/2024 10:32",
+        "Weight": 37.6,
+        "Height": 1.68,
+        "Food_category": "Croissant",
+        "Calories": 610
+    },
+    {
+        "UserId": 1,
+        "RecordID": 389,
+        "Timestamp": "20/1/2024 13:06",
+        "Weight": 37.3,
+        "Height": 1.68,
+        "Food_category": "Katsu",
+        "Calories": 840
+    },
+    {
+        "UserId": 1,
+        "RecordID": 390,
+        "Timestamp": "20/1/2024 15:45",
+        "Weight": 37.2,
+        "Height": 1.68,
+        "Food_category": "Nasi Goreng",
+        "Calories": 240
+    },
+    {
+        "UserId": 1,
+        "RecordID": 391,
+        "Timestamp": "21/1/2024 9:14",
+        "Weight": 37.3,
+        "Height": 1.68,
+        "Food_category": "Sushi",
+        "Calories": 880
+    },
+    {
+        "UserId": 1,
+        "RecordID": 392,
+        "Timestamp": "21/1/2024 11:38",
+        "Weight": 37.3,
+        "Height": 1.68,
+        "Food_category": "Cinnamon Roll",
+        "Calories": 500
+    },
+    {
+        "UserId": 1,
+        "RecordID": 393,
+        "Timestamp": "21/1/2024 15:02",
+        "Weight": 37.0,
+        "Height": 1.68,
+        "Food_category": "Gyoza",
+        "Calories": 710
+    },
+    {
+        "UserId": 1,
+        "RecordID": 394,
+        "Timestamp": "22/1/2024 10:08",
+        "Weight": 37.0,
+        "Height": 1.68,
+        "Food_category": "Waffles",
+        "Calories": 500
+    },
+    {
+        "UserId": 1,
+        "RecordID": 395,
+        "Timestamp": "22/1/2024 12:14",
+        "Weight": 36.8,
+        "Height": 1.68,
+        "Food_category": "Ice Cream",
+        "Calories": 380
+    },
+    {
+        "UserId": 1,
+        "RecordID": 396,
+        "Timestamp": "22/1/2024 16:30",
+        "Weight": 36.8,
+        "Height": 1.68,
+        "Food_category": "Gyoza",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 397,
+        "Timestamp": "23/1/2024 10:18",
+        "Weight": 36.7,
+        "Height": 1.68,
+        "Food_category": "Hamburger",
+        "Calories": 430
+    },
+    {
+        "UserId": 1,
+        "RecordID": 398,
+        "Timestamp": "23/1/2024 12:35",
+        "Weight": 36.7,
+        "Height": 1.68,
+        "Food_category": "Waffles",
+        "Calories": 990
+    },
+    {
+        "UserId": 1,
+        "RecordID": 399,
+        "Timestamp": "23/1/2024 15:49",
+        "Weight": 36.8,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 800
+    },
+    {
+        "UserId": 1,
+        "RecordID": 400,
+        "Timestamp": "24/1/2024 7:58",
+        "Weight": 36.8,
+        "Height": 1.68,
+        "Food_category": "Beef Steak",
+        "Calories": 750
+    },
+    {
+        "UserId": 1,
+        "RecordID": 401,
+        "Timestamp": "24/1/2024 13:35",
+        "Weight": 36.7,
+        "Height": 1.68,
+        "Food_category": "Poutine",
+        "Calories": 980
+    },
+    {
+        "UserId": 1,
+        "RecordID": 402,
+        "Timestamp": "24/1/2024 16:27",
+        "Weight": 36.6,
+        "Height": 1.68,
+        "Food_category": "Sausages",
+        "Calories": 830
+    },
+    {
+        "UserId": 1,
+        "RecordID": 403,
+        "Timestamp": "25/1/2024 7:31",
+        "Weight": 36.3,
+        "Height": 1.68,
+        "Food_category": "Beef Steak",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 404,
+        "Timestamp": "25/1/2024 13:45",
+        "Weight": 36.0,
+        "Height": 1.68,
+        "Food_category": "Ceviche",
+        "Calories": 900
+    },
+    {
+        "UserId": 1,
+        "RecordID": 405,
+        "Timestamp": "25/1/2024 15:10",
+        "Weight": 35.8,
+        "Height": 1.68,
+        "Food_category": "Macaroni and Cheese",
+        "Calories": 800
+    },
+    {
+        "UserId": 1,
+        "RecordID": 406,
+        "Timestamp": "26/1/2024 8:41",
+        "Weight": 35.7,
+        "Height": 1.68,
+        "Food_category": "Pho",
+        "Calories": 460
+    },
+    {
+        "UserId": 1,
+        "RecordID": 407,
+        "Timestamp": "26/1/2024 12:42",
+        "Weight": 35.5,
+        "Height": 1.68,
+        "Food_category": "Jambalaya",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 408,
+        "Timestamp": "26/1/2024 16:51",
+        "Weight": 35.3,
+        "Height": 1.68,
+        "Food_category": "Sausages",
+        "Calories": 560
+    },
+    {
+        "UserId": 1,
+        "RecordID": 409,
+        "Timestamp": "27/1/2024 10:27",
+        "Weight": 35.3,
+        "Height": 1.68,
+        "Food_category": "Tater Tots",
+        "Calories": 200
+    },
+    {
+        "UserId": 1,
+        "RecordID": 410,
+        "Timestamp": "27/1/2024 12:14",
+        "Weight": 35.1,
+        "Height": 1.68,
+        "Food_category": "Churros",
+        "Calories": 380
+    },
+    {
+        "UserId": 1,
+        "RecordID": 411,
+        "Timestamp": "27/1/2024 15:14",
+        "Weight": 35.1,
+        "Height": 1.68,
+        "Food_category": "Vindaloo",
+        "Calories": 280
+    },
+    {
+        "UserId": 1,
+        "RecordID": 412,
+        "Timestamp": "28/1/2024 8:53",
+        "Weight": 35.2,
+        "Height": 1.68,
+        "Food_category": "Chicken Wings",
+        "Calories": 150
+    },
+    {
+        "UserId": 1,
+        "RecordID": 413,
+        "Timestamp": "28/1/2024 11:46",
+        "Weight": 34.9,
+        "Height": 1.68,
+        "Food_category": "Kebab",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 414,
+        "Timestamp": "28/1/2024 15:29",
+        "Weight": 34.7,
+        "Height": 1.68,
+        "Food_category": "Pastrami",
+        "Calories": 840
+    },
+    {
+        "UserId": 1,
+        "RecordID": 415,
+        "Timestamp": "29/1/2024 9:03",
+        "Weight": 34.4,
+        "Height": 1.68,
+        "Food_category": "Vegan Burger",
+        "Calories": 370
+    },
+    {
+        "UserId": 1,
+        "RecordID": 416,
+        "Timestamp": "29/1/2024 11:58",
+        "Weight": 34.3,
+        "Height": 1.68,
+        "Food_category": "Lobster",
+        "Calories": 540
+    },
+    {
+        "UserId": 1,
+        "RecordID": 417,
+        "Timestamp": "29/1/2024 15:09",
+        "Weight": 34.3,
+        "Height": 1.68,
+        "Food_category": "Barbeque",
+        "Calories": 420
+    },
+    {
+        "UserId": 1,
+        "RecordID": 418,
+        "Timestamp": "30/1/2024 9:10",
+        "Weight": 34.1,
+        "Height": 1.68,
+        "Food_category": "Laksa",
+        "Calories": 720
+    },
+    {
+        "UserId": 1,
+        "RecordID": 419,
+        "Timestamp": "30/1/2024 12:30",
+        "Weight": 34.2,
+        "Height": 1.68,
+        "Food_category": "Ratatouille",
+        "Calories": 680
+    },
+    {
+        "UserId": 1,
+        "RecordID": 420,
+        "Timestamp": "30/1/2024 16:50",
+        "Weight": 34.2,
+        "Height": 1.68,
+        "Food_category": "Churros",
+        "Calories": 790
+    },
+    {
+        "UserId": 1,
+        "RecordID": 421,
+        "Timestamp": "1/2/2024 9:43",
+        "Weight": 34.1,
+        "Height": 1.68,
+        "Food_category": "Jambalaya",
+        "Calories": 720
+    },
+    {
+        "UserId": 1,
+        "RecordID": 422,
+        "Timestamp": "1/2/2024 11:05",
+        "Weight": 33.9,
+        "Height": 1.68,
+        "Food_category": "Pasta",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 423,
+        "Timestamp": "1/2/2024 16:55",
+        "Weight": 34.0,
+        "Height": 1.68,
+        "Food_category": "Macaroni and Cheese",
+        "Calories": 500
+    },
+    {
+        "UserId": 1,
+        "RecordID": 424,
+        "Timestamp": "2/2/2024 8:26",
+        "Weight": 33.8,
+        "Height": 1.68,
+        "Food_category": "Macaroni and Cheese",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 425,
+        "Timestamp": "2/2/2024 11:16",
+        "Weight": 33.8,
+        "Height": 1.68,
+        "Food_category": "French Fries",
+        "Calories": 700
+    },
+    {
+        "UserId": 1,
+        "RecordID": 426,
+        "Timestamp": "2/2/2024 15:52",
+        "Weight": 33.6,
+        "Height": 1.68,
+        "Food_category": "Churros",
+        "Calories": 820
+    },
+    {
+        "UserId": 1,
+        "RecordID": 427,
+        "Timestamp": "3/2/2024 8:12",
+        "Weight": 33.6,
+        "Height": 1.68,
+        "Food_category": "Omelette",
+        "Calories": 550
+    },
+    {
+        "UserId": 1,
+        "RecordID": 428,
+        "Timestamp": "3/2/2024 11:40",
+        "Weight": 33.4,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 900
+    },
+    {
+        "UserId": 1,
+        "RecordID": 429,
+        "Timestamp": "3/2/2024 15:27",
+        "Weight": 33.5,
+        "Height": 1.68,
+        "Food_category": "Oysters",
+        "Calories": 560
+    },
+    {
+        "UserId": 1,
+        "RecordID": 430,
+        "Timestamp": "4/2/2024 9:24",
+        "Weight": 33.6,
+        "Height": 1.68,
+        "Food_category": "Hummus",
+        "Calories": 330
+    },
+    {
+        "UserId": 1,
+        "RecordID": 431,
+        "Timestamp": "4/2/2024 13:21",
+        "Weight": 33.7,
+        "Height": 1.68,
+        "Food_category": "Avocado Toast",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 432,
+        "Timestamp": "4/2/2024 16:50",
+        "Weight": 33.8,
+        "Height": 1.68,
+        "Food_category": "Sausages",
+        "Calories": 190
+    },
+    {
+        "UserId": 1,
+        "RecordID": 433,
+        "Timestamp": "5/2/2024 9:04",
+        "Weight": 33.6,
+        "Height": 1.68,
+        "Food_category": "Noodles",
+        "Calories": 160
+    },
+    {
+        "UserId": 1,
+        "RecordID": 434,
+        "Timestamp": "5/2/2024 12:34",
+        "Weight": 33.7,
+        "Height": 1.68,
+        "Food_category": "Egg Rolls",
+        "Calories": 860
+    },
+    {
+        "UserId": 1,
+        "RecordID": 435,
+        "Timestamp": "5/2/2024 15:46",
+        "Weight": 33.4,
+        "Height": 1.68,
+        "Food_category": "Onigiri",
+        "Calories": 180
+    },
+    {
+        "UserId": 1,
+        "RecordID": 436,
+        "Timestamp": "6/2/2024 8:04",
+        "Weight": 33.4,
+        "Height": 1.68,
+        "Food_category": "Yakisoba",
+        "Calories": 980
+    },
+    {
+        "UserId": 1,
+        "RecordID": 437,
+        "Timestamp": "6/2/2024 13:21",
+        "Weight": 33.2,
+        "Height": 1.68,
+        "Food_category": "Fajitas",
+        "Calories": 270
+    },
+    {
+        "UserId": 1,
+        "RecordID": 438,
+        "Timestamp": "6/2/2024 16:26",
+        "Weight": 33.0,
+        "Height": 1.68,
+        "Food_category": "Hot Pot",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 439,
+        "Timestamp": "7/2/2024 9:56",
+        "Weight": 33.0,
+        "Height": 1.68,
+        "Food_category": "Yakisoba",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 440,
+        "Timestamp": "7/2/2024 13:43",
+        "Weight": 33.0,
+        "Height": 1.68,
+        "Food_category": "Naan",
+        "Calories": 230
+    },
+    {
+        "UserId": 1,
+        "RecordID": 441,
+        "Timestamp": "7/2/2024 15:01",
+        "Weight": 33.1,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 530
+    },
+    {
+        "UserId": 1,
+        "RecordID": 442,
+        "Timestamp": "8/2/2024 7:41",
+        "Weight": 32.9,
+        "Height": 1.68,
+        "Food_category": "Ziti",
+        "Calories": 440
+    },
+    {
+        "UserId": 1,
+        "RecordID": 443,
+        "Timestamp": "8/2/2024 12:16",
+        "Weight": 32.8,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 750
+    },
+    {
+        "UserId": 1,
+        "RecordID": 444,
+        "Timestamp": "8/2/2024 15:23",
+        "Weight": 32.5,
+        "Height": 1.68,
+        "Food_category": "Escargot",
+        "Calories": 300
+    },
+    {
+        "UserId": 1,
+        "RecordID": 445,
+        "Timestamp": "9/2/2024 9:45",
+        "Weight": 32.5,
+        "Height": 1.68,
+        "Food_category": "Indian Curry",
+        "Calories": 110
+    },
+    {
+        "UserId": 1,
+        "RecordID": 446,
+        "Timestamp": "9/2/2024 13:24",
+        "Weight": 32.4,
+        "Height": 1.68,
+        "Food_category": "Yakitori",
+        "Calories": 250
+    },
+    {
+        "UserId": 1,
+        "RecordID": 447,
+        "Timestamp": "9/2/2024 16:16",
+        "Weight": 32.4,
+        "Height": 1.68,
+        "Food_category": "Ice Cream",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 448,
+        "Timestamp": "10/2/2024 8:37",
+        "Weight": 32.5,
+        "Height": 1.68,
+        "Food_category": "Dim Sum",
+        "Calories": 180
+    },
+    {
+        "UserId": 1,
+        "RecordID": 449,
+        "Timestamp": "10/2/2024 13:07",
+        "Weight": 32.3,
+        "Height": 1.68,
+        "Food_category": "Ravioli",
+        "Calories": 660
+    },
+    {
+        "UserId": 1,
+        "RecordID": 450,
+        "Timestamp": "10/2/2024 15:58",
+        "Weight": 32.1,
+        "Height": 1.68,
+        "Food_category": "Chimichanga",
+        "Calories": 830
+    },
+    {
+        "UserId": 1,
+        "RecordID": 451,
+        "Timestamp": "11/2/2024 9:55",
+        "Weight": 31.9,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 490
+    },
+    {
+        "UserId": 1,
+        "RecordID": 452,
+        "Timestamp": "11/2/2024 12:07",
+        "Weight": 31.6,
+        "Height": 1.68,
+        "Food_category": "Poutine",
+        "Calories": 590
+    },
+    {
+        "UserId": 1,
+        "RecordID": 453,
+        "Timestamp": "11/2/2024 16:53",
+        "Weight": 31.7,
+        "Height": 1.68,
+        "Food_category": "Beef Steak",
+        "Calories": 270
+    },
+    {
+        "UserId": 1,
+        "RecordID": 454,
+        "Timestamp": "12/2/2024 8:36",
+        "Weight": 31.5,
+        "Height": 1.68,
+        "Food_category": "Hash Browns",
+        "Calories": 730
+    },
+    {
+        "UserId": 1,
+        "RecordID": 455,
+        "Timestamp": "12/2/2024 12:38",
+        "Weight": 31.6,
+        "Height": 1.68,
+        "Food_category": "Noodles",
+        "Calories": 570
+    },
+    {
+        "UserId": 1,
+        "RecordID": 456,
+        "Timestamp": "12/2/2024 16:32",
+        "Weight": 31.3,
+        "Height": 1.68,
+        "Food_category": "Bubble Tea",
+        "Calories": 620
+    },
+    {
+        "UserId": 1,
+        "RecordID": 457,
+        "Timestamp": "13/2/2024 10:34",
+        "Weight": 31.3,
+        "Height": 1.68,
+        "Food_category": "Chimichanga",
+        "Calories": 430
+    },
+    {
+        "UserId": 1,
+        "RecordID": 458,
+        "Timestamp": "13/2/2024 12:10",
+        "Weight": 31.0,
+        "Height": 1.68,
+        "Food_category": "Wontons",
+        "Calories": 990
+    },
+    {
+        "UserId": 1,
+        "RecordID": 459,
+        "Timestamp": "13/2/2024 16:45",
+        "Weight": 30.8,
+        "Height": 1.68,
+        "Food_category": "Chicken Wings",
+        "Calories": 690
+    },
+    {
+        "UserId": 1,
+        "RecordID": 460,
+        "Timestamp": "14/2/2024 9:55",
+        "Weight": 30.9,
+        "Height": 1.68,
+        "Food_category": "Beef Steak",
+        "Calories": 300
+    },
+    {
+        "UserId": 1,
+        "RecordID": 461,
+        "Timestamp": "14/2/2024 11:57",
+        "Weight": 31.0,
+        "Height": 1.68,
+        "Food_category": "Jollof Rice",
+        "Calories": 250
+    },
+    {
+        "UserId": 1,
+        "RecordID": 462,
+        "Timestamp": "14/2/2024 16:21",
+        "Weight": 30.8,
+        "Height": 1.68,
+        "Food_category": "Nachos",
+        "Calories": 870
+    },
+    {
+        "UserId": 1,
+        "RecordID": 463,
+        "Timestamp": "15/2/2024 10:42",
+        "Weight": 30.8,
+        "Height": 1.68,
+        "Food_category": "Vindaloo",
+        "Calories": 710
+    },
+    {
+        "UserId": 1,
+        "RecordID": 464,
+        "Timestamp": "15/2/2024 11:06",
+        "Weight": 30.7,
+        "Height": 1.68,
+        "Food_category": "Hummus",
+        "Calories": 810
+    },
+    {
+        "UserId": 1,
+        "RecordID": 465,
+        "Timestamp": "15/2/2024 15:43",
+        "Weight": 30.4,
+        "Height": 1.68,
+        "Food_category": "Hot Dog",
+        "Calories": 440
+    },
+    {
+        "UserId": 1,
+        "RecordID": 466,
+        "Timestamp": "16/2/2024 10:18",
+        "Weight": 30.5,
+        "Height": 1.68,
+        "Food_category": "Hamburger",
+        "Calories": 780
+    },
+    {
+        "UserId": 1,
+        "RecordID": 467,
+        "Timestamp": "16/2/2024 11:29",
+        "Weight": 30.3,
+        "Height": 1.68,
+        "Food_category": "Samosa",
+        "Calories": 210
+    },
+    {
+        "UserId": 1,
+        "RecordID": 468,
+        "Timestamp": "16/2/2024 15:20",
+        "Weight": 30.4,
+        "Height": 1.68,
+        "Food_category": "Avocado Toast",
+        "Calories": 210
+    },
+    {
+        "UserId": 1,
+        "RecordID": 469,
+        "Timestamp": "17/2/2024 7:29",
+        "Weight": 30.4,
+        "Height": 1.68,
+        "Food_category": "Meatballs",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 470,
+        "Timestamp": "17/2/2024 11:11",
+        "Weight": 30.1,
+        "Height": 1.68,
+        "Food_category": "Ravioli",
+        "Calories": 370
+    },
+    {
+        "UserId": 1,
+        "RecordID": 471,
+        "Timestamp": "17/2/2024 15:11",
+        "Weight": 30.2,
+        "Height": 1.68,
+        "Food_category": "Donuts",
+        "Calories": 510
+    },
+    {
+        "UserId": 1,
+        "RecordID": 472,
+        "Timestamp": "18/2/2024 9:50",
+        "Weight": 30.0,
+        "Height": 1.68,
+        "Food_category": "Oysters",
+        "Calories": 730
+    },
+    {
+        "UserId": 1,
+        "RecordID": 473,
+        "Timestamp": "18/2/2024 11:30",
+        "Weight": 29.8,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 560
+    },
+    {
+        "UserId": 1,
+        "RecordID": 474,
+        "Timestamp": "18/2/2024 16:51",
+        "Weight": 29.7,
+        "Height": 1.68,
+        "Food_category": "Katsu",
+        "Calories": 190
+    },
+    {
+        "UserId": 1,
+        "RecordID": 475,
+        "Timestamp": "19/2/2024 8:19",
+        "Weight": 29.7,
+        "Height": 1.68,
+        "Food_category": "Egg Rolls",
+        "Calories": 160
+    },
+    {
+        "UserId": 1,
+        "RecordID": 476,
+        "Timestamp": "19/2/2024 12:03",
+        "Weight": 29.4,
+        "Height": 1.68,
+        "Food_category": "Gyudon",
+        "Calories": 320
+    },
+    {
+        "UserId": 1,
+        "RecordID": 477,
+        "Timestamp": "19/2/2024 15:56",
+        "Weight": 29.2,
+        "Height": 1.68,
+        "Food_category": "Ratatouille",
+        "Calories": 930
+    },
+    {
+        "UserId": 1,
+        "RecordID": 478,
+        "Timestamp": "20/2/2024 7:55",
+        "Weight": 29.2,
+        "Height": 1.68,
+        "Food_category": "Burger",
+        "Calories": 510
+    },
+    {
+        "UserId": 1,
+        "RecordID": 479,
+        "Timestamp": "20/2/2024 13:03",
+        "Weight": 28.9,
+        "Height": 1.68,
+        "Food_category": "Taco",
+        "Calories": 980
+    },
+    {
+        "UserId": 1,
+        "RecordID": 480,
+        "Timestamp": "20/2/2024 16:07",
+        "Weight": 28.8,
+        "Height": 1.68,
+        "Food_category": "Donuts",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 481,
+        "Timestamp": "21/2/2024 9:26",
+        "Weight": 28.6,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 482,
+        "Timestamp": "21/2/2024 11:54",
+        "Weight": 28.5,
+        "Height": 1.68,
+        "Food_category": "Muffin",
+        "Calories": 540
+    },
+    {
+        "UserId": 1,
+        "RecordID": 483,
+        "Timestamp": "21/2/2024 16:11",
+        "Weight": 28.2,
+        "Height": 1.68,
+        "Food_category": "Vegan Burger",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 484,
+        "Timestamp": "22/2/2024 8:14",
+        "Weight": 28.1,
+        "Height": 1.68,
+        "Food_category": "Dumplings",
+        "Calories": 140
+    },
+    {
+        "UserId": 1,
+        "RecordID": 485,
+        "Timestamp": "22/2/2024 11:40",
+        "Weight": 27.9,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 510
+    },
+    {
+        "UserId": 1,
+        "RecordID": 486,
+        "Timestamp": "22/2/2024 16:00",
+        "Weight": 27.6,
+        "Height": 1.68,
+        "Food_category": "Ziti",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 487,
+        "Timestamp": "23/2/2024 9:01",
+        "Weight": 27.5,
+        "Height": 1.68,
+        "Food_category": "Lobster",
+        "Calories": 850
+    },
+    {
+        "UserId": 1,
+        "RecordID": 488,
+        "Timestamp": "23/2/2024 11:23",
+        "Weight": 27.3,
+        "Height": 1.68,
+        "Food_category": "Zucchini Noodles",
+        "Calories": 470
+    },
+    {
+        "UserId": 1,
+        "RecordID": 489,
+        "Timestamp": "23/2/2024 15:26",
+        "Weight": 27.4,
+        "Height": 1.68,
+        "Food_category": "Jerk Chicken",
+        "Calories": 580
+    },
+    {
+        "UserId": 1,
+        "RecordID": 490,
+        "Timestamp": "24/2/2024 10:04",
+        "Weight": 27.1,
+        "Height": 1.68,
+        "Food_category": "Irish Stew",
+        "Calories": 200
+    },
+    {
+        "UserId": 1,
+        "RecordID": 491,
+        "Timestamp": "24/2/2024 11:44",
+        "Weight": 27.0,
+        "Height": 1.68,
+        "Food_category": "Pasta",
+        "Calories": 790
+    },
+    {
+        "UserId": 1,
+        "RecordID": 492,
+        "Timestamp": "24/2/2024 16:32",
+        "Weight": 27.0,
+        "Height": 1.68,
+        "Food_category": "Ramen",
+        "Calories": 230
+    },
+    {
+        "UserId": 1,
+        "RecordID": 493,
+        "Timestamp": "25/2/2024 9:33",
+        "Weight": 27.0,
+        "Height": 1.68,
+        "Food_category": "Udon",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 494,
+        "Timestamp": "25/2/2024 13:08",
+        "Weight": 26.7,
+        "Height": 1.68,
+        "Food_category": "Jollof Rice",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 495,
+        "Timestamp": "25/2/2024 15:42",
+        "Weight": 26.7,
+        "Height": 1.68,
+        "Food_category": "Nachos",
+        "Calories": 920
+    },
+    {
+        "UserId": 1,
+        "RecordID": 496,
+        "Timestamp": "26/2/2024 9:38",
+        "Weight": 26.6,
+        "Height": 1.68,
+        "Food_category": "Goulash",
+        "Calories": 450
+    },
+    {
+        "UserId": 1,
+        "RecordID": 497,
+        "Timestamp": "26/2/2024 13:55",
+        "Weight": 26.5,
+        "Height": 1.68,
+        "Food_category": "Okonomiyaki",
+        "Calories": 500
+    },
+    {
+        "UserId": 1,
+        "RecordID": 498,
+        "Timestamp": "26/2/2024 16:55",
+        "Weight": 26.6,
+        "Height": 1.68,
+        "Food_category": "Irish Stew",
+        "Calories": 230
+    },
+    {
+        "UserId": 1,
+        "RecordID": 499,
+        "Timestamp": "27/2/2024 9:57",
+        "Weight": 26.7,
+        "Height": 1.68,
+        "Food_category": "Kebab",
+        "Calories": 230
+    },
+    {
+        "UserId": 1,
+        "RecordID": 500,
+        "Timestamp": "27/2/2024 11:22",
+        "Weight": 26.7,
+        "Height": 1.68,
+        "Food_category": "Ice Cream",
+        "Calories": 630
+    },
+    {
+        "UserId": 1,
+        "RecordID": 501,
+        "Timestamp": "27/2/2024 15:12",
+        "Weight": 26.5,
+        "Height": 1.68,
+        "Food_category": "Bagel",
+        "Calories": 690
+    },
+    {
+        "UserId": 1,
+        "RecordID": 502,
+        "Timestamp": "28/2/2024 8:38",
+        "Weight": 26.4,
+        "Height": 1.68,
+        "Food_category": "Churros",
+        "Calories": 970
+    },
+    {
+        "UserId": 1,
+        "RecordID": 503,
+        "Timestamp": "28/2/2024 12:57",
+        "Weight": 26.3,
+        "Height": 1.68,
+        "Food_category": "Onigiri",
+        "Calories": 490
+    },
+    {
+        "UserId": 1,
+        "RecordID": 504,
+        "Timestamp": "28/2/2024 16:41",
+        "Weight": 26.2,
+        "Height": 1.68,
+        "Food_category": "Quesadilla",
+        "Calories": 680
+    },
+    {
+        "UserId": 1,
+        "RecordID": 505,
+        "Timestamp": "29/2/2024 7:00",
+        "Weight": 26.2,
+        "Height": 1.68,
+        "Food_category": "Samosa",
+        "Calories": 290
+    },
+    {
+        "UserId": 1,
+        "RecordID": 506,
+        "Timestamp": "29/2/2024 12:30",
+        "Weight": 25.9,
+        "Height": 1.68,
+        "Food_category": "Pastrami",
+        "Calories": 580
+    },
+    {
+        "UserId": 1,
+        "RecordID": 507,
+        "Timestamp": "29/2/2024 16:03",
+        "Weight": 25.7,
+        "Height": 1.68,
+        "Food_category": "Laksa",
+        "Calories": 970
+    },
+    {
+        "UserId": 1,
+        "RecordID": 508,
+        "Timestamp": "1/3/2024 7:32",
+        "Weight": 25.7,
+        "Height": 1.68,
+        "Food_category": "Salmon",
+        "Calories": 110
+    },
+    {
+        "UserId": 1,
+        "RecordID": 509,
+        "Timestamp": "1/3/2024 11:31",
+        "Weight": 25.4,
+        "Height": 1.68,
+        "Food_category": "Dumplings",
+        "Calories": 590
+    },
+    {
+        "UserId": 1,
+        "RecordID": 510,
+        "Timestamp": "1/3/2024 16:01",
+        "Weight": 25.4,
+        "Height": 1.68,
+        "Food_category": "Katsu",
+        "Calories": 630
+    },
+    {
+        "UserId": 1,
+        "RecordID": 511,
+        "Timestamp": "2/3/2024 7:37",
+        "Weight": 25.5,
+        "Height": 1.68,
+        "Food_category": "Udon",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 512,
+        "Timestamp": "2/3/2024 11:50",
+        "Weight": 25.3,
+        "Height": 1.68,
+        "Food_category": "Hot Pot",
+        "Calories": 750
+    },
+    {
+        "UserId": 1,
+        "RecordID": 513,
+        "Timestamp": "2/3/2024 15:54",
+        "Weight": 25.4,
+        "Height": 1.68,
+        "Food_category": "Bread",
+        "Calories": 280
+    },
+    {
+        "UserId": 1,
+        "RecordID": 514,
+        "Timestamp": "3/3/2024 8:33",
+        "Weight": 25.3,
+        "Height": 1.68,
+        "Food_category": "Okonomiyaki",
+        "Calories": 340
+    },
+    {
+        "UserId": 1,
+        "RecordID": 515,
+        "Timestamp": "3/3/2024 13:03",
+        "Weight": 25.3,
+        "Height": 1.68,
+        "Food_category": "Ravioli",
+        "Calories": 590
+    },
+    {
+        "UserId": 1,
+        "RecordID": 516,
+        "Timestamp": "3/3/2024 15:19",
+        "Weight": 25.1,
+        "Height": 1.68,
+        "Food_category": "Yakisoba",
+        "Calories": 690
+    },
+    {
+        "UserId": 1,
+        "RecordID": 517,
+        "Timestamp": "4/3/2024 10:18",
+        "Weight": 25.2,
+        "Height": 1.68,
+        "Food_category": "Taco",
+        "Calories": 760
+    },
+    {
+        "UserId": 1,
+        "RecordID": 518,
+        "Timestamp": "4/3/2024 13:28",
+        "Weight": 25.2,
+        "Height": 1.68,
+        "Food_category": "Indian Curry",
+        "Calories": 800
+    },
+    {
+        "UserId": 1,
+        "RecordID": 519,
+        "Timestamp": "4/3/2024 16:49",
+        "Weight": 25.0,
+        "Height": 1.68,
+        "Food_category": "Moussaka",
+        "Calories": 960
+    },
+    {
+        "UserId": 1,
+        "RecordID": 520,
+        "Timestamp": "5/3/2024 10:18",
+        "Weight": 24.8,
+        "Height": 1.68,
+        "Food_category": "Gumbo",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 521,
+        "Timestamp": "5/3/2024 11:54",
+        "Weight": 24.9,
+        "Height": 1.68,
+        "Food_category": "French Fries",
+        "Calories": 780
+    },
+    {
+        "UserId": 1,
+        "RecordID": 522,
+        "Timestamp": "5/3/2024 16:05",
+        "Weight": 24.8,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 250
+    },
+    {
+        "UserId": 1,
+        "RecordID": 523,
+        "Timestamp": "6/3/2024 10:16",
+        "Weight": 24.8,
+        "Height": 1.68,
+        "Food_category": "Bread",
+        "Calories": 900
+    },
+    {
+        "UserId": 1,
+        "RecordID": 524,
+        "Timestamp": "6/3/2024 11:29",
+        "Weight": 24.8,
+        "Height": 1.68,
+        "Food_category": "Burger",
+        "Calories": 440
+    },
+    {
+        "UserId": 1,
+        "RecordID": 525,
+        "Timestamp": "6/3/2024 16:59",
+        "Weight": 24.7,
+        "Height": 1.68,
+        "Food_category": "Zucchini Noodles",
+        "Calories": 510
+    },
+    {
+        "UserId": 1,
+        "RecordID": 526,
+        "Timestamp": "7/3/2024 9:18",
+        "Weight": 24.7,
+        "Height": 1.68,
+        "Food_category": "Churros",
+        "Calories": 310
+    },
+    {
+        "UserId": 1,
+        "RecordID": 527,
+        "Timestamp": "7/3/2024 13:18",
+        "Weight": 24.7,
+        "Height": 1.68,
+        "Food_category": "Tzatziki",
+        "Calories": 150
+    },
+    {
+        "UserId": 1,
+        "RecordID": 528,
+        "Timestamp": "7/3/2024 16:20",
+        "Weight": 24.7,
+        "Height": 1.68,
+        "Food_category": "Cupcake",
+        "Calories": 350
+    },
+    {
+        "UserId": 1,
+        "RecordID": 529,
+        "Timestamp": "8/3/2024 7:36",
+        "Weight": 24.7,
+        "Height": 1.68,
+        "Food_category": "Jerk Chicken",
+        "Calories": 130
+    },
+    {
+        "UserId": 1,
+        "RecordID": 530,
+        "Timestamp": "8/3/2024 13:09",
+        "Weight": 24.7,
+        "Height": 1.68,
+        "Food_category": "Ceviche",
+        "Calories": 520
+    },
+    {
+        "UserId": 1,
+        "RecordID": 531,
+        "Timestamp": "8/3/2024 15:57",
+        "Weight": 24.7,
+        "Height": 1.68,
+        "Food_category": "Indian Curry",
+        "Calories": 960
+    },
+    {
+        "UserId": 1,
+        "RecordID": 532,
+        "Timestamp": "9/3/2024 9:00",
+        "Weight": 24.6,
+        "Height": 1.68,
+        "Food_category": "Yakitori",
+        "Calories": 200
+    },
+    {
+        "UserId": 1,
+        "RecordID": 533,
+        "Timestamp": "9/3/2024 13:11",
+        "Weight": 24.5,
+        "Height": 1.68,
+        "Food_category": "Quiche",
+        "Calories": 870
+    },
+    {
+        "UserId": 1,
+        "RecordID": 534,
+        "Timestamp": "9/3/2024 16:06",
+        "Weight": 24.4,
+        "Height": 1.68,
+        "Food_category": "Macaroni and Cheese",
+        "Calories": 280
+    },
+    {
+        "UserId": 1,
+        "RecordID": 535,
+        "Timestamp": "10/3/2024 7:00",
+        "Weight": 24.4,
+        "Height": 1.68,
+        "Food_category": "Jollof Rice",
+        "Calories": 660
+    },
+    {
+        "UserId": 1,
+        "RecordID": 536,
+        "Timestamp": "10/3/2024 11:13",
+        "Weight": 24.3,
+        "Height": 1.68,
+        "Food_category": "Bagel",
+        "Calories": 310
+    },
+    {
+        "UserId": 1,
+        "RecordID": 537,
+        "Timestamp": "10/3/2024 16:32",
+        "Weight": 24.1,
+        "Height": 1.68,
+        "Food_category": "Sushi",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 538,
+        "Timestamp": "11/3/2024 10:58",
+        "Weight": 23.9,
+        "Height": 1.68,
+        "Food_category": "Barbeque",
+        "Calories": 720
+    },
+    {
+        "UserId": 1,
+        "RecordID": 539,
+        "Timestamp": "11/3/2024 13:05",
+        "Weight": 23.9,
+        "Height": 1.68,
+        "Food_category": "Hash Browns",
+        "Calories": 880
+    },
+    {
+        "UserId": 1,
+        "RecordID": 540,
+        "Timestamp": "11/3/2024 16:51",
+        "Weight": 23.9,
+        "Height": 1.68,
+        "Food_category": "Dumplings",
+        "Calories": 360
+    },
+    {
+        "UserId": 1,
+        "RecordID": 541,
+        "Timestamp": "12/3/2024 8:02",
+        "Weight": 23.7,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 570
+    },
+    {
+        "UserId": 1,
+        "RecordID": 542,
+        "Timestamp": "12/3/2024 13:47",
+        "Weight": 23.5,
+        "Height": 1.68,
+        "Food_category": "Pastrami",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 543,
+        "Timestamp": "12/3/2024 15:58",
+        "Weight": 23.3,
+        "Height": 1.68,
+        "Food_category": "Bagel",
+        "Calories": 460
+    },
+    {
+        "UserId": 1,
+        "RecordID": 544,
+        "Timestamp": "13/3/2024 10:54",
+        "Weight": 23.3,
+        "Height": 1.68,
+        "Food_category": "Macaroni and Cheese",
+        "Calories": 250
+    },
+    {
+        "UserId": 1,
+        "RecordID": 545,
+        "Timestamp": "13/3/2024 13:25",
+        "Weight": 23.4,
+        "Height": 1.68,
+        "Food_category": "Onigiri",
+        "Calories": 320
+    },
+    {
+        "UserId": 1,
+        "RecordID": 546,
+        "Timestamp": "13/3/2024 15:59",
+        "Weight": 23.2,
+        "Height": 1.68,
+        "Food_category": "Wontons",
+        "Calories": 840
+    },
+    {
+        "UserId": 1,
+        "RecordID": 547,
+        "Timestamp": "14/3/2024 8:30",
+        "Weight": 23.3,
+        "Height": 1.68,
+        "Food_category": "Pastrami",
+        "Calories": 880
+    },
+    {
+        "UserId": 1,
+        "RecordID": 548,
+        "Timestamp": "14/3/2024 12:27",
+        "Weight": 23.4,
+        "Height": 1.68,
+        "Food_category": "Sushi",
+        "Calories": 120
+    },
+    {
+        "UserId": 1,
+        "RecordID": 549,
+        "Timestamp": "14/3/2024 15:21",
+        "Weight": 23.2,
+        "Height": 1.68,
+        "Food_category": "Vegan Burger",
+        "Calories": 800
+    },
+    {
+        "UserId": 1,
+        "RecordID": 550,
+        "Timestamp": "15/3/2024 8:29",
+        "Weight": 22.9,
+        "Height": 1.68,
+        "Food_category": "Nasi Goreng",
+        "Calories": 110
+    },
+    {
+        "UserId": 1,
+        "RecordID": 551,
+        "Timestamp": "15/3/2024 12:49",
+        "Weight": 23.0,
+        "Height": 1.68,
+        "Food_category": "Omelette",
+        "Calories": 100
+    },
+    {
+        "UserId": 1,
+        "RecordID": 552,
+        "Timestamp": "15/3/2024 15:59",
+        "Weight": 22.8,
+        "Height": 1.68,
+        "Food_category": "Hainanese Chicken Rice",
+        "Calories": 830
+    },
+    {
+        "UserId": 1,
+        "RecordID": 553,
+        "Timestamp": "16/3/2024 10:39",
+        "Weight": 22.9,
+        "Height": 1.68,
+        "Food_category": "Oysters",
+        "Calories": 770
+    },
+    {
+        "UserId": 1,
+        "RecordID": 554,
+        "Timestamp": "16/3/2024 13:10",
+        "Weight": 22.8,
+        "Height": 1.68,
+        "Food_category": "Onigiri",
+        "Calories": 430
+    },
+    {
+        "UserId": 1,
+        "RecordID": 555,
+        "Timestamp": "16/3/2024 16:14",
+        "Weight": 22.9,
+        "Height": 1.68,
+        "Food_category": "Taco",
+        "Calories": 160
+    },
+    {
+        "UserId": 1,
+        "RecordID": 556,
+        "Timestamp": "17/3/2024 8:16",
+        "Weight": 22.8,
+        "Height": 1.68,
+        "Food_category": "Jollof Rice",
+        "Calories": 470
+    },
+    {
+        "UserId": 1,
+        "RecordID": 557,
+        "Timestamp": "17/3/2024 11:25",
+        "Weight": 22.8,
+        "Height": 1.68,
+        "Food_category": "Avocado Toast",
+        "Calories": 840
+    },
+    {
+        "UserId": 1,
+        "RecordID": 558,
+        "Timestamp": "17/3/2024 15:29",
+        "Weight": 22.8,
+        "Height": 1.68,
+        "Food_category": "Hummus",
+        "Calories": 680
+    },
+    {
+        "UserId": 1,
+        "RecordID": 559,
+        "Timestamp": "18/3/2024 8:07",
+        "Weight": 22.9,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 300
+    },
+    {
+        "UserId": 1,
+        "RecordID": 560,
+        "Timestamp": "18/3/2024 11:11",
+        "Weight": 22.9,
+        "Height": 1.68,
+        "Food_category": "Gyudon",
+        "Calories": 310
+    },
+    {
+        "UserId": 1,
+        "RecordID": 561,
+        "Timestamp": "18/3/2024 16:13",
+        "Weight": 22.8,
+        "Height": 1.68,
+        "Food_category": "Quiche",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 562,
+        "Timestamp": "19/3/2024 9:51",
+        "Weight": 22.5,
+        "Height": 1.68,
+        "Food_category": "Dumplings",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 563,
+        "Timestamp": "19/3/2024 12:42",
+        "Weight": 22.4,
+        "Height": 1.68,
+        "Food_category": "Bread",
+        "Calories": 830
+    },
+    {
+        "UserId": 1,
+        "RecordID": 564,
+        "Timestamp": "19/3/2024 15:00",
+        "Weight": 22.5,
+        "Height": 1.68,
+        "Food_category": "Ice Cream",
+        "Calories": 620
+    },
+    {
+        "UserId": 1,
+        "RecordID": 565,
+        "Timestamp": "20/3/2024 9:18",
+        "Weight": 22.4,
+        "Height": 1.68,
+        "Food_category": "Pizza",
+        "Calories": 370
+    },
+    {
+        "UserId": 1,
+        "RecordID": 566,
+        "Timestamp": "20/3/2024 12:59",
+        "Weight": 22.4,
+        "Height": 1.68,
+        "Food_category": "Lobster",
+        "Calories": 440
+    },
+    {
+        "UserId": 1,
+        "RecordID": 567,
+        "Timestamp": "20/3/2024 15:49",
+        "Weight": 22.3,
+        "Height": 1.68,
+        "Food_category": "Laksa",
+        "Calories": 480
+    },
+    {
+        "UserId": 1,
+        "RecordID": 568,
+        "Timestamp": "21/3/2024 8:44",
+        "Weight": 22.4,
+        "Height": 1.68,
+        "Food_category": "Laksa",
+        "Calories": 280
+    },
+    {
+        "UserId": 1,
+        "RecordID": 569,
+        "Timestamp": "21/3/2024 12:22",
+        "Weight": 22.4,
+        "Height": 1.68,
+        "Food_category": "Taco",
+        "Calories": 250
+    },
+    {
+        "UserId": 1,
+        "RecordID": 570,
+        "Timestamp": "21/3/2024 16:38",
+        "Weight": 22.1,
+        "Height": 1.68,
+        "Food_category": "Zucchini Noodles",
+        "Calories": 800
+    },
+    {
+        "UserId": 1,
+        "RecordID": 571,
+        "Timestamp": "22/3/2024 10:41",
+        "Weight": 21.9,
+        "Height": 1.68,
+        "Food_category": "Meatballs",
+        "Calories": 740
+    },
+    {
+        "UserId": 1,
+        "RecordID": 572,
+        "Timestamp": "22/3/2024 11:59",
+        "Weight": 21.8,
+        "Height": 1.68,
+        "Food_category": "Paella",
+        "Calories": 710
+    },
+    {
+        "UserId": 1,
+        "RecordID": 573,
+        "Timestamp": "22/3/2024 16:36",
+        "Weight": 21.7,
+        "Height": 1.68,
+        "Food_category": "Hummus",
+        "Calories": 340
+    },
+    {
+        "UserId": 1,
+        "RecordID": 574,
+        "Timestamp": "23/3/2024 8:52",
+        "Weight": 21.8,
+        "Height": 1.68,
+        "Food_category": "Barbeque",
+        "Calories": 100
+    },
+    {
+        "UserId": 1,
+        "RecordID": 575,
+        "Timestamp": "23/3/2024 12:01",
+        "Weight": 21.6,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 950
+    },
+    {
+        "UserId": 1,
+        "RecordID": 576,
+        "Timestamp": "23/3/2024 15:26",
+        "Weight": 21.6,
+        "Height": 1.68,
+        "Food_category": "Pastrami",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 577,
+        "Timestamp": "24/3/2024 9:28",
+        "Weight": 21.4,
+        "Height": 1.68,
+        "Food_category": "Fried Rice",
+        "Calories": 770
+    },
+    {
+        "UserId": 1,
+        "RecordID": 578,
+        "Timestamp": "24/3/2024 13:14",
+        "Weight": 21.1,
+        "Height": 1.68,
+        "Food_category": "Sausages",
+        "Calories": 770
+    },
+    {
+        "UserId": 1,
+        "RecordID": 579,
+        "Timestamp": "24/3/2024 16:30",
+        "Weight": 21.2,
+        "Height": 1.68,
+        "Food_category": "Beef Steak",
+        "Calories": 530
+    },
+    {
+        "UserId": 1,
+        "RecordID": 580,
+        "Timestamp": "25/3/2024 9:22",
+        "Weight": 21.1,
+        "Height": 1.68,
+        "Food_category": "Bagel",
+        "Calories": 150
+    },
+    {
+        "UserId": 1,
+        "RecordID": 581,
+        "Timestamp": "25/3/2024 12:13",
+        "Weight": 21.2,
+        "Height": 1.68,
+        "Food_category": "Poutine",
+        "Calories": 160
+    },
+    {
+        "UserId": 1,
+        "RecordID": 582,
+        "Timestamp": "25/3/2024 15:55",
+        "Weight": 20.9,
+        "Height": 1.68,
+        "Food_category": "Hummus",
+        "Calories": 680
+    },
+    {
+        "UserId": 1,
+        "RecordID": 583,
+        "Timestamp": "26/3/2024 7:35",
+        "Weight": 20.6,
+        "Height": 1.68,
+        "Food_category": "Ceviche",
+        "Calories": 450
+    },
+    {
+        "UserId": 1,
+        "RecordID": 584,
+        "Timestamp": "26/3/2024 11:31",
+        "Weight": 20.3,
+        "Height": 1.68,
+        "Food_category": "Ice Cream",
+        "Calories": 380
+    },
+    {
+        "UserId": 1,
+        "RecordID": 585,
+        "Timestamp": "26/3/2024 16:45",
+        "Weight": 20.4,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 950
+    },
+    {
+        "UserId": 1,
+        "RecordID": 586,
+        "Timestamp": "27/3/2024 9:30",
+        "Weight": 20.4,
+        "Height": 1.68,
+        "Food_category": "Dim Sum",
+        "Calories": 130
+    },
+    {
+        "UserId": 1,
+        "RecordID": 587,
+        "Timestamp": "27/3/2024 12:33",
+        "Weight": 20.1,
+        "Height": 1.68,
+        "Food_category": "Chicken Wings",
+        "Calories": 880
+    },
+    {
+        "UserId": 1,
+        "RecordID": 588,
+        "Timestamp": "27/3/2024 16:28",
+        "Weight": 19.9,
+        "Height": 1.68,
+        "Food_category": "Tzatziki",
+        "Calories": 440
+    },
+    {
+        "UserId": 1,
+        "RecordID": 589,
+        "Timestamp": "28/3/2024 10:35",
+        "Weight": 19.9,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 810
+    },
+    {
+        "UserId": 1,
+        "RecordID": 590,
+        "Timestamp": "28/3/2024 12:14",
+        "Weight": 19.9,
+        "Height": 1.68,
+        "Food_category": "Ramen",
+        "Calories": 640
+    },
+    {
+        "UserId": 1,
+        "RecordID": 591,
+        "Timestamp": "28/3/2024 16:48",
+        "Weight": 19.6,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 310
+    },
+    {
+        "UserId": 1,
+        "RecordID": 592,
+        "Timestamp": "29/3/2024 8:14",
+        "Weight": 19.5,
+        "Height": 1.68,
+        "Food_category": "Ziti",
+        "Calories": 750
+    },
+    {
+        "UserId": 1,
+        "RecordID": 593,
+        "Timestamp": "29/3/2024 13:38",
+        "Weight": 19.5,
+        "Height": 1.68,
+        "Food_category": "Fried Chicken",
+        "Calories": 700
+    },
+    {
+        "UserId": 1,
+        "RecordID": 594,
+        "Timestamp": "29/3/2024 16:09",
+        "Weight": 19.2,
+        "Height": 1.68,
+        "Food_category": "Laksa",
+        "Calories": 860
+    },
+    {
+        "UserId": 1,
+        "RecordID": 595,
+        "Timestamp": "30/3/2024 10:35",
+        "Weight": 18.9,
+        "Height": 1.68,
+        "Food_category": "Donuts",
+        "Calories": 490
+    },
+    {
+        "UserId": 1,
+        "RecordID": 596,
+        "Timestamp": "30/3/2024 13:22",
+        "Weight": 18.9,
+        "Height": 1.68,
+        "Food_category": "Samosa",
+        "Calories": 410
+    },
+    {
+        "UserId": 1,
+        "RecordID": 597,
+        "Timestamp": "30/3/2024 15:27",
+        "Weight": 18.9,
+        "Height": 1.68,
+        "Food_category": "Egg Rolls",
+        "Calories": 460
+    },
+    {
+        "UserId": 1,
+        "RecordID": 598,
+        "Timestamp": "1/4/2024 8:39",
+        "Weight": 18.7,
+        "Height": 1.68,
+        "Food_category": "Naan",
+        "Calories": 210
+    },
+    {
+        "UserId": 1,
+        "RecordID": 599,
+        "Timestamp": "1/4/2024 11:15",
+        "Weight": 18.7,
+        "Height": 1.68,
+        "Food_category": "Quiche",
+        "Calories": 540
+    },
+    {
+        "UserId": 1,
+        "RecordID": 600,
+        "Timestamp": "1/4/2024 16:47",
+        "Weight": 18.5,
+        "Height": 1.68,
+        "Food_category": "Ramen",
+        "Calories": 360
+    },
+    {
+        "UserId": 1,
+        "RecordID": 601,
+        "Timestamp": "2/4/2024 10:15",
+        "Weight": 18.2,
+        "Height": 1.68,
+        "Food_category": "Pasta",
+        "Calories": 240
+    },
+    {
+        "UserId": 1,
+        "RecordID": 602,
+        "Timestamp": "2/4/2024 12:20",
+        "Weight": 18.2,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 150
+    },
+    {
+        "UserId": 1,
+        "RecordID": 603,
+        "Timestamp": "2/4/2024 15:59",
+        "Weight": 18.0,
+        "Height": 1.68,
+        "Food_category": "Cannoli",
+        "Calories": 990
+    },
+    {
+        "UserId": 1,
+        "RecordID": 604,
+        "Timestamp": "3/4/2024 9:50",
+        "Weight": 18.0,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 160
+    },
+    {
+        "UserId": 1,
+        "RecordID": 605,
+        "Timestamp": "3/4/2024 12:58",
+        "Weight": 18.1,
+        "Height": 1.68,
+        "Food_category": "French Fries",
+        "Calories": 540
+    },
+    {
+        "UserId": 1,
+        "RecordID": 606,
+        "Timestamp": "3/4/2024 16:43",
+        "Weight": 17.8,
+        "Height": 1.68,
+        "Food_category": "Barbeque",
+        "Calories": 400
+    },
+    {
+        "UserId": 1,
+        "RecordID": 607,
+        "Timestamp": "4/4/2024 7:30",
+        "Weight": 17.8,
+        "Height": 1.68,
+        "Food_category": "Noodles",
+        "Calories": 360
+    },
+    {
+        "UserId": 1,
+        "RecordID": 608,
+        "Timestamp": "4/4/2024 12:30",
+        "Weight": 17.9,
+        "Height": 1.68,
+        "Food_category": "Hot Pot",
+        "Calories": 570
+    },
+    {
+        "UserId": 1,
+        "RecordID": 609,
+        "Timestamp": "4/4/2024 15:19",
+        "Weight": 18.0,
+        "Height": 1.68,
+        "Food_category": "Gumbo",
+        "Calories": 220
+    },
+    {
+        "UserId": 1,
+        "RecordID": 610,
+        "Timestamp": "5/4/2024 7:32",
+        "Weight": 17.8,
+        "Height": 1.68,
+        "Food_category": "Hot Dog",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 611,
+        "Timestamp": "5/4/2024 12:13",
+        "Weight": 17.9,
+        "Height": 1.68,
+        "Food_category": "Enchiladas",
+        "Calories": 360
+    },
+    {
+        "UserId": 1,
+        "RecordID": 612,
+        "Timestamp": "5/4/2024 15:16",
+        "Weight": 17.6,
+        "Height": 1.68,
+        "Food_category": "Pizza",
+        "Calories": 940
+    },
+    {
+        "UserId": 1,
+        "RecordID": 613,
+        "Timestamp": "6/4/2024 8:58",
+        "Weight": 17.4,
+        "Height": 1.68,
+        "Food_category": "Jerk Chicken",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 614,
+        "Timestamp": "6/4/2024 12:56",
+        "Weight": 17.2,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 820
+    },
+    {
+        "UserId": 1,
+        "RecordID": 615,
+        "Timestamp": "6/4/2024 15:32",
+        "Weight": 17.3,
+        "Height": 1.68,
+        "Food_category": "French Fries",
+        "Calories": 710
+    },
+    {
+        "UserId": 1,
+        "RecordID": 616,
+        "Timestamp": "7/4/2024 8:44",
+        "Weight": 17.4,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 450
+    },
+    {
+        "UserId": 1,
+        "RecordID": 617,
+        "Timestamp": "7/4/2024 11:34",
+        "Weight": 17.3,
+        "Height": 1.68,
+        "Food_category": "Wiener Schnitzel",
+        "Calories": 100
+    },
+    {
+        "UserId": 1,
+        "RecordID": 618,
+        "Timestamp": "7/4/2024 16:57",
+        "Weight": 17.2,
+        "Height": 1.68,
+        "Food_category": "Muffin",
+        "Calories": 180
+    },
+    {
+        "UserId": 1,
+        "RecordID": 619,
+        "Timestamp": "8/4/2024 10:17",
+        "Weight": 17.1,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 390
+    },
+    {
+        "UserId": 1,
+        "RecordID": 620,
+        "Timestamp": "8/4/2024 11:04",
+        "Weight": 17.1,
+        "Height": 1.68,
+        "Food_category": "Hot Pot",
+        "Calories": 950
+    },
+    {
+        "UserId": 1,
+        "RecordID": 621,
+        "Timestamp": "8/4/2024 15:35",
+        "Weight": 17.1,
+        "Height": 1.68,
+        "Food_category": "Tzatziki",
+        "Calories": 960
+    },
+    {
+        "UserId": 1,
+        "RecordID": 622,
+        "Timestamp": "9/4/2024 9:30",
+        "Weight": 16.9,
+        "Height": 1.68,
+        "Food_category": "Kimchi",
+        "Calories": 250
+    },
+    {
+        "UserId": 1,
+        "RecordID": 623,
+        "Timestamp": "9/4/2024 13:43",
+        "Weight": 16.9,
+        "Height": 1.68,
+        "Food_category": "Katsu",
+        "Calories": 330
+    },
+    {
+        "UserId": 1,
+        "RecordID": 624,
+        "Timestamp": "9/4/2024 15:23",
+        "Weight": 17.0,
+        "Height": 1.68,
+        "Food_category": "Onigiri",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 625,
+        "Timestamp": "10/4/2024 8:33",
+        "Weight": 16.7,
+        "Height": 1.68,
+        "Food_category": "French Fries",
+        "Calories": 190
+    },
+    {
+        "UserId": 1,
+        "RecordID": 626,
+        "Timestamp": "10/4/2024 12:23",
+        "Weight": 16.6,
+        "Height": 1.68,
+        "Food_category": "Sashimi Bowl",
+        "Calories": 820
+    },
+    {
+        "UserId": 1,
+        "RecordID": 627,
+        "Timestamp": "10/4/2024 15:02",
+        "Weight": 16.7,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 628,
+        "Timestamp": "11/4/2024 9:35",
+        "Weight": 16.6,
+        "Height": 1.68,
+        "Food_category": "Omelette",
+        "Calories": 520
+    },
+    {
+        "UserId": 1,
+        "RecordID": 629,
+        "Timestamp": "11/4/2024 11:44",
+        "Weight": 16.5,
+        "Height": 1.68,
+        "Food_category": "Yakisoba",
+        "Calories": 450
+    },
+    {
+        "UserId": 1,
+        "RecordID": 630,
+        "Timestamp": "11/4/2024 16:03",
+        "Weight": 16.5,
+        "Height": 1.68,
+        "Food_category": "Kebab",
+        "Calories": 580
+    },
+    {
+        "UserId": 1,
+        "RecordID": 631,
+        "Timestamp": "12/4/2024 9:50",
+        "Weight": 16.5,
+        "Height": 1.68,
+        "Food_category": "Waffles",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 632,
+        "Timestamp": "12/4/2024 11:00",
+        "Weight": 16.2,
+        "Height": 1.68,
+        "Food_category": "Wiener Schnitzel",
+        "Calories": 240
+    },
+    {
+        "UserId": 1,
+        "RecordID": 633,
+        "Timestamp": "12/4/2024 16:18",
+        "Weight": 15.9,
+        "Height": 1.68,
+        "Food_category": "Ravioli",
+        "Calories": 910
+    },
+    {
+        "UserId": 1,
+        "RecordID": 634,
+        "Timestamp": "13/4/2024 10:42",
+        "Weight": 15.7,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 860
+    },
+    {
+        "UserId": 1,
+        "RecordID": 635,
+        "Timestamp": "13/4/2024 11:57",
+        "Weight": 15.7,
+        "Height": 1.68,
+        "Food_category": "Hummus",
+        "Calories": 450
+    },
+    {
+        "UserId": 1,
+        "RecordID": 636,
+        "Timestamp": "13/4/2024 15:19",
+        "Weight": 15.8,
+        "Height": 1.68,
+        "Food_category": "Tiramisu",
+        "Calories": 840
+    },
+    {
+        "UserId": 1,
+        "RecordID": 637,
+        "Timestamp": "14/4/2024 7:26",
+        "Weight": 15.7,
+        "Height": 1.68,
+        "Food_category": "Linguine",
+        "Calories": 740
+    },
+    {
+        "UserId": 1,
+        "RecordID": 638,
+        "Timestamp": "14/4/2024 11:33",
+        "Weight": 15.6,
+        "Height": 1.68,
+        "Food_category": "Hot Pot",
+        "Calories": 100
+    },
+    {
+        "UserId": 1,
+        "RecordID": 639,
+        "Timestamp": "14/4/2024 15:25",
+        "Weight": 15.7,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 600
+    },
+    {
+        "UserId": 1,
+        "RecordID": 640,
+        "Timestamp": "15/4/2024 10:09",
+        "Weight": 15.6,
+        "Height": 1.68,
+        "Food_category": "Macaroni and Cheese",
+        "Calories": 480
+    },
+    {
+        "UserId": 1,
+        "RecordID": 641,
+        "Timestamp": "15/4/2024 13:41",
+        "Weight": 15.7,
+        "Height": 1.68,
+        "Food_category": "Noodles",
+        "Calories": 380
+    },
+    {
+        "UserId": 1,
+        "RecordID": 642,
+        "Timestamp": "15/4/2024 15:04",
+        "Weight": 15.8,
+        "Height": 1.68,
+        "Food_category": "Fried Chicken",
+        "Calories": 780
+    },
+    {
+        "UserId": 1,
+        "RecordID": 643,
+        "Timestamp": "16/4/2024 8:33",
+        "Weight": 15.5,
+        "Height": 1.68,
+        "Food_category": "Pastrami",
+        "Calories": 640
+    },
+    {
+        "UserId": 1,
+        "RecordID": 644,
+        "Timestamp": "16/4/2024 12:06",
+        "Weight": 15.5,
+        "Height": 1.68,
+        "Food_category": "Miso Soup",
+        "Calories": 830
+    },
+    {
+        "UserId": 1,
+        "RecordID": 645,
+        "Timestamp": "16/4/2024 15:29",
+        "Weight": 15.6,
+        "Height": 1.68,
+        "Food_category": "Wontons",
+        "Calories": 240
+    },
+    {
+        "UserId": 1,
+        "RecordID": 646,
+        "Timestamp": "17/4/2024 10:00",
+        "Weight": 15.4,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 310
+    },
+    {
+        "UserId": 1,
+        "RecordID": 647,
+        "Timestamp": "17/4/2024 13:19",
+        "Weight": 15.4,
+        "Height": 1.68,
+        "Food_category": "French Fries",
+        "Calories": 120
+    },
+    {
+        "UserId": 1,
+        "RecordID": 648,
+        "Timestamp": "17/4/2024 16:59",
+        "Weight": 15.2,
+        "Height": 1.68,
+        "Food_category": "Cannoli",
+        "Calories": 310
+    },
+    {
+        "UserId": 1,
+        "RecordID": 649,
+        "Timestamp": "18/4/2024 7:46",
+        "Weight": 15.2,
+        "Height": 1.68,
+        "Food_category": "Nachos",
+        "Calories": 450
+    },
+    {
+        "UserId": 1,
+        "RecordID": 650,
+        "Timestamp": "18/4/2024 11:31",
+        "Weight": 14.9,
+        "Height": 1.68,
+        "Food_category": "Wiener Schnitzel",
+        "Calories": 220
+    },
+    {
+        "UserId": 1,
+        "RecordID": 651,
+        "Timestamp": "18/4/2024 15:32",
+        "Weight": 14.9,
+        "Height": 1.68,
+        "Food_category": "Goulash",
+        "Calories": 480
+    },
+    {
+        "UserId": 1,
+        "RecordID": 652,
+        "Timestamp": "19/4/2024 10:42",
+        "Weight": 14.9,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 250
+    },
+    {
+        "UserId": 1,
+        "RecordID": 653,
+        "Timestamp": "19/4/2024 11:20",
+        "Weight": 14.6,
+        "Height": 1.68,
+        "Food_category": "Escargot",
+        "Calories": 550
+    },
+    {
+        "UserId": 1,
+        "RecordID": 654,
+        "Timestamp": "19/4/2024 15:51",
+        "Weight": 14.4,
+        "Height": 1.68,
+        "Food_category": "Cinnamon Roll",
+        "Calories": 920
+    },
+    {
+        "UserId": 1,
+        "RecordID": 655,
+        "Timestamp": "20/4/2024 7:06",
+        "Weight": 14.5,
+        "Height": 1.68,
+        "Food_category": "Ceviche",
+        "Calories": 880
+    },
+    {
+        "UserId": 1,
+        "RecordID": 656,
+        "Timestamp": "20/4/2024 13:18",
+        "Weight": 14.5,
+        "Height": 1.68,
+        "Food_category": "Pasta",
+        "Calories": 710
+    },
+    {
+        "UserId": 1,
+        "RecordID": 657,
+        "Timestamp": "20/4/2024 15:29",
+        "Weight": 14.5,
+        "Height": 1.68,
+        "Food_category": "Falafel",
+        "Calories": 430
+    },
+    {
+        "UserId": 1,
+        "RecordID": 658,
+        "Timestamp": "21/4/2024 10:24",
+        "Weight": 14.5,
+        "Height": 1.68,
+        "Food_category": "Nasi Goreng",
+        "Calories": 110
+    },
+    {
+        "UserId": 1,
+        "RecordID": 659,
+        "Timestamp": "21/4/2024 11:10",
+        "Weight": 14.5,
+        "Height": 1.68,
+        "Food_category": "Baklava",
+        "Calories": 980
+    },
+    {
+        "UserId": 1,
+        "RecordID": 660,
+        "Timestamp": "21/4/2024 16:00",
+        "Weight": 14.6,
+        "Height": 1.68,
+        "Food_category": "Zucchini Noodles",
+        "Calories": 660
+    },
+    {
+        "UserId": 1,
+        "RecordID": 661,
+        "Timestamp": "22/4/2024 7:08",
+        "Weight": 14.5,
+        "Height": 1.68,
+        "Food_category": "Ramen",
+        "Calories": 730
+    },
+    {
+        "UserId": 1,
+        "RecordID": 662,
+        "Timestamp": "22/4/2024 11:37",
+        "Weight": 14.3,
+        "Height": 1.68,
+        "Food_category": "Jollof Rice",
+        "Calories": 820
+    },
+    {
+        "UserId": 1,
+        "RecordID": 663,
+        "Timestamp": "22/4/2024 16:31",
+        "Weight": 14.1,
+        "Height": 1.68,
+        "Food_category": "Paella",
+        "Calories": 920
+    },
+    {
+        "UserId": 1,
+        "RecordID": 664,
+        "Timestamp": "23/4/2024 10:16",
+        "Weight": 14.0,
+        "Height": 1.68,
+        "Food_category": "Ice Cream",
+        "Calories": 490
+    },
+    {
+        "UserId": 1,
+        "RecordID": 665,
+        "Timestamp": "23/4/2024 12:44",
+        "Weight": 14.1,
+        "Height": 1.68,
+        "Food_category": "Barbeque",
+        "Calories": 310
+    },
+    {
+        "UserId": 1,
+        "RecordID": 666,
+        "Timestamp": "23/4/2024 16:45",
+        "Weight": 14.0,
+        "Height": 1.68,
+        "Food_category": "Paella",
+        "Calories": 870
+    },
+    {
+        "UserId": 1,
+        "RecordID": 667,
+        "Timestamp": "24/4/2024 7:43",
+        "Weight": 14.1,
+        "Height": 1.68,
+        "Food_category": "Vegan Burger",
+        "Calories": 600
+    },
+    {
+        "UserId": 1,
+        "RecordID": 668,
+        "Timestamp": "24/4/2024 13:04",
+        "Weight": 13.9,
+        "Height": 1.68,
+        "Food_category": "Pancake",
+        "Calories": 630
+    },
+    {
+        "UserId": 1,
+        "RecordID": 669,
+        "Timestamp": "24/4/2024 16:43",
+        "Weight": 13.7,
+        "Height": 1.68,
+        "Food_category": "Burger",
+        "Calories": 350
+    },
+    {
+        "UserId": 1,
+        "RecordID": 670,
+        "Timestamp": "25/4/2024 7:13",
+        "Weight": 13.5,
+        "Height": 1.68,
+        "Food_category": "Wontons",
+        "Calories": 450
+    },
+    {
+        "UserId": 1,
+        "RecordID": 671,
+        "Timestamp": "25/4/2024 12:22",
+        "Weight": 13.4,
+        "Height": 1.68,
+        "Food_category": "Naan",
+        "Calories": 880
+    },
+    {
+        "UserId": 1,
+        "RecordID": 672,
+        "Timestamp": "25/4/2024 15:27",
+        "Weight": 13.1,
+        "Height": 1.68,
+        "Food_category": "Churros",
+        "Calories": 170
+    },
+    {
+        "UserId": 1,
+        "RecordID": 673,
+        "Timestamp": "26/4/2024 7:59",
+        "Weight": 13.2,
+        "Height": 1.68,
+        "Food_category": "Bagel",
+        "Calories": 890
+    },
+    {
+        "UserId": 1,
+        "RecordID": 674,
+        "Timestamp": "26/4/2024 11:59",
+        "Weight": 13.0,
+        "Height": 1.68,
+        "Food_category": "Udon",
+        "Calories": 590
+    },
+    {
+        "UserId": 1,
+        "RecordID": 675,
+        "Timestamp": "26/4/2024 15:50",
+        "Weight": 13.1,
+        "Height": 1.68,
+        "Food_category": "Fried Chicken",
+        "Calories": 930
+    }
+]
