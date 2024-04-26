@@ -38,7 +38,7 @@ struct RecordPageView: View {
             self.dailyData = data.filter { dict.values.contains($0.0) }.suffix(30).map {
                 (datetime, weight) in
                 let dateString = datetime.components(separatedBy: " ")[0]
-                return (dateString, weight + 40) // TODO: the generated weight is too small
+                return (dateString, weight)
             }
         }
     }
